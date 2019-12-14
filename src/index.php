@@ -15,7 +15,11 @@
     </nav>
 
 <?php
-    $main = $_GET["page"];
+    if (isset($_GET['Page'])) {
+        $main = $_GET['Page'];
+       } else {
+        $main = "home";
+       }
     switch ($main) {
         case "home":
             include "home.php";
