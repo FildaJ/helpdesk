@@ -13,7 +13,7 @@
     <div class="wrap">
         <nav>
             <ul class="primary">
-                <li><a href="index.php?page=home">PVY1 Helpdesk</a></li>    
+                <li><a href="index.php?page=home">PVY1 Helpdesk</a></li>
                 <li>
                     <a href="index.php?page=predmety">Předměty</a>
                     <ul class="sub">
@@ -28,12 +28,12 @@
         </nav>
     </div>
 
-<?php
+    <?php
     if (isset($_GET['Page'])) {
         $main = $_GET['Page'];
-       } else {
+    } else {
         $main = "home";
-       }
+    }
     switch ($main) {
         case "home":
             include "home.php";
@@ -50,7 +50,9 @@
     }
 
     ?>
-
+        <?php
+        include "footer.php";
+        ?>
 </body>
 
 </html>
