@@ -28,12 +28,12 @@
         </nav>
     </div>
 
-    <?php
+<?php
     if (isset($_GET['Page'])) {
         $main = $_GET['Page'];
-    } else {
+       } else {
         $main = "home";
-    }
+       }
     switch ($main) {
         case "home":
             include "home.php";
