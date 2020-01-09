@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 
 <head>
     <meta charset="UTF-8">
@@ -55,7 +55,7 @@
 
     ?>
         <?php
-        include "footer.php";
+        include "scripts/footer.php";
         ?>
 </body>
 
