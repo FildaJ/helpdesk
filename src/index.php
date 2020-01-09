@@ -24,6 +24,7 @@
                     </ul>
                 </li>
                 <li><a href="index.php?page=onas">O nás</a></li>
+                <li><a href="index.php?page=login">Login</a></li>
             </ul>
         </nav>
     </div>
@@ -44,6 +45,9 @@
         case "onas":
             include "onas.php";
             break;
+        case "login":
+                include "login.php";
+                break;    
         default:
             include "home.php";
             break;
