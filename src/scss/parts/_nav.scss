@@ -1,0 +1,13 @@
+nav {
+    width:100%;
+    display:flex;
+    background-color:$bg;
+
+    ul {
+        float:left;
+
+        li {
+            list-style-type: none;
+        }
+    }
+}
