@@ -10,24 +10,21 @@
 </head>
 
 <body>
-	<div class="wrap">
-		<nav>
-			<ul class="primary">
-				<li><a href="index.php?page=home">PVY1 Helpdesk</a></li>
-				<li>
-					<a href="index.php?page=predmety">Předměty</a>
-					<ul class="sub">
-						<li><a href="">PVY</a></li>
-						<li><a href="">POG</a></li>
-						<li><a href="">PRG</a></li>
-						<li><a href="">POS</a></li>
-					</ul>
-				</li>
-				<li><a href="index.php?page=onas">O nás</a></li>
-				<li><a href="index.php?page=login">Login</a></li>
-			</ul>
-		</nav>
-	</div>
+	<nav>
+		<ul>
+			<li><a href="#">Domů</a></li>
+			<li><a href="#">Předměty</a></li>
+				<ul>
+					<li><a href="#">Grafika</a></li>
+					<li><a href="#">Programování</a></li>
+					<li><a href="#">PVY</a></li>
+					<li><a href="#">Sítě</a></li>
+				</ul>
+			<li><a href="#">O nás</a></li>
+			<li><a href="#">Kalendář</a></li>
+			<li><a href="#">Přihlásit se</a></li>
+		</ul>
+	</nav>
 
 	<?php
 	if (isset($_GET['Page'])) {
@@ -37,19 +34,19 @@
 	}
 	switch ($main) {
 		case "home":
-			include "home.php";
+			include "pages/home.php";
 			break;
 		case "predmety":
-			include "predmety.php";
+			include "pages/predmety.php";
 			break;
 		case "onas":
-			include "onas.php";
+			include "pages/onas.php";
 			break;
 		case "login":
-				include "login.php";
+				include "pages/login.php";
 				break;    
 		default:
-			include "home.php";
+			include "pages/home.php";
 			break;
 	}
 
