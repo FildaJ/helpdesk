@@ -1,0 +1,21 @@
+//Barvy
+$bg: #000;
+$bgGray: #030708;
+$green: #009688;
+$greenAcc: #64ffda;
+$purple: #673ab7;
+$purpleAcc: #7c4dff;
+
+//Písma
+$poppins: 'Poppins', sans-serif;
+$playfair: 'Playfair Display', serif;
+
+@mixin poppinsBold {
+    font-family: $poppins;
+    font-weight: 700;    
+}
+
+@mixin poppinsLight {
+    font-family: $poppins;
+    font-weight: 300;
+}
