@@ -7,15 +7,24 @@ $purple: #673ab7;
 $purpleAcc: #7c4dff;
 
 //Písma
-$poppins: 'Poppins', sans-serif;
-$playfair: 'Playfair Display', serif;
+$raleway: 'Raleway', sans-serif;
 
-@mixin poppinsBold {
-    font-family: $poppins;
-    font-weight: 700;    
+@mixin ralewayBold {
+    font-family: $raleway;
+    font-weight: 700;
 }
 
-@mixin poppinsLight {
-    font-family: $poppins;
+@mixin ralewaySemibold {
+    font-family: $raleway;
+    font-weight: 600;
+}
+
+@mixin ralewayMedium {
+    font-family: $raleway;
+    font-weight: 500;    
+}
+
+@mixin ralewayLight {
+    font-family: $raleway;
     font-weight: 300;
 }

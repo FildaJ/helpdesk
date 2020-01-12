@@ -1,8 +1,31 @@
 //Odkazy v menu
 nav {
-    font-family: $poppins;
-    ul a {
-        color:$purpleAcc;
-        text-decoration: none;
-    }
+	font-family: $raleway;
+	ul a {
+		color:$purpleAcc;
+		text-decoration: none;
+	}
+}
+
+body {
+	h1 {
+		font-size: 3rem;
+		@include ralewayLight;
+	}
+
+	h2 {
+		@extend h1;
+		font-size: 2.25rem;
+	}
+
+	h3 {
+		@extend h1;
+		font-size: 1.75rem;
+	}
+
+	p {
+		@include ralewaySemibold;
+		width: 75ch;
+		font-size:1rem;
+	}
 }
