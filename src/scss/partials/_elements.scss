@@ -1,17 +1,11 @@
 //tlačítko
 .btn {
     background-color:$green;
-    padding: 10px 20px;
-    height:40px;
+    padding: 0.75rem 1.25rem;
     border-radius: 50px;
-    border:none;
-    display:block;
-    transition: all 0.3s ease 0s;
-
-    *{
-        display:inline-block;
-        vertical-align: center;
-    }
+    display:inline-block;
+    transition: background-color 0.45s;
+    transition-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
 
 
     &:hover {

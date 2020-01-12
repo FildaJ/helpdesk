@@ -12,6 +12,9 @@ nav ul a {
   color: white;
   text-decoration: none;
 }
+nav ul a:hover {
+  color: #009688;
+}
 
 body {
   color: white;
@@ -58,17 +61,13 @@ div.btn a:visited {
 
 .btn {
   background-color: #009688;
-  padding: 10px 20px;
-  height: 40px;
+  padding: 0.75rem 1.25rem;
   border-radius: 50px;
-  border: none;
-  display: block;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-.btn * {
   display: inline-block;
-  vertical-align: center;
+  -webkit-transition: background-color 0.45s;
+  transition: background-color 0.45s;
+  -webkit-transition-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+          transition-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 .btn:hover {
   background-color: #4DB6AC;
@@ -78,10 +77,12 @@ div.btn a:visited {
 }
 
 nav {
+  padding: 0 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   height: 5rem;
   width: 100%;
   background-color: #080908;
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,7 +116,7 @@ nav ul li:hover ul {
 nav ul li ul {
   display: none;
   position: absolute;
-  background-color: inherit;
+  background-color: #080908;
 }
 nav ul li ul li a {
   padding: 0.5rem 1rem;

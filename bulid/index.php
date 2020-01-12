@@ -13,8 +13,9 @@
 	<nav>
 		<ul>
 			<li><a href="#">Domů</a></li>
-			<li><a href="#">Předměty &#8964;</a>
-				<ul>
+			<li>
+				<a href="#">Předměty &#8964;</a>
+				<ul class="submenu">
 					<li><a href="#">Grafika</a></li>
 					<li><a href="#">Programování</a></li>
 					<li><a href="#">PVY</a></li>
