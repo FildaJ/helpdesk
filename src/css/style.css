@@ -6,22 +6,33 @@
 
 nav {
   font-family: "Raleway", sans-serif;
+  font-weight: 600;
 }
 nav ul a {
-  color: #7c4dff;
+  color: white;
   text-decoration: none;
 }
 
-body h1, body h2, body h3 {
-  font-size: 3rem;
+body {
+  color: white;
+}
+body h1 {
+  font-size: 6rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+body h2, body h4 {
   font-family: "Raleway", sans-serif;
   font-weight: 300;
-}
-body h2 {
-  font-size: 2.25rem;
+  font-size: 3.75rem;
 }
 body h3 {
-  font-size: 1.75rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+}
+body h4 {
+  font-size: 2.125rem;
 }
 body p {
   font-family: "Raleway", sans-serif;
@@ -30,13 +41,59 @@ body p {
   font-size: 1rem;
 }
 
+div.btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+div.btn a {
+  text-decoration: none;
+}
+div.btn a:visited {
+  color: black;
+}
+
+.btn {
+  background-color: #009688;
+  padding: 10px 20px;
+  height: 40px;
+  border-radius: 50px;
+  border: none;
+  display: block;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.btn * {
+  display: inline-block;
+  vertical-align: center;
+}
+.btn:hover {
+  background-color: #4DB6AC;
+}
+.btn:active {
+  background-color: #00796B;
+}
+
 nav {
+  height: 5rem;
   width: 100%;
-  background-color: #000;
+  background-color: #080908;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 nav ul {
-  float: left;
+  justify-self: space-between;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -44,7 +101,29 @@ nav ul {
 nav ul li {
   list-style-type: none;
   padding: 0.5rem;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
-nav ul ul {
+nav ul li a {
   display: block;
+}
+nav ul li:hover ul {
+  display: block;
+}
+nav ul li ul {
+  display: none;
+  position: absolute;
+  background-color: inherit;
+}
+nav ul li ul li a {
+  padding: 0.5rem 1rem;
+}
+nav .btn {
+  position: flex-end;
+}
+
+body {
+  background-color: #000;
 }

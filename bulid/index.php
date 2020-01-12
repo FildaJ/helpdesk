@@ -13,17 +13,18 @@
 	<nav>
 		<ul>
 			<li><a href="#">Domů</a></li>
-			<li><a href="#">Předměty</a></li>
+			<li><a href="#">Předměty &#8964;</a>
 				<ul>
 					<li><a href="#">Grafika</a></li>
 					<li><a href="#">Programování</a></li>
 					<li><a href="#">PVY</a></li>
 					<li><a href="#">Sítě</a></li>
 				</ul>
+			</li>
 			<li><a href="#">O nás</a></li>
 			<li><a href="#">Kalendář</a></li>
-			<li><a href="#">Přihlásit se</a></li>
 		</ul>
+		<div class="btn"><a href="#">Přihlásit se</a></div>
 	</nav>
 
 	<?php
