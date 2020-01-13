@@ -66,11 +66,11 @@ div.btn a:visited {
   display: inline-block;
   -webkit-transition: background-color 0.45s;
   transition: background-color 0.45s;
-  -webkit-transition-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
-          transition-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 .btn:hover {
   background-color: #4DB6AC;
+  -webkit-transition-timing-function: ease 0.3s all 0;
+          transition-timing-function: ease 0.3s all 0;
 }
 .btn:active {
   background-color: #00796B;
