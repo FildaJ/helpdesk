@@ -62,3 +62,4 @@ include 'scripts/join.php';
 </body>
 
 </html>
+<!-- Jsem negr -->
