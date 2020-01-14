@@ -1,5 +1,5 @@
 <?php
-$servername = "helpdesk";
+$servername = "localhost";
 $username = "matura";
 $password = "Maturita2020";
 
