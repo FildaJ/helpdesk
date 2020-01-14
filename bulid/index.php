@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-include 'page/join.php';
+require 'page/join.php';
 ?>
 <html lang="cs">
 
