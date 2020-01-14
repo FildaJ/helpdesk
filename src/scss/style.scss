@@ -1,1 +1,8 @@
-@import "parts/_colors.scss";
+//Importy
+@import "./partials/import";
+@import "./partials/reset";
+@import "./partials/vars";
+@import "./partials/typography";
+@import "./partials/elements";
+@import "./partials/nav";
+@import "./partials/body";

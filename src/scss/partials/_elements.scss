@@ -1,0 +1,19 @@
+//tlačítko
+.btn {
+    background-color:$green;
+    padding: 0.75rem 1.25rem;
+    border-radius: 50px;
+    display:inline-block;
+    transition: background-color 0.45s;
+
+
+    &:hover {
+        //background-color: darken($greenAcc, 25);
+        background-color: $greenLight;
+        transition-timing-function: ease 0.3s all 0;
+    }
+
+    &:active {
+        background-color: $greenDark;
+    }
+}

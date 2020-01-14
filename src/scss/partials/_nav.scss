@@ -1,0 +1,45 @@
+nav {
+	padding:0 1rem;
+	box-sizing: border-box;
+	height:5rem;
+	width:100%;
+	background-color:$bgGray;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+
+	ul {
+		justify-self: space-between;
+		display:inline-flex;
+		
+
+		li {
+			list-style-type: none;
+			padding:0.5rem;
+			position: relative;
+			display:inline-flex;
+
+			a {
+				display:block;
+			}
+
+			&:hover ul {
+				display:block;
+			}
+			
+			ul {
+
+				display:none;
+				position: absolute;
+				background-color:$bgGray;
+
+				li a {
+					padding: 0.5rem 1rem;
+				}
+			}
+		}
+	}
+	.btn {
+		position: flex-end;
+	}
+}
