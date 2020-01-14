@@ -14,7 +14,7 @@
 		<ul>
 			<li><a href="#">Domů</a></li>
 			<li>
-				<a href="#">Předměty &#8964;</a>
+				<a href="#">Předměty</a>
 				<ul class="submenu">
 					<li><a href="#">Grafika</a></li>
 					<li><a href="#">Programování</a></li>
