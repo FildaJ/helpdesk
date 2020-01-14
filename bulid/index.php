@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-require 'page/join.php';
+include 'scripts/join.php';
 ?>
 <html lang="cs">
 
@@ -28,12 +28,12 @@ require 'page/join.php';
 			<li><a href="#">O nás</a></li>
 			<li><a href="#">Kalendář</a></li>
 		</ul>
-		<div class="btn"><a href="#">Přihlásit se</a></div>
+		<div class="btn"><a href="index.php?page=login">Přihlásit se</a></div>
 	</nav>
 
 	<?php
-	if (isset($_GET['Page'])) {
-		$main = $_GET['Page'];
+	if (isset($_GET['page'])) {
+		$main = $_GET['page'];
 	} else {
 		$main = "home";
 	}
