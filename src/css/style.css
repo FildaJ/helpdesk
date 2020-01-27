@@ -77,10 +77,9 @@ div.btn a:visited {
 }
 
 nav {
-  padding: 0 1rem;
+  padding: 0rem 1rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  height: 5rem;
   width: 100%;
   background-color: #080908;
   display: -webkit-box;
@@ -92,25 +91,21 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  position: relative;
 }
 nav ul {
-  justify-self: space-between;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 nav ul li {
   list-style-type: none;
-  padding: 0.5rem;
+  padding: 1rem;
   position: relative;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
 }
 nav ul li a {
-  display: block;
-}
-nav ul li:hover ul {
   display: block;
 }
 nav ul li ul {
@@ -121,8 +116,21 @@ nav ul li ul {
 nav ul li ul li a {
   padding: 0.5rem 1rem;
 }
+nav ul li:hover ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 nav .btn {
   position: flex-end;
+}
+nav .submenu {
+  margin-top: 16px;
+  z-index: 420;
 }
 
 body {
