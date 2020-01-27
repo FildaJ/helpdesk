@@ -1,0 +1,58 @@
+//Odkazy v menu
+nav {
+	@include ralewaySemibold;
+	ul a {
+		color:white;
+		text-decoration: none;
+
+		&:hover {
+			color:$green;
+		}
+	}
+}
+
+body {
+	color:white;
+
+	h1 {
+		font-size: 6rem;
+		@include ralewayBold;
+	}
+
+	h2 {
+		@include ralewayLight; 
+		font-size: 3.75rem;
+	}
+
+	h3 {
+		@include ralewaySemibold;
+		font-size: 3rem;
+	}
+
+	h4 {
+		@extend h2;
+		font-size: 2.125rem;
+	}
+
+	p {
+		@include ralewaySemibold;
+		width: 75ch;
+		font-size:1rem;
+	}
+}
+
+div.btn {
+	@include ralewaySemibold;
+	font-size: 0.75rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	color:black;
+
+	a {
+		text-decoration: none;
+
+		&:visited {
+			color:black;
+		}
+	}
+}
