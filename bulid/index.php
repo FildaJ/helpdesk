@@ -60,6 +60,7 @@ include 'scripts/join.php';
 
 	?>
 		<?php
+		include "scripts/chat.php";
 		include "scripts/footer.php";
 		?>
 </body>
