@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html lang="cs">
 <?php
 include 'scripts/join.php';
 ?>
@@ -49,7 +49,10 @@ include 'scripts/join.php';
 			break;
 		case "login":
 				include "pages/login.php";
-				break;    
+				break;  
+        case "register":
+				include "pages/register.php";
+				break;  
 		default:
 			include "pages/home.php";
 			break;
