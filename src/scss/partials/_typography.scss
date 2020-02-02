@@ -19,16 +19,20 @@ body {
 	h1 {
 		font-size: 6rem;
 		@include oswaldSemi;
+		text-transform: uppercase;
 	}
 
 	h2 {
 		@include oswaldLight; 
 		font-size: 3.75rem;
+		text-transform: uppercase;
+		color:$purple;
 	}
 
 	h3 {
 		@include oswaldSemi;
 		font-size: 3rem;
+		text-transform: uppercase;
 	}
 
 	p {
@@ -40,10 +44,9 @@ body {
 
 div.btn {
 	font-family: $oswald;
-	font-size: 0.75rem;
+	font-size: 1rem;
 	text-transform: uppercase;
 	text-decoration: none;
-	color:black;
 
 	a {
 		text-decoration: none;

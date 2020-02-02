@@ -21,16 +21,20 @@ body h1 {
   font-size: 6rem;
   font-family: "Oswald", sans-serif;
   font-weight: 600;
+  text-transform: uppercase;
 }
 body h2 {
   font-family: "Oswald", sans-serif;
   font-weight: 300;
   font-size: 3.75rem;
+  text-transform: uppercase;
+  color: #7526FF;
 }
 body h3 {
   font-family: "Oswald", sans-serif;
   font-weight: 600;
   font-size: 3rem;
+  text-transform: uppercase;
 }
 body p {
   font-family: "Roboto", sans-serif;
@@ -40,10 +44,9 @@ body p {
 
 div.btn {
   font-family: "Oswald", sans-serif;
-  font-size: 0.75rem;
+  font-size: 1rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: black;
 }
 div.btn a {
   text-decoration: none;
@@ -52,21 +55,55 @@ div.btn a:visited {
   color: black;
 }
 
-.btn {
-  background-color: #00FFC3;
-  padding: 0.75rem 1.25rem;
-  border-radius: 50px;
+.btn, button {
+  padding: .5rem 1.25rem;
+  border-radius: 5px;
   display: inline-block;
-  -webkit-transition: background-color 0.45s;
-  transition: background-color 0.45s;
+  -webkit-transition: all 0.45s;
+  transition: all 0.45s;
+  margin: 1rem 1rem;
 }
-.btn:hover {
-  background-color: #00cc9c;
+
+.primary {
+  background-color: #00FFC3;
+  -webkit-box-shadow: 1px 1px 5px #00FFC3;
+          box-shadow: 1px 1px 5px #00FFC3;
+  color: black;
+}
+.primary:hover {
+  -webkit-box-shadow: 2px 2px 7px #00FFC3;
+          box-shadow: 2px 2px 7px #00FFC3;
   -webkit-transition-timing-function: ease 0.3s all 0;
           transition-timing-function: ease 0.3s all 0;
 }
-.btn:active {
+.primary:active {
+  -webkit-box-shadow: -2px -2px 7px #00FFC3;
+          box-shadow: -2px -2px 7px #00FFC3;
   background-color: #009975;
+}
+.primary:visited {
+  color: black;
+}
+
+.secondary {
+  background-color: #7526FF;
+  -webkit-box-shadow: 1px 1px 5px #7526FF;
+          box-shadow: 1px 1px 5px #7526FF;
+  color: black;
+}
+.secondary:hover {
+  -webkit-box-shadow: 2px 2px 7px #7526FF;
+          box-shadow: 2px 2px 7px #7526FF;
+  -webkit-transition-timing-function: ease 0.3s all 0;
+          transition-timing-function: ease 0.3s all 0;
+}
+.secondary:active {
+  -webkit-box-shadow: -2px -2px 7px #7526FF;
+          box-shadow: -2px -2px 7px #7526FF;
+  background-color: #4600bf;
+}
+.secondary:visited {
+  color: black;
 }
 
 nav {
@@ -86,7 +123,7 @@ nav {
           align-items: center;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  position: relative;
+  position: relative fixed;
   border-bottom: #00FFC3 2px solid;
 }
 nav ul {
@@ -125,7 +162,7 @@ nav .btn {
 nav .submenu {
   border-top: #00FFC3 2px dashed;
   border-bottom: #00FFC3 2px solid;
-  top: 56px;
+  top: 64px;
   z-index: 420;
 }
 

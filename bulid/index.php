@@ -25,7 +25,7 @@
 			<li><a href="#">O nás</a></li>
 			<li><a href="#">Kalendář</a></li>
 		</ul>
-		<div class="btn"><a href="#">Přihlásit se</a></div>
+		<div class="btn primary"><a href="#">Přihlásit se</a></div>
 	</nav>
 
 	<?php
