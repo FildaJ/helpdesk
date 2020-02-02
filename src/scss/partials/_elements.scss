@@ -9,11 +9,11 @@
 
 	&:hover {
 		//background-color: darken($greenAcc, 25);
-		background-color: $greenLight;
+		background-color: darken($green, 10);
 		transition-timing-function: ease 0.3s all 0;
 	}
 
 	&:active {
-		background-color: $greenDark;
+		background-color: darken($green, 20);
 	}
 }

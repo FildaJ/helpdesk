@@ -1,9 +1,11 @@
 //Odkazy v menu
 nav {
-	@include ralewaySemibold;
+	
 	ul a {
 		color:white;
 		text-decoration: none;
+		font-family:$oswald;
+		text-transform: uppercase;
 
 		&:hover {
 			color:$green;
@@ -16,33 +18,28 @@ body {
 
 	h1 {
 		font-size: 6rem;
-		@include ralewayBold;
+		@include oswaldSemi;
 	}
 
 	h2 {
-		@include ralewayLight; 
+		@include oswaldLight; 
 		font-size: 3.75rem;
 	}
 
 	h3 {
-		@include ralewaySemibold;
+		@include oswaldSemi;
 		font-size: 3rem;
 	}
 
-	h4 {
-		@extend h2;
-		font-size: 2.125rem;
-	}
-
 	p {
-		@include ralewaySemibold;
+		font-family: $roboto;
 		width: 75ch;
 		font-size:1rem;
 	}
 }
 
 div.btn {
-	@include ralewaySemibold;
+	font-family: $oswald;
 	font-size: 0.75rem;
 	text-transform: uppercase;
 	text-decoration: none;

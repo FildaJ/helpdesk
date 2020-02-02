@@ -1,19 +1,17 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald:300,400,600|Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
 
-nav {
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-}
 nav ul a {
   color: white;
   text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
 }
 nav ul a:hover {
-  color: #009688;
+  color: #00FFC3;
 }
 
 body {
@@ -21,32 +19,27 @@ body {
 }
 body h1 {
   font-size: 6rem;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
 }
-body h2, body h4 {
-  font-family: "Raleway", sans-serif;
+body h2 {
+  font-family: "Oswald", sans-serif;
   font-weight: 300;
   font-size: 3.75rem;
 }
 body h3 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 600;
   font-size: 3rem;
 }
-body h4 {
-  font-size: 2.125rem;
-}
 body p {
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
+  font-family: "Roboto", sans-serif;
   width: 75ch;
   font-size: 1rem;
 }
 
 div.btn {
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
+  font-family: "Oswald", sans-serif;
   font-size: 0.75rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -60,7 +53,7 @@ div.btn a:visited {
 }
 
 .btn {
-  background-color: #009688;
+  background-color: #00FFC3;
   padding: 0.75rem 1.25rem;
   border-radius: 50px;
   display: inline-block;
@@ -68,12 +61,12 @@ div.btn a:visited {
   transition: background-color 0.45s;
 }
 .btn:hover {
-  background-color: #4DB6AC;
+  background-color: #00cc9c;
   -webkit-transition-timing-function: ease 0.3s all 0;
           transition-timing-function: ease 0.3s all 0;
 }
 .btn:active {
-  background-color: #00796B;
+  background-color: #009975;
 }
 
 nav {
@@ -81,7 +74,7 @@ nav {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
-  background-color: #080908;
+  background-color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,6 +87,7 @@ nav {
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   position: relative;
+  border-bottom: #00FFC3 2px solid;
 }
 nav ul {
   display: -webkit-inline-box;
@@ -111,7 +105,7 @@ nav ul li a {
 nav ul li ul {
   display: none;
   position: absolute;
-  background-color: #080908;
+  background-color: #000;
 }
 nav ul li ul li a {
   padding: 0.5rem 1rem;
@@ -129,7 +123,9 @@ nav .btn {
   position: flex-end;
 }
 nav .submenu {
-  margin-top: 16px;
+  border-top: #00FFC3 2px dashed;
+  border-bottom: #00FFC3 2px solid;
+  top: 56px;
   z-index: 420;
 }
 

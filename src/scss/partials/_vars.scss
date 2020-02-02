@@ -1,33 +1,20 @@
 //Barvy
 $bg: #000;
-$bgGray: #080908;
-$greenLight: #4DB6AC;
-$green: #009688;
-$greenDark: #00796B;
-$purpleLight: #9575CD;
-$purple: #673AB7;
+$green: #00FFC3;
+$purple: #7526FF;
 
 
 //Písma
-$raleway: 'Raleway', sans-serif;
+$roboto: 'Roboto', sans-serif;
+$oswald: 'Oswald', sans-serif;
 
-@mixin ralewayBold {
-    font-family: $raleway;
-    font-weight: 700;
-}
-
-@mixin ralewaySemibold {
-    font-family: $raleway;
+@mixin oswaldSemi {
+    font-family: $oswald;
     font-weight: 600;
 }
 
-@mixin ralewayMedium {
-    font-family: $raleway;
-    font-weight: 500;    
-}
-
-@mixin ralewayLight {
-    font-family: $raleway;
+@mixin oswaldLight {
+    font-family: $oswald;
     font-weight: 300;
 }
 

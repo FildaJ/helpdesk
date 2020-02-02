@@ -2,12 +2,13 @@ nav {
 	padding:0rem 1rem;
 	box-sizing: border-box;
 	width:100%;
-	background-color:$bgGray;
+	background-color:$bg;
 	display:flex;
 	justify-content: space-between;
 	align-items: center;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 	position:relative;
+	border-bottom: $green 2px solid;
 
 	ul {
 		//justify-self: space-between;
@@ -26,7 +27,7 @@ nav {
 			ul {
 				display:none;
 				position: absolute;
-				background-color:$bgGray;
+				background-color:$bg;
 
 				li a {
 					padding: 0.5rem 1rem;
@@ -44,7 +45,9 @@ nav {
 	}
 
 	.submenu {
-		margin-top: 16px;
+		border-top: $green 2px dashed;
+		border-bottom: $green 2px solid;
+		top: 56px;
 		z-index:420;
 	}
 }
