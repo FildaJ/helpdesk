@@ -17,7 +17,7 @@ nav {
 
 		li {
 			list-style-type: none;
-			padding:1rem;
+			padding:1.5rem 1rem;
 			position: relative;
 
 			a {
@@ -46,9 +46,13 @@ nav {
 
 	.submenu {
 		border-top: $green 2px dashed;
-		border-bottom: $green 2px solid;
-		top: 64px;
+		border-bottom: $green 4px solid;
+		top: 72px;
 		z-index:420;
+
+		& > ul {
+			padding:1rem;
+		}
 	}
 }
 
