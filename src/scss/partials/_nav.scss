@@ -8,7 +8,7 @@ nav {
 	align-items: center;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 	position:relative fixed;
-	border-bottom: $green 2px solid;
+	border-bottom: $green 4px solid;
 
 	ul {
 		//justify-self: space-between;
@@ -45,7 +45,7 @@ nav {
 	}
 
 	.submenu {
-		border-top: $green 2px dashed;
+		border-top: $green 4px solid;
 		border-bottom: $green 4px solid;
 		top: 72px;
 		z-index:420;
