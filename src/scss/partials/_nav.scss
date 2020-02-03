@@ -2,12 +2,14 @@ nav {
 	padding:0rem 1rem;
 	box-sizing: border-box;
 	width:100%;
-	background-color:$bgGray;
+	background-color:$bg;
 	display:flex;
 	justify-content: space-between;
 	align-items: center;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-	position:relative;
+	position:relative fixed;
+	border-bottom: $green 4px solid;
+	user-select: none;
 
 	ul {
 		//justify-self: space-between;
@@ -16,7 +18,7 @@ nav {
 
 		li {
 			list-style-type: none;
-			padding:1rem;
+			padding:1.5rem 1rem;
 			position: relative;
 
 			a {
@@ -26,7 +28,7 @@ nav {
 			ul {
 				display:none;
 				position: absolute;
-				background-color:$bgGray;
+				background-color:$bg;
 
 				li a {
 					padding: 0.5rem 1rem;
@@ -44,8 +46,14 @@ nav {
 	}
 
 	.submenu {
-		margin-top: 16px;
+		border-top: $green 4px solid;
+		border-bottom: $green 4px solid;
+		top: 72px;
 		z-index:420;
+
+		& > ul {
+			padding:1rem;
+		}
 	}
 }
 

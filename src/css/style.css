@@ -1,19 +1,17 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald:300,400,600|Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
 
-nav {
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-}
 nav ul a {
   color: white;
   text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
 }
 nav ul a:hover {
-  color: #009688;
+  color: #00FFC3;
 }
 
 body {
@@ -21,59 +19,143 @@ body {
 }
 body h1 {
   font-size: 6rem;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
 }
-body h2, body h4 {
-  font-family: "Raleway", sans-serif;
+body h2 {
+  font-family: "Oswald", sans-serif;
   font-weight: 300;
   font-size: 3.75rem;
+  text-transform: uppercase;
+  color: #7526FF;
 }
 body h3 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 600;
   font-size: 3rem;
-}
-body h4 {
-  font-size: 2.125rem;
+  text-transform: uppercase;
 }
 body p {
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
+  font-family: "Roboto", sans-serif;
   width: 75ch;
   font-size: 1rem;
 }
 
-div.btn {
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  font-size: 0.75rem;
+div.btn, button, input[type=submit] {
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: black;
 }
-div.btn a {
+div.btn a, button a, input[type=submit] a {
   text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
-div.btn a:visited {
+div.btn a:visited, button a:visited, input[type=submit] a:visited {
   color: black;
 }
 
-.btn {
-  background-color: #009688;
-  padding: 0.75rem 1.25rem;
-  border-radius: 50px;
-  display: inline-block;
-  -webkit-transition: background-color 0.45s;
-  transition: background-color 0.45s;
+label {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1rem;
 }
-.btn:hover {
-  background-color: #4DB6AC;
+
+input, textarea {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.btn, button {
+  padding: .5rem 1.25rem;
+  border-radius: 5px;
+  display: inline-block;
+  -webkit-transition: all 0.45s;
+  transition: all 0.45s;
+  margin: 1rem 1rem;
+  border: none;
+}
+
+.primary {
+  background-color: #00FFC3;
+  -webkit-box-shadow: 1px 1px 5px #00FFC3;
+          box-shadow: 1px 1px 5px #00FFC3;
+  color: black;
+}
+.primary:hover, .primary:focus {
+  -webkit-box-shadow: 2px 2px 7px #00FFC3;
+          box-shadow: 2px 2px 7px #00FFC3;
   -webkit-transition-timing-function: ease 0.3s all 0;
           transition-timing-function: ease 0.3s all 0;
 }
-.btn:active {
-  background-color: #00796B;
+.primary:active {
+  -webkit-box-shadow: -2px -2px 7px #00FFC3;
+          box-shadow: -2px -2px 7px #00FFC3;
+  background-color: #009975;
+}
+.primary:visited {
+  color: black;
+}
+
+.secondary {
+  background-color: #7526FF;
+  -webkit-box-shadow: 1px 1px 5px #7526FF;
+          box-shadow: 1px 1px 5px #7526FF;
+  color: black;
+}
+.secondary:hover {
+  -webkit-box-shadow: 2px 2px 7px #7526FF;
+          box-shadow: 2px 2px 7px #7526FF;
+  -webkit-transition-timing-function: ease 0.3s all 0;
+          transition-timing-function: ease 0.3s all 0;
+}
+.secondary:active {
+  -webkit-box-shadow: -2px -2px 7px #7526FF;
+          box-shadow: -2px -2px 7px #7526FF;
+  background-color: #4600bf;
+}
+.secondary:visited {
+  color: black;
+}
+
+label {
+  display: block;
+  padding: 1rem 0 .25rem;
+  margin-left: 0.5rem;
+}
+
+input, textarea {
+  display: block;
+  border: 2px solid white;
+  padding: .5rem;
+  border-radius: 5px;
+  background-color: #000;
+}
+input:hover, textarea:hover {
+  background-color: #0d0d0d;
+}
+input:focus, textarea:focus {
+  border: 2px solid #00FFC3;
+  background-color: #0d0d0d;
+}
+input:invalid, textarea:invalid {
+  border: 2px solid #ff5252;
+}
+
+::-moz-selection, ::-moz-selection {
+  background-color: #7526FF;
+  color: #ffffff;
+}
+
+::-moz-selection, ::selection {
+  background-color: #7526FF;
+  color: #ffffff;
 }
 
 nav {
@@ -81,7 +163,7 @@ nav {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
-  background-color: #080908;
+  background-color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,7 +175,12 @@ nav {
           align-items: center;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  position: relative;
+  position: relative fixed;
+  border-bottom: #00FFC3 4px solid;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 nav ul {
   display: -webkit-inline-box;
@@ -102,7 +189,7 @@ nav ul {
 }
 nav ul li {
   list-style-type: none;
-  padding: 1rem;
+  padding: 1.5rem 1rem;
   position: relative;
 }
 nav ul li a {
@@ -111,7 +198,7 @@ nav ul li a {
 nav ul li ul {
   display: none;
   position: absolute;
-  background-color: #080908;
+  background-color: #000;
 }
 nav ul li ul li a {
   padding: 0.5rem 1rem;
@@ -129,8 +216,13 @@ nav .btn {
   position: flex-end;
 }
 nav .submenu {
-  margin-top: 16px;
+  border-top: #00FFC3 4px solid;
+  border-bottom: #00FFC3 4px solid;
+  top: 72px;
   z-index: 420;
+}
+nav .submenu > ul {
+  padding: 1rem;
 }
 
 body {
