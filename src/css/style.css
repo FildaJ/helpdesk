@@ -42,17 +42,34 @@ body p {
   font-size: 1rem;
 }
 
-div.btn {
+div.btn, button, input[type=submit] {
   font-family: "Oswald", sans-serif;
   font-size: 1rem;
   text-transform: uppercase;
   text-decoration: none;
 }
-div.btn a {
+div.btn a, button a, input[type=submit] a {
   text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
-div.btn a:visited {
+div.btn a:visited, button a:visited, input[type=submit] a:visited {
   color: black;
+}
+
+label {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1rem;
+}
+
+input, textarea {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  color: white;
 }
 
 .btn, button {
@@ -62,6 +79,7 @@ div.btn a:visited {
   -webkit-transition: all 0.45s;
   transition: all 0.45s;
   margin: 1rem 1rem;
+  border: none;
 }
 
 .primary {
@@ -70,7 +88,7 @@ div.btn a:visited {
           box-shadow: 1px 1px 5px #00FFC3;
   color: black;
 }
-.primary:hover {
+.primary:hover, .primary:focus {
   -webkit-box-shadow: 2px 2px 7px #00FFC3;
           box-shadow: 2px 2px 7px #00FFC3;
   -webkit-transition-timing-function: ease 0.3s all 0;
@@ -106,6 +124,40 @@ div.btn a:visited {
   color: black;
 }
 
+label {
+  display: block;
+  padding: 1rem 0 .25rem;
+  margin-left: 0.5rem;
+}
+
+input, textarea {
+  display: block;
+  border: 2px solid white;
+  padding: .5rem;
+  border-radius: 5px;
+  background-color: #000;
+}
+input:hover, textarea:hover {
+  background-color: #0d0d0d;
+}
+input:focus, textarea:focus {
+  border: 2px solid #00FFC3;
+  background-color: #0d0d0d;
+}
+input:invalid, textarea:invalid {
+  border: 2px solid #ff5252;
+}
+
+::-moz-selection, ::-moz-selection {
+  background-color: #7526FF;
+  color: #ffffff;
+}
+
+::-moz-selection, ::selection {
+  background-color: #7526FF;
+  color: #ffffff;
+}
+
 nav {
   padding: 0rem 1rem;
   -webkit-box-sizing: border-box;
@@ -125,6 +177,10 @@ nav {
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   position: relative fixed;
   border-bottom: #00FFC3 4px solid;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 nav ul {
   display: -webkit-inline-box;
