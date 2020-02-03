@@ -11,7 +11,8 @@
 
 
     <form action="#">
-        <input type="text">
+        <label for="name">Jméno</label>
+        <input type="text" id="name">
         <button type="submit" class="primary">Odeslat</button>
     </form>
 </article>

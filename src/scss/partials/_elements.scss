@@ -5,6 +5,7 @@
 	display:inline-block;
 	transition: all 0.45s;
 	margin: 1rem 1rem;
+	border:none;
 }
 
 .primary {
@@ -12,7 +13,7 @@
 	box-shadow: 1px 1px 5px $green;
 	color:black;
 
-	&:hover {
+	&:hover,&:focus {
 		//background-color: darken($greenAcc, 25);
 		box-shadow: 2px 2px 7px $green;
 		transition-timing-function: ease 0.3s all 0;
@@ -48,4 +49,38 @@
 	&:visited {
 		color:black;
 	}
+}
+
+//formuuláře
+label{
+	display:block;
+	padding:1rem 0 .25rem;
+	margin-left:0.5rem;
+}
+
+input, textarea{
+	display:block;
+	border:2px solid white;
+	padding:.5rem;
+	border-radius:5px;
+	background-color: $bg;
+
+	&:hover {
+		background-color:lighten($bg, 5);
+	}
+
+	&:focus {
+		border: 2px solid $green;
+		background-color:lighten($bg,5);
+	}
+
+	&:invalid {
+		border: 2px solid $error;
+	}
+}
+
+//výběr
+::-moz-selection, ::selection { 
+	background-color: $purple; 
+	color: #ffffff;
 }

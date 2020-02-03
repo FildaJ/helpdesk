@@ -42,7 +42,7 @@ body {
 	}
 }
 
-div.btn {
+div.btn, button, input[type=submit]{
 	font-family: $oswald;
 	font-size: 1rem;
 	text-transform: uppercase;
@@ -50,9 +50,23 @@ div.btn {
 
 	a {
 		text-decoration: none;
+		user-select: none;
 
 		&:visited {
 			color:black;
 		}
 	}
+}
+
+label {
+	font-family: $oswald;
+	text-transform: uppercase;
+	color:white;
+	font-size:1rem;
+}
+
+input, textarea {
+	font-family: $roboto;
+	font-size:1.2rem;
+	color:white;
 }
