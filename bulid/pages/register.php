@@ -1,4 +1,7 @@
-﻿<form method="post">
+﻿<?php
+    include "scripts\auth.php";
+?>
+<form method="post">
  First name:<br>
   <input type="text" name="jmeno" placeholder="Tomáš"  required><br>
   Last name:<br>

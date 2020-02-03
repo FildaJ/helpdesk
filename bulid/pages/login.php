@@ -1,4 +1,7 @@
-﻿<form method="post">
+﻿<?php
+    include "scripts\auth.php";
+?>
+<form method="post">
  E-Mail:<br>
   <input type="email" name="email" placeholder="vzor@vzor.cz"><br>
   Heslo:<br>
@@ -21,8 +24,11 @@ if (isset($_POST['login_user'])) {
         $results = mysqli_query($conn, $query);
         if (mysqli_num_rows($results) == 1) {
             $uspech = "Úspěšně jsi se přihlásil";
-            $uzivatel           = "SELECT jmeno FROM user WHERE email='$email' LIMIT 1"; //najdi jméno uživatele pro jiné účely
-            $execute             = mysqli_query($conn, $uzivatel);
+            $uzivatel               = "SELECT jmeno FROM user WHERE email='$email' LIMIT 1"; //najdi jméno uživatele pro jiné účely
+            $execute                = mysqli_query($conn, $uzivatel);
+            $_SESSION['username']   = $execute;
+            header("Location: index.php");
+            
 
         } else {
             $erorr_login = "Tato kombinace neexistuje.";
@@ -41,9 +47,5 @@ if (isset($_POST['login_user'])) {
  ?>
   <?php if (isset($erorr_heslox)) {
  echo '<p>' . $erorr_heslox . '</p><br>';
- }
- ?>
-  <?php if (isset($uspech)) {
- echo '<p>' . $uspech . '</p><br>';
  }
  ?>
