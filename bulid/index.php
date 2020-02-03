@@ -31,7 +31,7 @@ include 'scripts/join.php';
 			<li><a href="#">O nás</a></li>
 			<li><a href="#">Kalendář</a></li>
 		</ul>
-		<div class="btn">
+		<div class="btn primary">
 			<?php
 				if (!isset($_SESSION["username"])) {
 					echo '<a href="index.php?page=login">Přihlásit se</a>';
