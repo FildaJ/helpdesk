@@ -4,11 +4,11 @@
   Last name:<br>
   <input type="text" name="prijmeni" placeholder="Novák"  required> <br>
   Mail:<br>
-  <input type="text" name="email" placeholder="test@test.cz" title="text@text.text" required pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$">   <br>                 
+  <input type="email" name="email" placeholder="test@test.cz" title="text@text.text" required pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$">   <br>                 
   Heslo:<br>
-  <input type="text" name="heslo1" placeholder="Vzor123" title="Heslo nejméně 8 znaků. Alespoň jedno malé a jedno velké písmeno." required pattern="(?=^.{8,}$)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">     <br>    
+  <input type="password" name="heslo1" placeholder="Vzor123" title="Heslo nejméně 8 znaků. Alespoň jedno malé a jedno velké písmeno." required pattern="(?=^.{8,}$)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">     <br>    
   Heslo pro kontrolu:<br>
-  <input type="text" name="heslo2" placeholder="Vzor123" title="Heslo nejméně 8 znaků. Alespoň jedno malé a jedno velké písmeno." required pattern="(?=^.{8,}$)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">      <br>                            <br>
+  <input type="password" name="heslo2" placeholder="Vzor123" title="Heslo nejméně 8 znaků. Alespoň jedno malé a jedno velké písmeno." required pattern="(?=^.{8,}$)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">      <br>                            <br>
     <a href="index.php?page=login"><button type="button">Zpět k přihlášení</button> </a>   
    <button name="reg_user" type="submit">Registrovat</button>  
 </form>      
@@ -28,7 +28,7 @@ if (isset($_POST['reg_user'])) {
         $eror_heslo = "Hesla se neshodují";
     } else
         {
-        //$heslo1 = md5($heslo1);//zahesluj to (hvězdičky)
+        $heslo1 =  hash('sha512', $heslo1);
         $admin = false;
         $query = "INSERT INTO user (jmeno,prijmeni,email,heslo,admin) 
 VALUES('$jmeno','$prijmeni', '$email', '$heslo1', '$admin')";

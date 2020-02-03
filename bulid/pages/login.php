@@ -1,8 +1,8 @@
 ﻿<form method="post">
  E-Mail:<br>
-  <input type="text" name="email" placeholder="vzor@vzor.cz"><br>
+  <input type="email" name="email" placeholder="vzor@vzor.cz"><br>
   Heslo:<br>
-  <input type="text" name="heslo" placeholder="vzor@vzor.cz"> <br>                          
+  <input type="password" name="heslo" placeholder="Vzor123"> <br>                          
 <button name="login_user"  title="Odeslat formulář" type="submit">Přihlásit se</button> 
 <p>Ještě nemáš účet?<a href="index.php?page=register"> Vytvoř si ho!</a> </p> 
 </form>  
@@ -15,7 +15,9 @@ if (isset($_POST['login_user'])) {
     } elseif (empty($pass)) {
         $erorr_heslox = "Heslo je povinné";
     } else {
-        $query   = "SELECT * FROM user WHERE email='$email' AND heslo='$pass'";
+        $heslo1 = $_POST['heslo'];
+        $crypted = hash('sha512', $heslo1);
+        $query   = "SELECT * FROM user WHERE email='$email' AND heslo='$crypted'";
         $results = mysqli_query($conn, $query);
         if (mysqli_num_rows($results) == 1) {
             $uspech = "Úspěšně jsi se přihlásil";
