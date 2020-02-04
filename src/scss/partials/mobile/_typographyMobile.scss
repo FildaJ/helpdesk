@@ -1,0 +1,39 @@
+//písmo v navigaci
+nav {
+	ul a {
+		color:white;
+		text-decoration: none;
+		font-family:$oswald;
+		text-transform: uppercase;
+	}
+}
+
+body {
+	color:white;
+
+	h1 {
+		font-size:4rem;
+		@include oswaldSemi;
+		text-transform: uppercase;
+	}
+
+	h2 {
+		@include oswaldLight;
+		font-size: 3rem;
+		text-transform: uppercase;
+		color:$purple;
+	}
+
+	h3 {
+		@include oswaldSemi;
+		font-size:2.5rem;
+		text-transform: uppercase;
+	}
+
+	p {
+		font-family: $roboto;
+		min-width: 50%;
+		max-width: 70%;
+		font-size: 1.25rem;
+	}
+}

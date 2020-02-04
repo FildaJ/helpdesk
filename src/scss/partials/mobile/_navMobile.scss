@@ -1,0 +1,39 @@
+nav {
+	//padding: 0 1rem;
+	width:100%;
+	background-color:$bg;
+	border-bottom: $green 4px solid;
+	user-select: none;
+	box-sizing: border-box;
+	z-index:99;
+
+	#links {
+		//display:none;
+		position: absolute;
+		text-align: left;
+		background-color:$bg;
+		width:100%;
+		z-index: 98;
+	}
+
+	#loginBtn {
+
+	}
+
+	ul {
+		li {
+			list-style-type: none;
+			padding:1rem;
+
+			a {
+				display:block;
+			}
+
+			ul {
+				margin: 1rem 0 0 0;
+				border-left: $green 4px solid;
+			}
+
+		}
+	}
+}

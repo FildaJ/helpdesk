@@ -13,7 +13,7 @@
 <body>
 	<nav>
 		<div class="btn primary toggle"><a href="#">&#x2716 Menu</a></div>
-		<ul>
+		<ul id="links">
 			<li><a href="#">Domů</a></li>
 			<li>
 				<a href="#">Předměty</a>
