@@ -188,10 +188,10 @@ nav {
     nav .submenu > ul {
       padding: 1rem; }
   nav #loginBtn {
-    justify-self: flex-end;
     -ms-flex-item-align: end;
         align-self: end; }
   nav #navContent {
+    width: 100%;
     -ms-flex-item-align: end;
         align-self: flex-end;
     display: -webkit-box;
