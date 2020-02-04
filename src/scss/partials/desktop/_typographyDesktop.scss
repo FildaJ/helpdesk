@@ -1,0 +1,105 @@
+//Odkazy v menu
+nav {
+	
+	ul a {
+		color:white;
+		text-decoration: none;
+		font-family:$oswald;
+		text-transform: uppercase;
+
+		&:hover {
+			color:$green;
+		}
+	}
+}
+
+body {
+	color:white;
+
+	h1 {
+		font-size: 6rem;
+		@include oswaldSemi;
+		text-transform: uppercase;
+	}
+
+	h2 {
+		@include oswaldLight; 
+		font-size: 3.75rem;
+		text-transform: uppercase;
+		color:$purple;
+	}
+
+	h3 {
+		@include oswaldSemi;
+		font-size: 3rem;
+		text-transform: uppercase;
+	}
+
+	p {
+		font-family: $roboto;
+		width: 75ch;
+		font-size:1rem;
+	}
+}
+
+button, input[type=submit]{
+	font-family: $oswald;
+	font-size: 1rem;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	a {
+		text-decoration: none;
+		user-select: none;
+
+		&:visited {
+			color:black;
+		}
+	}
+}
+
+.btn-primary {
+	font-family: $oswald;
+	font-size: 1rem;
+	text-transform: uppercase;
+
+	a {
+		color:black;
+		user-select: none;
+		text-decoration: none;
+
+		&:visited {
+			color:black;
+		}
+	}
+}
+
+.btn-ghost {
+	font-family: $oswald;
+	font-size: 1rem;
+	text-transform: uppercase;
+
+	a {
+		color:$green;
+		user-select: none;
+		text-decoration: none;
+
+		&:visited {
+			color:$green;
+		}
+	}
+
+}
+
+label {
+	font-family: $oswald;
+	text-transform: uppercase;
+	color:white;
+	font-size:1rem;
+}
+
+input, textarea {
+	font-family: $roboto;
+	font-size:1.2rem;
+	color:white;
+}

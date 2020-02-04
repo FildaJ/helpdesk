@@ -1,15 +1,10 @@
-//Odkazy v menu
+//písmo v navigaci
 nav {
-	
 	ul a {
 		color:white;
 		text-decoration: none;
 		font-family:$oswald;
 		text-transform: uppercase;
-
-		&:hover {
-			color:$green;
-		}
 	}
 }
 
@@ -17,32 +12,33 @@ body {
 	color:white;
 
 	h1 {
-		font-size: 6rem;
+		font-size:4rem;
 		@include oswaldSemi;
 		text-transform: uppercase;
 	}
 
 	h2 {
-		@include oswaldLight; 
-		font-size: 3.75rem;
+		@include oswaldLight;
+		font-size: 3rem;
 		text-transform: uppercase;
 		color:$purple;
 	}
 
 	h3 {
 		@include oswaldSemi;
-		font-size: 3rem;
+		font-size:2.5rem;
 		text-transform: uppercase;
 	}
 
 	p {
 		font-family: $roboto;
-		width: 75ch;
-		font-size:1rem;
+		min-width: 50%;
+		max-width: 70%;
+		font-size: 1.25rem;
 	}
 }
 
-div.btn, button, input[type=submit]{
+button, input[type=submit] {
 	font-family: $oswald;
 	font-size: 1rem;
 	text-transform: uppercase;
@@ -58,15 +54,48 @@ div.btn, button, input[type=submit]{
 	}
 }
 
+.btn-primary {
+	font-family: $oswald;
+	font-size: 1rem;
+	text-transform: uppercase;
+
+	a {
+		color:black;
+		user-select: none;
+		text-decoration: none;
+
+		&:visited {
+			color:black;
+		}
+	}
+}
+
+.btn-ghost {
+	font-family: $oswald;
+	font-size: 1rem;
+	text-transform: uppercase;
+
+	a {
+		color:$green;
+		user-select: none;
+		text-decoration: none;
+
+		&:visited {
+			color:$green;
+		}
+	}
+
+}
+
 label {
 	font-family: $oswald;
 	text-transform: uppercase;
-	color:white;
-	font-size:1rem;
+	color: white;
+	font-size: 1rem;
 }
 
 input, textarea {
 	font-family: $roboto;
-	font-size:1.2rem;
+	font-size: 1.2rem;
 	color:white;
 }
