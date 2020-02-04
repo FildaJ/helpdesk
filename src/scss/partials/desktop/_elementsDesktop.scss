@@ -15,7 +15,7 @@
 
 	&:hover,&:focus {
 		//background-color: darken($greenAcc, 25);
-		box-shadow: 2px 2px 7px $green;
+		box-shadow: 2px 2px 14px $green;
 		transition-timing-function: ease 0.3s all 0;
 	}
 
@@ -54,7 +54,7 @@
 //formuuláře
 label{
 	display:block;
-	padding:1rem .25rem;
+	padding:0.5rem .25rem;
 	margin-left:0.5rem;
 }
 

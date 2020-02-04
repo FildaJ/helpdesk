@@ -74,8 +74,8 @@ input, textarea {
           box-shadow: 1px 1px 5px #00FFC3;
   color: black; }
   .primary:hover, .primary:focus {
-    -webkit-box-shadow: 2px 2px 7px #00FFC3;
-            box-shadow: 2px 2px 7px #00FFC3;
+    -webkit-box-shadow: 2px 2px 14px #00FFC3;
+            box-shadow: 2px 2px 14px #00FFC3;
     -webkit-transition-timing-function: ease 0.3s all 0;
             transition-timing-function: ease 0.3s all 0; }
   .primary:active {
@@ -104,7 +104,7 @@ input, textarea {
 
 label {
   display: block;
-  padding: 1rem .25rem;
+  padding: 0.5rem .25rem;
   margin-left: 0.5rem; }
 
 input, textarea {

@@ -7,6 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="css/desktopStyle.css" media="screen and (min-width: 1024px)"/>
 	<link rel="stylesheet" href="css/mobileStyle.css" media="screen and (max-width: 1023px)"/>
+	<meta name="theme-color" content="#000">
 	<title>Document</title>
 </head>
 
