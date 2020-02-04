@@ -10,6 +10,12 @@ nav {
 	position:relative fixed;
 	border-bottom: $green 4px solid;
 	user-select: none;
+	.toggle{
+		display:none;
+	}
+	#links {
+		display:flex;
+	}
 
 	ul {
 		//justify-self: space-between;
@@ -41,9 +47,6 @@ nav {
 			}
 		}
 	}
-	.btn {
-		position: flex-end;
-	}
 
 	.submenu {
 		border-top: $green 4px solid;
@@ -56,4 +59,3 @@ nav {
 		}
 	}
 }
-

@@ -5,12 +5,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/desktopStyle.css" media="screen and (min-width: 1024px)"/>
+	<link rel="stylesheet" href="css/mobileStyle.css" media="screen and (max-width: 1023px)"/>
 	<title>Document</title>
 </head>
 
 <body>
 	<nav>
+		<div class="btn primary toggle"><a href="#">&#x2716 Menu</a></div>
 		<ul>
 			<li><a href="#">Domů</a></li>
 			<li>
@@ -25,7 +27,7 @@
 			<li><a href="#">O nás</a></li>
 			<li><a href="#">Kalendář</a></li>
 		</ul>
-		<div class="btn primary"><a href="#">Přihlásit se</a></div>
+		<div id="loginBtn" class="btn primary"><a href="#">Přihlásit se</a></div>
 	</nav>
 
 	<?php
