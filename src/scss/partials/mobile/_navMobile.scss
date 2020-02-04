@@ -6,19 +6,18 @@ nav {
 	user-select: none;
 	box-sizing: border-box;
 	z-index:99;
+	display:flex
 
 	#links {
 		//display:none;
 		position: absolute;
-		text-align: left;
+		text-align: center;
 		background-color:$bg;
 		width:100%;
 		z-index: 98;
 	}
 
-	#loginBtn {
 
-	}
 
 	ul {
 		li {
@@ -32,8 +31,21 @@ nav {
 			ul {
 				margin: 1rem 0 0 0;
 				border-left: $green 4px solid;
+				text-align: left;
 			}
 
+		}
+	}
+	#navContent {
+		align-self: center;
+		justify-self: center;
+		display:flex;
+		flex-direction: column;
+		align-content: center;
+		justify-content: center;
+
+		#loginBtn {
+			text-align: center;
 		}
 	}
 }

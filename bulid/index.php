@@ -12,22 +12,24 @@
 
 <body>
 	<nav>
-		<div class="btn primary toggle"><a href="#">&#x2716 Menu</a></div>
-		<ul id="links">
-			<li><a href="#">Domů</a></li>
-			<li>
-				<a href="#">Předměty</a>
-				<ul class="submenu">
-					<li><a href="#">Grafika</a></li>
-					<li><a href="#">Programování</a></li>
-					<li><a href="#">PVY</a></li>
-					<li><a href="#">Sítě</a></li>
-				</ul>
-			</li>
-			<li><a href="#">O nás</a></li>
-			<li><a href="#">Kalendář</a></li>
-		</ul>
-		<div id="loginBtn" class="btn primary"><a href="#">Přihlásit se</a></div>
+		<div class="btn primary toggle"><a href="#">&#9776; Menu</a></div>
+		<div id="navContent">
+			<ul id="links">
+				<li><a href="#">Domů</a></li>
+				<li>
+					<a href="#">Předměty</a>
+					<ul class="submenu">
+						<li><a href="#">Grafika</a></li>
+						<li><a href="#">Programování</a></li>
+						<li><a href="#">PVY</a></li>
+						<li><a href="#">Sítě</a></li>
+					</ul>
+				</li>
+				<li><a href="#">O nás</a></li>
+				<li><a href="#">Kalendář</a></li>
+			</ul>
+			<div id="loginBtn" class="btn primary"><a href="#">Přihlásit se</a></div>
+		</div>
 	</nav>
 
 	<?php

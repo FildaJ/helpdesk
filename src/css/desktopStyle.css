@@ -65,7 +65,7 @@ input, textarea {
   display: inline-block;
   -webkit-transition: all 0.45s;
   transition: all 0.45s;
-  margin: 1rem 1rem;
+  margin: 1rem;
   border: none; }
 
 .primary {
@@ -104,7 +104,7 @@ input, textarea {
 
 label {
   display: block;
-  padding: 1rem 0 .25rem;
+  padding: 1rem .25rem;
   margin-left: 0.5rem; }
 
 input, textarea {
@@ -187,6 +187,22 @@ nav {
     z-index: 420; }
     nav .submenu > ul {
       padding: 1rem; }
+  nav #loginBtn {
+    justify-self: flex-end;
+    -ms-flex-item-align: end;
+        align-self: end; }
+  nav #navContent {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
 
 body {
   background-color: #000; }

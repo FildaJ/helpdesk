@@ -57,4 +57,17 @@ nav {
 			padding:1rem;
 		}
 	}
+
+	#loginBtn {
+		justify-self: flex-end;
+		align-self: end;
+
+	}
+
+	#navContent{
+		align-self:flex-end;
+		display:flex;
+		align-items: center;
+		justify-content: space-between;
+	}
 }
