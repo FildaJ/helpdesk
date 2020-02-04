@@ -48,4 +48,20 @@ nav {
 			text-align: center;
 		}
 	}
+
+	input[type=checkbox]{
+		display: none;
+	}
+	
+	ul{
+		display: none;
+	}
+	
+	input[type=checkbox]:checked ~ ul {
+		display: block
+	}
+	
+	input[type=checkbox]:checked ~ ul li ul {
+		display: block
+	}
 }

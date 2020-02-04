@@ -70,4 +70,8 @@ nav {
 		align-items: center;
 		justify-content: space-between;
 	}
+
+	input[type=checkbox]{
+		display: none;
+	}
 }
