@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="cs">
 
 <head>
@@ -13,8 +13,10 @@
 
 <body>
 	<nav>
-		<div class="btn-primary toggle"><a href="#">&#9776; Menu</a></div>
 		<div id="navContent">
+		<input type="checkbox" id="checkbox_toggle">
+		<label for="checkbox_toggle" class="btn-primary toggle">&#9776; Menu</label>
+		
 			<ul id="links">
 				<li><a href="#">Domů</a></li>
 				<li>
