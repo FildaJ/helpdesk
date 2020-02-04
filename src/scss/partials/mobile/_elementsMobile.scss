@@ -1,9 +1,23 @@
 button {
+	background-color:$green;
+	box-shadow: 1px 1px 5px $green;
+	color:black;
 	padding: .5rem 1.25rem;
 	border-radius: 5px;
 	display:inline-block;
-	margin:0.5rem;
-	border:none;
+	transition: all 0.45s;
+	margin:1rem;
+	border:4px solid $green;
+
+	&:visited {
+		color:black;
+	}
+
+	&:active {
+		box-shadow: -2px -2px 7px $green;
+		background-color: darken($green, 20);
+		border: 4px solid darken($green,20);
+	}
 }
 
 .btn-primary {
@@ -50,6 +64,11 @@ button {
 }
 
 //formuláře
+form {
+	border:4px solid $purple;
+	margin: 2rem auto;
+}
+
 label {
 	display:block;
 	padding: 0.5rem .25rem;

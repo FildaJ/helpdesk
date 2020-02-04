@@ -40,6 +40,31 @@ body {
 		width: 75ch;
 		font-size:1rem;
 	}
+
+	a {
+		color:$purple;
+		transition: all 0.45s;
+		display: inline-block;
+		position: relative;
+
+		&::after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			transform: scaleX(0);
+			height: 2px;
+			bottom: 0;
+			left: 0;
+			background-color: $purple;
+			transform-origin: bottom right;
+			transition: transform 0.25s ease-out;
+		}
+
+		&:hover {
+			transform: scaleX(1);
+			transform-origin: bottom left;
+		}
+	}
 }
 
 button, input[type=submit]{
@@ -100,6 +125,6 @@ label {
 
 input, textarea {
 	font-family: $roboto;
-	font-size:1.2rem;
+	font-size:1rem;
 	color:white;
 }

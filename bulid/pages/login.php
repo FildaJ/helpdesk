@@ -2,12 +2,12 @@
     include "scripts\auth.php";
 ?>
 <form method="post">
- E-Mail:<br>
-  <input type="email" name="email" placeholder="vzor@vzor.cz"><br>
-  Heslo:<br>
-  <input type="password" name="heslo" placeholder="Vzor123"> <br>                          
-<button name="login_user"  title="Odeslat formulář" type="submit">Přihlásit se</button> 
-<p>Ještě nemáš účet?<a href="index.php?page=register"> Vytvoř si ho!</a> </p> 
+    <label for="email">E-Mail</label>
+    <input type="email" name="email" placeholder="vzor@vzor.cz"><br>
+    <label for="password">Heslo</label>
+    <input type="password" name="heslo" placeholder="Vzor123"> <br>                          
+<button name="login_user" title="Odeslat formulář" type="submit">Přihlásit se</button> 
+<span>Ještě nemáš účet?<a href="index.php?page=register"> Vytvoř si ho!</a> </span> 
 </form>  
 <?php
 if (isset($_POST['login_user'])) {
