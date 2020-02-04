@@ -38,7 +38,7 @@ body {
 	}
 }
 
-div.btn, button, input[type=submit] {
+button, input[type=submit] {
 	font-family: $oswald;
 	font-size: 1rem;
 	text-transform: uppercase;
@@ -52,6 +52,39 @@ div.btn, button, input[type=submit] {
 			color:black;
 		}
 	}
+}
+
+.btn-primary {
+	font-family: $oswald;
+	font-size: 1rem;
+	text-transform: uppercase;
+
+	a {
+		color:black;
+		user-select: none;
+		text-decoration: none;
+
+		&:visited {
+			color:black;
+		}
+	}
+}
+
+.btn-ghost {
+	font-family: $oswald;
+	font-size: 1rem;
+	text-transform: uppercase;
+
+	a {
+		color:$green;
+		user-select: none;
+		text-decoration: none;
+
+		&:visited {
+			color:$green;
+		}
+	}
+
 }
 
 label {

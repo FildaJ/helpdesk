@@ -13,7 +13,7 @@
 
 <body>
 	<nav>
-		<div class="btn primary toggle"><a href="#">&#9776; Menu</a></div>
+		<div class="btn-primary toggle"><a href="#">&#9776; Menu</a></div>
 		<div id="navContent">
 			<ul id="links">
 				<li><a href="#">Domů</a></li>
@@ -29,10 +29,11 @@
 				<li><a href="#">O nás</a></li>
 				<li><a href="#">Kalendář</a></li>
 			</ul>
-			<div id="loginBtn" class="btn primary"><a href="#">Přihlásit se</a></div>
+			<div id="loginBtn" class="btn-primary"><a href="#">Přihlásit se</a></div>
 		</div>
 	</nav>
-
+	<header>
+	</header>
 	<?php
 	if (isset($_GET['Page'])) {
 		$main = $_GET['Page'];
@@ -58,6 +59,8 @@
 	}
 
 	?>
+
+
 		<?php
 		include "scripts/footer.php";
 		?>
