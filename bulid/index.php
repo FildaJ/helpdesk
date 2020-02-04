@@ -1,4 +1,10 @@
-﻿<!DOCTYPE html>
+﻿﻿<?php
+session_start();
+?>
+<!DOCTYPE html lang="cs">
+<?php
+include 'scripts/join.php';
+?>
 <html lang="cs">
 
 <head>
@@ -31,14 +37,22 @@
 				<li><a href="#">O nás</a></li>
 				<li><a href="#">Kalendář</a></li>
 			</ul>
-			<div id="loginBtn" class="btn-primary"><a href="#">Přihlásit se</a></div>
+			<div class="btn-primary">
+				<?php
+					if (!isset($_SESSION["username"])) {
+						echo '<a href="index.php?page=login">Přihlásit se</a>';
+					} else {
+						echo '<a href="index.php?page=logout">Odhlásit se</a>';
+					}
+				?>
+			</div>
 		</div>
 	</nav>
 	<header>
 	</header>
 	<?php
-	if (isset($_GET['Page'])) {
-		$main = $_GET['Page'];
+	if (isset($_GET['page'])) {
+		$main = $_GET['page'];
 	} else {
 		$main = "home";
 	}
@@ -54,6 +68,12 @@
 			break;
 		case "login":
 				include "pages/login.php";
+				break;  
+        case "register":
+				include "pages/register.php";
+				break;
+		case "logout":
+				include "scripts/logout.php";
 				break;    
 		default:
 			include "pages/home.php";
@@ -64,6 +84,7 @@
 
 
 		<?php
+		include "scripts/chat.php";
 		include "scripts/footer.php";
 		?>
 </body>
