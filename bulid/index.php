@@ -1,4 +1,4 @@
-﻿<?php
+﻿﻿<?php
 session_start();
 ?>
 <!DOCTYPE html lang="cs">
@@ -19,9 +19,11 @@ include 'scripts/join.php';
 
 <body>
 	<nav>
-		<div class="btn-primary toggle"><a href="#">&#9776; Menu</a></div>
-		<div id="navContent">		
-			<ul>
+		<div id="navContent">
+		<input type="checkbox" id="checkbox_toggle">
+		<label for="checkbox_toggle" class="btn-primary toggle">&#9776; Menu</label>
+		
+			<ul id="links">
 				<li><a href="#">Domů</a></li>
 				<li>
 					<a href="#">Předměty</a>
