@@ -82,7 +82,7 @@ include 'scripts/join.php';
 			include "pages/clanek.php";
 			break;
 			case "pos":
-				include "pages/pos.php";
+				include "pages/pos-sos.php";
 				break;
 		default:
 			include "pages/home.php";

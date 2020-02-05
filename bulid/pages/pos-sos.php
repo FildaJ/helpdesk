@@ -6,7 +6,7 @@
 </head>
 
 <body>
-	<form id="someform" method="post" action="">
+	<form method="post" action="">
 		<div class="btn primary">
 			<input type="submit" name="idclanek" value="1" />
 		</div>
