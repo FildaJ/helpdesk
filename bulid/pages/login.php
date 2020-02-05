@@ -1,14 +1,17 @@
 ﻿<?php
     include "scripts\auth.php";
 ?>
-<form method="post">
- E-Mail:<br>
-  <input type="email" name="email" placeholder="vzor@vzor.cz"><br>
-  Heslo:<br>
-  <input type="password" name="heslo" placeholder="Vzor123"> <br>                          
-<button name="login_user"  title="Odeslat formulář" type="submit">Přihlásit se</button> 
-<p>Ještě nemáš účet?<a href="index.php?page=register"> Vytvoř si ho!</a> </p> 
-</form>  
+<main class="centerContainer">
+    <form method="post">
+        <h2>Přihlášení</h2>
+        <label for="email">E-Mail</label>
+        <input type="email" name="email" placeholder="vzor@vzor.cz">
+        <label for="password">Heslo</label>
+        <input type="password" name="heslo" placeholder="Vzor123">
+        <button class="fullWidthBtn" name="login_user" title="Odeslat formulář" type="submit">Přihlásit se</button> 
+        <span>Ještě nemáš účet?<a href="index.php?page=register"> Vytvoř si ho!</a> </span> 
+    </form>
+</main>  
 <?php
 if (isset($_POST['login_user'])) {
     $email  = mysqli_real_escape_string($conn, $_POST['email']);

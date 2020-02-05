@@ -11,18 +11,22 @@ include 'scripts/join.php';
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="css/desktopStyle.css" media="screen and (min-width: 1024px)" />
-	<link rel="stylesheet" href="css/mobileStyle.css" media="screen and (max-width: 1023px)" />
+	<link rel="manifest" href="manifest.json">
+	<link rel="icon" href="/img/logo/logo.png" type="image/gif" sizes="16x16">
 	<meta name="theme-color" content="#000">
+	<link rel="stylesheet" href="css/desktopStyle.css" media="screen and (min-width: 750px)"/>
+	<link rel="stylesheet" href="css/mobileStyle.css" media="screen and (max-width: 749px)"/>
 	<title>Document</title>
 </head>
 
 <body>
+	<link rel="apple-touch-icon" sizes="180x180" href="/img/logo/logo-180.png">
 	<nav>
-		<div class="btn-primary toggle"><a href="#">&#9776; Menu</a></div>
 		<div id="navContent">
-			<ul>
-				<li><a href="#">Domů</a></li>
+			<input type="checkbox" id="checkbox_toggle">
+			<label for="checkbox_toggle" class="btn-primary toggle">&#9776; Menu</label>		
+			<ul id="links">
+				<li><a href="index.php?page=home">Domů</a></li>
 				<li>
 					<a href="#">Předměty</a>
 					<ul class="submenu">
@@ -36,15 +40,18 @@ include 'scripts/join.php';
 				<li><a href="#">Kalendář</a></li>
 				<li><a href="index.php?page=edit">Edit</a></li>
 			</ul>
-			<div class="btn-primary">
-				<?php
-				if (!isset($_SESSION["username"])) {
-					echo '<a href="index.php?page=login">Přihlásit se</a>';
-				} else {
-					echo '<a href="index.php?page=logout">Odhlásit se</a>';
-				}
-				?>
-			</div>
+			<ul>
+				<div style="display: flex;" class="btn-primary">
+					<?php
+						if (!isset($_SESSION["username"])) {
+							echo '<a href="index.php?page=login">Přihlásit se</a>';
+						} else {
+							echo '<a href="index.php?page=logout">Odhlásit se</a>';
+						}
+					?>
+				</div>
+			</ul>
+		</div>
 	</nav>
 
 	<?php
@@ -64,11 +71,11 @@ include 'scripts/join.php';
 			include "pages/onas.php";
 			break;
 		case "login":
-			include "pages/login.php";
-			break;
+				include "pages/login.php";
+				break;  
 		case "register":
-			include "pages/register.php";
-			break;
+				include "pages/register.php";
+				break;
 		case "logout":
 			include "scripts/logout.php";
 			break;
