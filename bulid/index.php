@@ -40,7 +40,7 @@ include 'scripts/join.php';
 				<li><a href="#">Kalendář</a></li>
 			</ul>
 			<ul>
-				<div style="display: flex;" class="btn-primary">
+				<div class="btn-primary">
 					<?php
 						if (!isset($_SESSION["username"])) {
 							echo '<a href="index.php?page=login">Přihlásit se</a>';
