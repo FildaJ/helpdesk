@@ -15,19 +15,22 @@ body {
 		font-size:4rem;
 		@include oswaldSemi;
 		text-transform: uppercase;
+		text-align: center;
 	}
 
 	h2 {
-		@include oswaldLight;
+		@include oswaldSemi;
 		font-size: 3rem;
 		text-transform: uppercase;
 		color:$purple;
+		text-align: center;
 	}
 
 	h3 {
-		@include oswaldSemi;
+		@include oswaldLight;
 		font-size:2.5rem;
 		text-transform: uppercase;
+		text-align: center;
 	}
 
 	p {
@@ -35,6 +38,16 @@ body {
 		min-width: 50%;
 		max-width: 70%;
 		font-size: 1.25rem;
+		text-align:left;
+	}
+
+	a {
+		color:$green;
+		transition: all 0.45s;
+
+		&:active {
+			color:darken($green, 10);
+		}
 	}
 }
 
@@ -100,4 +113,5 @@ input, textarea {
 	font-family: $roboto;
 	font-size: 1.2rem;
 	color:white;
+	width:100%;
 }

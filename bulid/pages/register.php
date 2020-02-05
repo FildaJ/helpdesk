@@ -1,22 +1,23 @@
 ﻿<?php
     include "scripts\auth.php";
 ?>
-<form method="post">
-    <h2>Registrace</h2>
-    <label for="jmeno">Jméno</label>
-    <input type="text" name="jmeno" placeholder="Tomáš"  required><br>
-    <label for="prijmeni">Přijmení</label>
-    <input type="text" name="prijmeni" placeholder="Novák"  required> <br>
-    <label for="email">E-Mail</label>
-    <input type="email" name="email" placeholder="test@test.cz" title="text@text.text" required pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$">   <br>                 
-    <label for="heslo1">Heslo</label>
-    <input type="password" name="heslo1" placeholder="Vzor123" title="Heslo nejméně 8 znaků. Alespoň jedno malé a jedno velké písmeno." required pattern="(?=^.{8,}$)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">     <br>    
-    <label for="heslo2">Heslo znovu</label>
-    <input type="password" name="heslo2" placeholder="Vzor123" title="Heslo nejméně 8 znaků. Alespoň jedno malé a jedno velké písmeno." required pattern="(?=^.{8,}$)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">      <br>                            <br>
-    <button name="reg_user" type="submit">Registrovat</button>  
-    <div class="btn-ghost"><a href="index.php?page=login">Zpět k přihlášení</a></div>     
-</form>      
-    
+<main class="centerContainer">
+    <form method="post">
+        <h2>Registrace</h2>
+        <label for="jmeno">Jméno</label>
+        <input type="text" name="jmeno" placeholder="Tomáš"  required>
+        <label for="prijmeni">Přijmení</label>
+        <input type="text" name="prijmeni" placeholder="Novák"  required>
+        <label for="email">E-Mail</label>
+        <input type="email" name="email" placeholder="test@test.cz" title="text@text.text" required pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$">
+        <label for="heslo1">Heslo</label>
+        <input type="password" name="heslo1" placeholder="Vzor123" title="Heslo nejméně 8 znaků. Alespoň jedno malé a jedno velké písmeno." required pattern="(?=^.{8,}$)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+        <label for="heslo2">Heslo znovu</label>
+        <input type="password" name="heslo2" placeholder="Vzor123" title="Heslo nejméně 8 znaků. Alespoň jedno malé a jedno velké písmeno." required pattern="(?=^.{8,}$)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+        <button class="fullWidthBtn" name="reg_user" type="submit">Registrovat</button>  
+        <div class="btn-ghost fullWidthBtn"><a href="index.php?page=login">Zpět k přihlášení</a></div>     
+    </form>
+</main>
 <?php 
 if (isset($_POST['reg_user'])) {
     $jmeno     = mysqli_real_escape_string($conn, $_POST['jmeno']);
