@@ -41,14 +41,6 @@ body {
 		font-size:1rem;
 	}
 
-	a {
-		color:$green;
-		transition: all 0.45s;
-
-		&:hover {
-			color:darken($green, 10);
-		}
-	}
 }
 
 button, input[type=submit]{
@@ -58,7 +50,7 @@ button, input[type=submit]{
 	text-decoration: none;
 	text-align: center;
 
-	a {
+	& > a {
 		text-decoration: none;
 		user-select: none;
 
@@ -74,15 +66,13 @@ button, input[type=submit]{
 	text-transform: uppercase;
 	text-align: center;
 
-	a {
-		color:black;
+	color:black;
 		user-select: none;
 		text-decoration: none;
 
 		&:visited {
 			color:black;
 		}
-	}
 }
 
 .btn-ghost {
@@ -91,15 +81,13 @@ button, input[type=submit]{
 	text-transform: uppercase;
 	text-align: center;
 
-	a {
-		color:$green;
-		user-select: none;
-		text-decoration: none;
+	color:$green;
+	user-select: none;
+	text-decoration: none;
 
 		&:visited {
 			color:$green;
 		}
-	}
 
 }
 
@@ -114,4 +102,17 @@ input, textarea {
 	font-family: $roboto;
 	font-size:0.9rem;
 	color:white;
+}
+
+main {
+
+	a {
+		color:$green;
+		transition: all 0.45s;
+
+		&:hover {
+			color:darken($green, 10);
+
+		}
+	}
 }

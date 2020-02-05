@@ -60,30 +60,28 @@ button, input[type=submit] {
 .btn-primary {
   font-family: "Oswald", sans-serif;
   font-size: 1rem;
-  text-transform: uppercase; }
-  .btn-primary a {
-    color: black;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    text-decoration: none; }
-    .btn-primary a:visited {
-      color: black; }
+  text-transform: uppercase;
+  color: black;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-decoration: none; }
+  .btn-primary:visited {
+    color: black; }
 
 .btn-ghost {
   font-family: "Oswald", sans-serif;
   font-size: 1rem;
-  text-transform: uppercase; }
-  .btn-ghost a {
-    color: #00FFC3;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    text-decoration: none; }
-    .btn-ghost a:visited {
-      color: #00FFC3; }
+  text-transform: uppercase;
+  color: #00FFC3;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-decoration: none; }
+  .btn-ghost:visited {
+    color: #00FFC3; }
 
 label {
   font-family: "Oswald", sans-serif;
@@ -96,6 +94,13 @@ input, textarea {
   font-size: 1.2rem;
   color: white;
   width: 100%; }
+
+main a {
+  color: #00FFC3;
+  -webkit-transition: all 0.45s;
+  transition: all 0.45s; }
+  main a:hover {
+    color: #00cc9c; }
 
 .btn-primary {
   background-color: #00FFC3;
@@ -131,7 +136,7 @@ input, textarea {
           box-sizing: border-box;
   text-align: center; }
   .btn-ghost:visited {
-    color: black; }
+    color: #00FFC3; }
   .btn-ghost:active {
     -webkit-box-shadow: -2px -2px 7px #00FFC3;
             box-shadow: -2px -2px 7px #00FFC3;
