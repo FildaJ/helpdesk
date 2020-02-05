@@ -23,23 +23,24 @@ body {
 	}
 
 	h2 {
-		@include oswaldLight; 
+		@include oswaldSemi; 
 		font-size: 3.75rem;
 		text-transform: uppercase;
 		color:$purple;
 	}
 
 	h3 {
-		@include oswaldSemi;
+		@include oswaldLight;
 		font-size: 3rem;
 		text-transform: uppercase;
 	}
 
 	p {
 		font-family: $roboto;
-		width: 75ch;
+		max-width: 75ch;
 		font-size:1rem;
 	}
+
 }
 
 button, input[type=submit]{
@@ -47,8 +48,9 @@ button, input[type=submit]{
 	font-size: 1rem;
 	text-transform: uppercase;
 	text-decoration: none;
+	text-align: center;
 
-	a {
+	& > a {
 		text-decoration: none;
 		user-select: none;
 
@@ -62,32 +64,30 @@ button, input[type=submit]{
 	font-family: $oswald;
 	font-size: 1rem;
 	text-transform: uppercase;
+	text-align: center;
 
-	a {
-		color:black;
+	color:black;
 		user-select: none;
 		text-decoration: none;
 
 		&:visited {
 			color:black;
 		}
-	}
 }
 
 .btn-ghost {
 	font-family: $oswald;
 	font-size: 1rem;
 	text-transform: uppercase;
+	text-align: center;
 
-	a {
-		color:$green;
-		user-select: none;
-		text-decoration: none;
+	color:$green;
+	user-select: none;
+	text-decoration: none;
 
 		&:visited {
 			color:$green;
 		}
-	}
 
 }
 
@@ -95,11 +95,24 @@ label {
 	font-family: $oswald;
 	text-transform: uppercase;
 	color:white;
-	font-size:1rem;
+	font-size:0.8rem;
 }
 
 input, textarea {
 	font-family: $roboto;
-	font-size:1.2rem;
+	font-size:0.9rem;
 	color:white;
+}
+
+main {
+
+	a {
+		color:$green;
+		transition: all 0.45s;
+
+		&:hover {
+			color:darken($green, 10);
+
+		}
+	}
 }

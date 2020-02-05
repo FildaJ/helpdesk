@@ -17,6 +17,9 @@ nav {
 		z-index: 98;
 	}
 
+	.btn-primary, .btn-ghost {
+		margin: 1rem;
+	}
 
 
 	ul {
@@ -39,7 +42,7 @@ nav {
 	#navContent {
 		align-self: center;
 		justify-self: center;
-		display:flex;
+		display:block;
 		flex-direction: column;
 		align-content: center;
 		justify-content: center;
@@ -47,5 +50,21 @@ nav {
 		#loginBtn {
 			text-align: center;
 		}
+	}
+
+	input[type=checkbox]{
+		display: none;
+	}
+	
+	ul{
+		display: none;
+	}
+	
+	input[type=checkbox]:checked ~ ul {
+		display: block
+	}
+	
+	input[type=checkbox]:checked ~ ul li ul {
+		display: block
 	}
 }

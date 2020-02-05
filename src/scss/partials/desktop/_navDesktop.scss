@@ -17,6 +17,7 @@ nav {
 	}
 
 	ul {
+		
 		//justify-self: space-between;
 		display:inline-flex;
 		
@@ -69,5 +70,9 @@ nav {
 		display:flex;
 		align-items: center;
 		justify-content: space-between;
+	}
+
+	input[type=checkbox]{
+		display: none;
 	}
 }
