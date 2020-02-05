@@ -2,13 +2,13 @@
 <html>
 
 <head>
-	<title>PVY</title>
+	<title>POS/SOS</title>
 </head>
 
 <body>
 	<form id="someform" method="post" action="">
 		<div class="btn primary">
-			<input type="submit" name="idclanek" value="" />
+			<input type="submit" name="idclanek" value="1" />
 		</div>
 	</form>
 	<?php

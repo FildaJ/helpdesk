@@ -29,7 +29,7 @@ include 'scripts/join.php';
 						<li><a href="#">Grafika</a></li>
 						<li><a href="#">Programování</a></li>
 						<li><a href="index.php?page=pvy">PVY</a></li>
-						<li><a href="#">Sítě</a></li>
+						<li><a href="index.php?page=pos">Sítě</a></li>
 					</ul>
 				</li>
 				<li><a href="#">O nás</a></li>
@@ -78,9 +78,12 @@ include 'scripts/join.php';
 		case "pvy":
 			include "pages/pvy.php";
 			break;
-		case "pvyc":
-			include "pages/pvy-clanek.php";
+		case "clanek":
+			include "pages/clanek.php";
 			break;
+			case "pos":
+				include "pages/pos.php";
+				break;
 		default:
 			include "pages/home.php";
 			break;
