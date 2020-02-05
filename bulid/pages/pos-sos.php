@@ -8,7 +8,7 @@
 <body>
 	<form method="post" action="">
 		<div class="btn primary">
-			<input type="submit" name="idclanek" value="1" />
+			<input type="submit" name="idclanek" value="2" />
 		</div>
 	</form>
 	<?php
