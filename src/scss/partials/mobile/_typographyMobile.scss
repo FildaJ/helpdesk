@@ -35,10 +35,9 @@ body {
 
 	p {
 		font-family: $roboto;
-		min-width: 50%;
-		max-width: 70%;
 		font-size: 1.25rem;
 		text-align:left;
+		max-width:50ch;
 	}
 
 	a {
