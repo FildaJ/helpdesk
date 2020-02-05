@@ -15,7 +15,7 @@
         <label for="heslo2">Heslo znovu</label>
         <input type="password" name="heslo2" placeholder="Vzor123" title="Heslo nejméně 8 znaků. Alespoň jedno malé a jedno velké písmeno." required pattern="(?=^.{8,}$)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
         <button class="fullWidthBtn" name="reg_user" type="submit">Registrovat</button>  
-        <div class="btn-ghost fullWidthBtn"><a href="index.php?page=login">Zpět k přihlášení</a></div>     
+        <a class="btn-ghost" href="index.php?page=login">Zpět k přihlášení</a>  
     </form>
 </main>
 <?php 

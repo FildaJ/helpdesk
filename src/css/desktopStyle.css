@@ -33,12 +33,6 @@ body {
     font-family: "Roboto", sans-serif;
     max-width: 75ch;
     font-size: 1rem; }
-  body a {
-    color: #00FFC3;
-    -webkit-transition: all 0.45s;
-    transition: all 0.45s; }
-    body a:hover {
-      color: #00cc9c; }
 
 button, input[type=submit] {
   font-family: "Oswald", sans-serif;
@@ -46,44 +40,42 @@ button, input[type=submit] {
   text-transform: uppercase;
   text-decoration: none;
   text-align: center; }
-  button a, input[type=submit] a {
+  button > a, input[type=submit] > a {
     text-decoration: none;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none; }
-    button a:visited, input[type=submit] a:visited {
+    button > a:visited, input[type=submit] > a:visited {
       color: black; }
 
 .btn-primary {
   font-family: "Oswald", sans-serif;
   font-size: 1rem;
   text-transform: uppercase;
-  text-align: center; }
-  .btn-primary a {
-    color: black;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    text-decoration: none; }
-    .btn-primary a:visited {
-      color: black; }
+  text-align: center;
+  color: black;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-decoration: none; }
+  .btn-primary:visited {
+    color: black; }
 
 .btn-ghost {
   font-family: "Oswald", sans-serif;
   font-size: 1rem;
   text-transform: uppercase;
-  text-align: center; }
-  .btn-ghost a {
-    color: #00FFC3;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    text-decoration: none; }
-    .btn-ghost a:visited {
-      color: #00FFC3; }
+  text-align: center;
+  color: #00FFC3;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-decoration: none; }
+  .btn-ghost:visited {
+    color: #00FFC3; }
 
 label {
   font-family: "Oswald", sans-serif;
@@ -96,6 +88,13 @@ input, textarea {
   font-size: 0.9rem;
   color: white; }
 
+main a {
+  color: #00FFC3;
+  -webkit-transition: all 0.45s;
+  transition: all 0.45s; }
+  main a:hover {
+    color: #00cc9c; }
+
 .btn-primary {
   background-color: #00FFC3;
   -webkit-box-shadow: 1px 1px 5px #00FFC3;
@@ -104,10 +103,10 @@ input, textarea {
   padding: .5rem 1.25rem;
   border-radius: 5px;
   display: inline-block;
-  -webkit-transition: all 0.45s;
-  transition: all 0.45s;
   margin: 1rem 1rem 1rem 0;
   border: 4px solid #00FFC3; }
+  .btn-primary:visited {
+    color: black; }
   .btn-primary:hover {
     -webkit-box-shadow: 2px 2px 14px #00FFC3;
             box-shadow: 2px 2px 14px #00FFC3;
@@ -118,8 +117,6 @@ input, textarea {
             box-shadow: -2px -2px 7px #00FFC3;
     background-color: #009975;
     border: 4px solid #009975; }
-  .btn-primary:visited {
-    color: black; }
 
 .btn-ghost {
   border: 4px solid #00FFC3;
@@ -127,25 +124,21 @@ input, textarea {
   padding: .5rem 1.25rem;
   border-radius: 5px;
   display: inline-block;
-  -webkit-transition: all 0.45s;
-  transition: all 0.45s;
   margin: 1rem 1rem 1rem 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+  .btn-ghost:visited {
+    color: #00FFC3; }
   .btn-ghost:hover {
     background-color: #00FFC3;
-    color: #000;
+    color: black;
     -webkit-transition-timing-function: ease 0.3s all 0;
             transition-timing-function: ease 0.3s all 0; }
-    .btn-ghost:hover a {
-      color: black; }
   .btn-ghost:active {
     -webkit-box-shadow: -2px -2px 7px #00FFC3;
             box-shadow: -2px -2px 7px #00FFC3;
     background-color: #009975;
     border: 4px solid #009975; }
-  .btn-ghost:visited {
-    color: black; }
 
 form {
   padding: 2rem; }
@@ -181,8 +174,6 @@ form {
     padding: .5rem 1.25rem;
     border-radius: 5px;
     display: inline-block;
-    -webkit-transition: all 0.45s;
-    transition: all 0.45s;
     margin: 1rem 1rem 1rem 0;
     border: 4px solid #00FFC3; }
     form button:hover {
@@ -218,7 +209,9 @@ main {
           justify-content: center; }
 
 .buttonBox {
-  display: inline-block; }
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex; }
 
 nav {
   padding: 0rem 1rem;

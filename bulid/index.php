@@ -41,15 +41,13 @@ include 'scripts/join.php';
 				<li><a href="index.php?page=edit">Edit</a></li>
 			</ul>
 			<ul>
-				<div style="display: flex;" class="btn-primary">
-					<?php
-						if (!isset($_SESSION["username"])) {
-							echo '<a href="index.php?page=login">Přihlásit se</a>';
-						} else {
-							echo '<a href="index.php?page=logout">Odhlásit se</a>';
-						}
-					?>
-				</div>
+				<?php
+					if (!isset($_SESSION["username"])) {
+						echo '<a class="btn-primary" href="index.php?page=login">Přihlásit se</a>';
+					} else {
+						echo '<a class="btn-primary" href="index.php?page=logout">Odhlásit se</a>';
+					}
+				?>
 			</ul>
 		</div>
 	</nav>
