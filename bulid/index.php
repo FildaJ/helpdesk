@@ -11,8 +11,8 @@ include 'scripts/join.php';
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="css/desktopStyle.css" media="screen and (min-width: 1024px)"/>
-	<link rel="stylesheet" href="css/mobileStyle.css" media="screen and (max-width: 1023px)"/>
+	<link rel="stylesheet" href="css/desktopStyle.css" media="screen and (min-width: 750px)"/>
+	<link rel="stylesheet" href="css/mobileStyle.css" media="screen and (max-width: 749px)"/>
 	<meta name="theme-color" content="#000">
 	<title>Document</title>
 </head>
@@ -69,7 +69,7 @@ include 'scripts/join.php';
 		case "login":
 				include "pages/login.php";
 				break;  
-        case "register":
+		case "register":
 				include "pages/register.php";
 				break;
 		case "logout":
