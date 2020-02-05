@@ -20,11 +20,10 @@ include 'scripts/join.php';
 <body>
 	<nav>
 		<div id="navContent">
-		<input type="checkbox" id="checkbox_toggle">
-		<label for="checkbox_toggle" class="btn-primary toggle">&#9776; Menu</label>
-		
+			<input type="checkbox" id="checkbox_toggle">
+			<label for="checkbox_toggle" class="btn-primary toggle">&#9776; Menu</label>		
 			<ul id="links">
-				<li><a href="#">Domů</a></li>
+				<li><a href="index.php?page=home">Domů</a></li>
 				<li>
 					<a href="#">Předměty</a>
 					<ul class="submenu">
@@ -37,15 +36,17 @@ include 'scripts/join.php';
 				<li><a href="#">O nás</a></li>
 				<li><a href="#">Kalendář</a></li>
 			</ul>
-			<div class="btn-primary">
-				<?php
-					if (!isset($_SESSION["username"])) {
-						echo '<a href="index.php?page=login">Přihlásit se</a>';
-					} else {
-						echo '<a href="index.php?page=logout">Odhlásit se</a>';
-					}
-				?>
-			</div>
+			<ul>
+				<div style="display: flex;" class="btn-primary">
+					<?php
+						if (!isset($_SESSION["username"])) {
+							echo '<a href="index.php?page=login">Přihlásit se</a>';
+						} else {
+							echo '<a href="index.php?page=logout">Odhlásit se</a>';
+						}
+					?>
+				</div>
+			</ul>
 		</div>
 	</nav>
 	<header>
