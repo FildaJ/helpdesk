@@ -1,5 +1,8 @@
 ﻿<?php
-    include "scripts\auth.php";
+if (isset($_SESSION["username"])) {
+    header("Location: index.php?page=home");
+    exit();
+}
 ?>
 <main class="centerContainer">
     <form method="post">
@@ -26,11 +29,13 @@ if (isset($_POST['login_user'])) {
         $query   = "SELECT * FROM user WHERE email='$email' AND heslo='$crypted'";
         $results = mysqli_query($conn, $query);
         if (mysqli_num_rows($results) == 1) {
-            $uspech = "Úspěšně jsi se přihlásil";
             $uzivatel               = "SELECT jmeno FROM user WHERE email='$email' LIMIT 1"; //najdi jméno uživatele pro jiné účely
             $execute                = mysqli_query($conn, $uzivatel);
             $_SESSION['username']   = $execute;
-            header("Location: index.php");
+            $admin              = "SELECT administrator FROM user WHERE email='$email' LIMIT 1"; //najdi jméno uživatele pro jiné účely
+            $execute            = mysqli_query($conn, $uzivatel);
+            $_SESSION['admin']  = $execute;
+            header("Location: index.php?page=home");
             
 
         } else {

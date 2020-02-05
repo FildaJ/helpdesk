@@ -38,7 +38,11 @@ include 'scripts/join.php';
 				</li>
 				<li><a href="#">O nás</a></li>
 				<li><a href="#">Kalendář</a></li>
-				<li><a href="index.php?page=edit">Edit</a></li>
+				<?php
+					if (isset($_SESSION["username"])) {
+						echo '<li><a href="index.php?page=edit">Edit</a></li>';
+					} 
+				?>
 			</ul>
 			<ul>
 				<?php
