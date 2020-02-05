@@ -6,7 +6,6 @@
 	</p>
 	<div class="buttonBox">
 		<div class="btn-primary"><a href="">Stiskni mě</a></div>
-		
 		<div class="btn-ghost"><a href="">Stiskni mě</a></div>
 	</div>
 </article>
