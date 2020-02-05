@@ -11,20 +11,22 @@ include 'scripts/join.php';
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="manifest" href="manifest.json">
+	<link rel="icon" href="/img/logo/logo.png" type="image/gif" sizes="16x16">
+	<meta name="theme-color" content="#000">
 	<link rel="stylesheet" href="css/desktopStyle.css" media="screen and (min-width: 750px)"/>
 	<link rel="stylesheet" href="css/mobileStyle.css" media="screen and (max-width: 749px)"/>
-	<meta name="theme-color" content="#000">
 	<title>Document</title>
 </head>
 
 <body>
+	<link rel="apple-touch-icon" sizes="180x180" href="/img/logo/logo-180.png">
 	<nav>
 		<div id="navContent">
-		<input type="checkbox" id="checkbox_toggle">
-		<label for="checkbox_toggle" class="btn-primary toggle">&#9776; Menu</label>
-		
+			<input type="checkbox" id="checkbox_toggle">
+			<label for="checkbox_toggle" class="btn-primary toggle">&#9776; Menu</label>		
 			<ul id="links">
-				<li><a href="#">Domů</a></li>
+				<li><a href="index.php?page=home">Domů</a></li>
 				<li>
 					<a href="#">Předměty</a>
 					<ul class="submenu">
@@ -37,15 +39,17 @@ include 'scripts/join.php';
 				<li><a href="#">O nás</a></li>
 				<li><a href="#">Kalendář</a></li>
 			</ul>
-			<div class="btn-primary">
-				<?php
-					if (!isset($_SESSION["username"])) {
-						echo '<a href="index.php?page=login">Přihlásit se</a>';
-					} else {
-						echo '<a href="index.php?page=logout">Odhlásit se</a>';
-					}
-				?>
-			</div>
+			<ul>
+				<div style="display: flex;" class="btn-primary">
+					<?php
+						if (!isset($_SESSION["username"])) {
+							echo '<a href="index.php?page=login">Přihlásit se</a>';
+						} else {
+							echo '<a href="index.php?page=logout">Odhlásit se</a>';
+						}
+					?>
+				</div>
+			</ul>
 		</div>
 	</nav>
 	<header>
