@@ -1,0 +1,143 @@
+<html><head><style>body {
+   color: black;
+}
+</style></head><body><h3 id="statick-a-dynamick-routov-n-sm-rovac-tabulka-a-sm-rovac-protokoly">Statické a dynamické routování. Směrovací tabulka a směrovací protokoly</h3>
+<h4 id="sm-rov-n-">Směrování</h4>
+<p>V rámci poč. sítí směrování značí určování cest packetů.</p>
+<blockquote>
+<p>Směrování zajišťují routery, mohou to být ale i servery či PC nebo tak firewally. Jejich úkolem je doručit packet, co možná nejefektivnější cestou.
+Směrování zajišťuje třetí, tedy <em>síťová vrstva ISO/OSI</em>.
+Směrování je používáno jak v LAN sítích, tak i na <em>Internetu</em>.</p>
+</blockquote>
+<p>Směrování zajišťují směrovače, které od sebe oddělují jednotlivé sítě. Pro samotné směrování, jako pro všechno v síti, jsou definované standardy ve formě protokolů.</p>
+<h4 id="z-kladn-pojmy-routov-n-">Základní pojmy routování:</h4>
+<ul>
+<li>Router – směrovač</li>
+<li>Routing table – směrovací tabulka, v níž jsou záznamy, kam pakety směrovat</li>
+<li>Next hop – další směrovač, přes který se dostaneme k cíli</li>
+<li>Administrative distance – číslo od 0 až po 255, kt. indikuje, jak je <em>daná cesta výhodná</em></li>
+<li>Autonomní systém – je množina sítí a routerů (se svýma IP adresama), kterou spravuje jeden <em>administrátor</em>. Tento systém má vůči Internetu stejný způsob routování</li>
+</ul>
+<h4 id="sm-rovac-tabulka-">Směrovací tabulka:</h4>
+<p>Směrovací tabulka označuje soubor, který definuje cesty, kterými je packet směrován. Právě směrovací tabulka obsahuje informace, které jsou nutné při rozhodování směrování
+Tato tabulka může být uložena nejčastěji v routeru, ale také v koncových zařízeních. Tabulka je uložena v operační paměti počítače nebo routeru.</p>
+<p>Směrovací tabulka je vytvořena při startu počítače (může být i za jeho běhu). Pro protokoly TCP/IP je vložena jako součást jádra OS. Směrovací tabulka obsahuje informace nastavené staticky (nastavené adminem, uloženy na HDD) nebo dynamické (ty si z tabulky filtruje směrovací protokol – RIP, OSPF).</p>
+<p>Záznamy jsou ve směrovací tabulce uloženy v řádcích, kdy každý jeden záznam představuje jednu <em>směrovací informaci</em>. Informace v tabulce jsou seřazeny od těch nejkonkrétnějších (maska sítě) po obecné. Poslední záznam je vždy odkaz na nejbližší router (tzn. implicitní brána).</p>
+<h4 id="druhy-routov-n-">Druhy routování:</h4>
+<h5 id="statick-routov-n-">Statické routování:</h5>
+<p>Statické routování (tedy statické směrování cesty packetům) je používáno v menších sítích či k přístupu k sítím vzdáleným, tedy nepřipojeným k síťovému routeru (směrovači).</p>
+<p>Tento typ routování typicky používají koncové stanice sítě či routery v domácích sítích. Záznamy statických dat jsou <em>ručně</em> do tabulky zadány (adminem). Ukládány jsou poté v tzn. konfiguračním souboru, v koncových zařízeních potom v registrech MS Windows.
+Z názvu plyne, že router při statických adresách nemůže vytvářet alternativní cesty. Všechny změny v sítí poté vyžadují pomoc admina.</p>
+<blockquote>
+<p>VÝHODY: možnost permanentního nastavení (lepší možnost zabezpečení)
+Nevýhody  malá flexibilita, nutnost zadání každé změny ručně</p>
+</blockquote>
+<h3 id="dynamick-routov-n-">Dynamické routování:</h3>
+<p>Dynamické routování se používá tam, kde existuje více cest k cíli a potřebujeme-li mít v síti redundanci (nadbytečnost). Dynamické (taktéž se můžeme setkat s pojmem adaptivní) routování tedy reaguje na změny (změna topologie, zátěže v nějaké části sítě) v síti a přizpůsobuje tomu obsah routovací tabulky. </p>
+<p>Routovací tabulka se tedy mění automatizovaně na základě průběžně získávaných informací o stavu směrovacích cest. Pro správnou výměnu těchto informací potřebujeme tzn. směrovací (routovací) protokoly.</p>
+<p>Obecně máme dva druhy dynamických směrovacích protokolů:</p>
+<ul>
+<li><p>Distance-vector routing protocol (DVA) – volně přeloženo: směrování dle délky vektoru 
+Routery zde neznají topologie sítě, znají pouze rozhraní. Směrovače vysílají obsah své tabulky pomocí IP broadcastu. Ta obsahuje informaci o vektoru a.k.a vzdálenosti do dané sítě. Tato tabulka je předávána do sousedního routeru, které si případně data od předchozí aktualizují a posílají tuto tabulku dále.</p>
+<p>Nejvýhodnější cesta se zde počítá na pomocí počtu směrovačů, přes které by datagram (packet prošel); tzn. hopcount (počet hopů). Neřeší se zde parametry sítě ani zařízení, pře které prochází.</p>
+</li>
+</ul>
+<ul>
+<li>Link state algorithms (LSA) 
+Metoda LSP (Link State Packets) nepracuje pouze vzdálenosti („hopy“), ale metrika (hodnota cost) zde počítá při výpočtu nejlepší cesty packetu taky s věcmi:</li>
+<li>Technickými (propust dat, rychlost přenosu)</li>
+<li>Politickými (důvěryhodnost přenosové cesty)</li>
+<li>či Finanční (cena za přenos)</li>
+</ul>
+<p>LSP jsou vysílány z nějakého směrovače ostatním tzn „záplavou“, což znamená, že šíří informace určené skupině směrovačů. Na základě těchto dat si router (směrovač) <em>vytvoří obraz o tom</em>, jak síť z topologického hlediska vypadá. Právě na základě těchto dat je počítána nejkratší cesta.
+Topologická DB obsahuje:</p>
+<ul>
+<li>ID směrovače</li>
+<li>Seznam přilehlých linek k sousedním směrovačům</li>
+<li>Seznam koncových zařízení připojených ke switchi</li>
+</ul>
+<h2 id="sm-rovac-protokoly-">Směrovací protokoly:</h2>
+<p>Směrovací protokol je používán <em>routery</em> ke zjištění cesty. Pomocí nich jsou sdíleny data s <em>ostatními routery</em>.</p>
+<h4 id="sm-rovac-protokoly-definuj-">Směrovací protokoly definují:</h4>
+<ul>
+<li>Jak budou informace zprostředkovány</li>
+<li>Jaké směrovací tabulce budou sdíleny</li>
+<li>Kdy bude tabulky sdílena</li>
+<li>Jak zjistit příjemce aktualizací</li>
+</ul>
+<p>Z hlediska dělení máme dva druhy protokolů:
+IGP (Interior Gateway Protocol) – starají se o směrování v rámci LAN (uvnitř autonomního systému)</p>
+<ul>
+<li>Např.: protokoly RIP, OSPF, EIGRP</li>
+</ul>
+<p>EGP (Exterior Gateway Protocol) – <em>směrování mezi LANkami</em>, tedy v rámci Internetu</p>
+<ul>
+<li>Např.: protokol BGP</li>
+</ul>
+<p>Směrovací protokoly se dělí také dle typu algoritmu, na němž pracují:</p>
+<ul>
+<li>Distance vector – rozhoduje <em>o směru a vzdálenosti</em> cíle (RIP protokol)</li>
+<li>Link state  – počítání <em>nejlepší cesty v závislosti na více faktech</em> (viz nahoře) (OSFP protocol)</li>
+<li>Balanced hybrid – zkombinování přechozích dvou metod (EIGRP)</li>
+</ul>
+<h4 id="d-le-it-sm-rovac-protokoly-">Důležité směrovací protokoly:</h4>
+<h5 id="intern-protokoly-">INTERNÍ PROTOKOLY:</h5>
+<hr>
+<h5 id="rip-routing-information-protocol-">RIP (Routing Information Protocol)</h5>
+<p>...</p>
+<blockquote>
+<p>Je směrovací protokol typu distance vector, který tedy <em>umožňuje komunikaci mezi routery</em>. </p>
+</blockquote>
+<p>...
+RIP je protokol pro metriku směrování počet skoků (hop count). Pro určení nejkratší cesty používá <em>Bellmanův-Fordův algoritmus</em>.
+Aby se hopy nevracely ve smyčkách zpět, je jejich počet omezen na 15.</p>
+<p>Původně RIP <em>posílal celou routovací tabulky svým sousedům každých 30 sekund</em>. Vzhledem k čím dal většímu růstu sítí a zařízení v nich začaly být sítě čím dál více zahlcovány. 
+Proto vznikl RIPv2, který umožnil nastavování <em>časového intervalu každého routeru zvlášť</em>.
+PROBLÉM první verze <em>RIPu</em> tkvěl v tom, že používal routing dle tříd IPV4 adres <em>(A, B nebo C)</em>. Tabulky neobsahovaly informace o masce sítě, díky kterému musely mít všechny podsítě stejný počet koncových zařízení. Subnety musely být stejně veliké.</p>
+<p>VYUŽITÍ RIPu:
+Ač je RIP nejstarším (již v ARPANETu) směr. protokolem v rámci sítí, stále se v menší míře používá v malých sítích, a to díky své nenáročné konfiguraci.
+Nedoporučení v používání je příčinnou hlavně čas, za který je schopný data příjmout a poslat dále, ale také omezený počet hopů.</p>
+<p>ROZDÍLY RIPv2 x RIPv1:</p>
+<ul>
+<li>zabezpečení komunikace mezi směrovači pomocí šifrovaného hesla</li>
+<li>přenos síťových masek ve zprávách mezi směrovači umožňuje používat podsítě</li>
+</ul>
+<h5 id="igrp">IGRP</h5>
+<p>...</p>
+<blockquote>
+<p>Protokol typu distance vector, který se řadí do <em>protokolů vnitřních</em>. Metrika je zde vypočítaná z několika položek:</p>
+<ul>
+<li>šířka pásma (bandwidth)</li>
+<li>spolehlivosti (reliability)</li>
+<li>zatížení (load)</li>
+<li>zpoždění sítě (delay)</li>
+</ul>
+</blockquote>
+<p>Metrika může mít širokou škálu nastavení; například zmiňovaná spolehlivost může mít hodnotu 1-255, šířka pásma od 1,2Mb-10Gb a zpoždění hodnoty 1-224. Správce sítě má tedy „celkem“ volnou ruku v ladění.</p>
+<p>Oproti RIPu byl navýšen maximální počet <em>hopů na 255</em>. Byl nahrazen protokolem EIGRP v polovině 90. let.</p>
+<h5 id="eigrp">EIGRP</h5>
+<p>Je to směrovací vnitřní protokol, který byl navrhnut společností CISCO, do roku 2013 jej bylo možné používat jen na jejich zařízeních.</p>
+<p>EIGRP tedy také používají routery. Pomocí něj se sdílí trasy s ostatními routery v rámci stejného autonomního systému. Na rozdíl od RIPu <em>posílá EIGRP pouze data</em>, která jsou přírůstková (tedy nová), čímž snižuje zásadně zátěž zařízení a množství dat, která musí být předána.</p>
+<p>Kromě směrovací tabulky využívá EIGRP taktéž další tabulky pro ukládání vybraných dat:</p>
+<ul>
+<li>Tabulky sousedů – uchovává záznamy o adresách routerů, kt. jsou přímo fyzický spojené s daným routerem (s dalšími už ale NE!)</li>
+<li>Tabulku topologie – ukládá data na základě informací z tabulky sousedů</li>
+</ul>
+<h5 id="ospf-open-shortest-path-first-">OSPF (Open Shortest Path First)</h5>
+<p>...</p>
+<blockquote>
+<p>Je to směrovací vnitřní protokol, který na rozdíl o předešlých funguje na algoritmu link-state <em>(výběr cesty na základě více faktů, ne jen hopů)</em>.</p>
+</blockquote>
+<p>OSPF je typickým představitelem směrovacího protokolu <em>Link State</em>. Vytváří v paměti směrovače (routeru) kompletní mapu sítě (DB topologie). 
+Nad touto DB <em>potom pomocí algoritmu SPF</em> provádí výpočty nejvýhodnější cesty do jednotlivých sítí. </p>
+<p>Metrika OSPF je postavena na ceně (tzn. cost). To je číslo od 1-65 535, které má přiřazený každý směrovač. Platí, že čím menší číslo, tím lepší metriku cesta má a bude více preferována.</p>
+<h5 id="extern-protokoly-">EXTERNÍ PROTOKOLY:</h5>
+<hr>
+<h5 id="bgp-protokol-border-gateway-protocol-">BGP protokol (Border Gateway Protocol)</h5>
+<p>..</p>
+<blockquote>
+<p>Je to dynamický externí protokol, který je používán v rámci centrálních <em>uzlů Internetu</em>. Používají ho tedy poskytovatelé připojení k internetu a peeringové uzly.</p>
+</blockquote>
+<p>Směrování mezi systémy má odlišné požadavky než interní směrování.
+Směrovací tabulky obsahují stovky tisíc záznamů a nejdůležitějším kritériem nebývá <em>vzdálenost</em>, ale parametry jako cena, <em>spohlivosti</em>,…</p>
+</body></html>

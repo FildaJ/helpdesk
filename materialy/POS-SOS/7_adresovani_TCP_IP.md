@@ -38,7 +38,6 @@ IP adresy jsou dále členěny do tříd podle toho, jakou částí obsahuje č�
 
 Čím více bajtů je věnováno adrese sítě, tím více sítí můžeme adresovat. Tím méně číslic však zbude na adresy PC v síti a naopak.
 
-[adresace siti](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 
 V internetu byly IP adresy použity poprvé. Až později se začaly používat v lokálních sítích. Aby se předešlo konfliktům adres (lokálních sítích a internetových), vymezily se v každé třídě IP adres rozsahy pro lokální adresy.
 
@@ -48,7 +47,6 @@ V internetu byly IP adresy použity poprvé. Až později se začaly používat 
 Třída B: 172.16.0.0 – 172.31.255.25
 Třída C: 192.168.0.0 – 192.168.255.255
 
-[tridy siti](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 
 IP adresa je navržena variabilně. Adrese sítě je možné vyhradit 1 až 3 číslice (bajty). 
 
