@@ -189,6 +189,10 @@ footer {
 	padding: 2rem;
 	text-align: center;
 
+	hr {
+		width:60%;
+	}
+
 	a {
 		color:$green;
 		transition: all 0.45s;
@@ -204,10 +208,6 @@ footer {
 		color:white;
 		text-align:center;
 
-		strong {
-			@include oswaldSemi;
-			text-transform: uppercase;
-		}
 	}
 }
 
