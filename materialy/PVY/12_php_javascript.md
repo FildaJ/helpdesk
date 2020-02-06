@@ -1,7 +1,7 @@
-# PHP – Dynamické stránky
+### PHP – Dynamické stránky
 
 
-### Vlastnosti PHP
+#### Vlastnosti PHP
 
 >Datový typ proměnné je vázán na HODNOTU (nikoliv na proměnnou) 
 >= Dynamicky typovaný 
@@ -28,7 +28,7 @@ Důležitý příkaz pro vykonání funkcí se nazývá SWITCH. Často potřebuj
 
 >Další příkazy: while, do, for.
 
-### Výhody PHP
+#### Výhody PHP
 
   - Rozsáhlý soubor funkcí
   - Podpora mnoha databázových systémů
@@ -36,14 +36,14 @@ Důležitý příkaz pro vykonání funkcí se nazývá SWITCH. Často potřebuj
   - Spousta kódů a projektů, které lze zdarma využít (phpBB, WordPress atd.)
   - Svobodná licence
 
-### Nevýhody PHP
+#### Nevýhody PHP
 
   - Nekonzistentní pojmenování funkcí (strpos(), strchr(), ale str_replace(), str_pad().)
   - Jazyk podporuje výjimky, ale knihovna je používá jen zřídka
   - Slabší podpora Unicode
   - Ve standardní edici chybí ladící nástroj
 
-### Instalace Apache, MySQL a PHP
+#### Instalace Apache, MySQL a PHP
 
 Webové aplikace často používají linuxový operační systém, webserver Apache, databázi MySQL a programovací jazyk PHP. Tato čtveřice je často označována zkratkou LAMP. Všechny zmíněné technologie jsou zadarmo. Pokud následující technologie provozujeme pod Windows, používá se někdy zkratka WAMP.
 
@@ -55,7 +55,7 @@ Jednotlivé části balíčku XAMPP:
   - Mercury Mail Server – Lokální SMTP server pro posílání emailů.
   - Tomcat – Servrlet pro Javu, pokud tvoříte stránky v tomto jazyce.
 
-### Základy syntaxe
+#### Základy syntaxe
 
 Celý kód musí být označen dvojící otazníku a menšítka.
 ```sh
@@ -70,7 +70,7 @@ echo „Druhý řádek“;
 ?>
 ```
 
-### Proměnné
+#### Proměnné
 
 Narozdíl od mnoha jiných jazyků se proměnné v PHP určují při přiřazení, což velice zkracuje a zjednodušuje kód, zároveň ale může být takový kód pro začátečníky matoucí a nepřehledný.
 
@@ -104,7 +104,7 @@ echo $prohlaseni.“<BR>“;
 | Řetězec   | String   | uchovává texty neboli řetězce, ZNAKY nebo sada znaků, v php prakticky neomezené délky   |
 
 ... 
-### Komentáře
+#### Komentáře
 
 Komentáře mohou být v PHP jednořádkové nebo víceřádkové a používají se na ně znaky „//“ (dvě dopředná lomítka), „#“ (mřížka) a dvojice „/*“ a „*/.
 
@@ -137,7 +137,7 @@ Základní vlastnosti:
 
 >JavaScript je klientský skript. To znamená, že se program odesílá se stránkou na klienta (do prohlížeče) a teprve tam je vykonáván. (Protikladem klientských skriptů jsou skripty serverové, které jsou vykonávány na serveru a na klienta jdou už jen výsledky).
 
-### Kde umístit skripty?
+#### Kde umístit skripty?
 
 Skripty můžete umístit na následujících místech:
 
@@ -145,7 +145,7 @@ Skripty můžete umístit na následujících místech:
 - Do těla HTML dokumentu (tj. mezi tagy <body> a </body>).
 - Do externího souboru (V HTML dokumentu bude odkazováno na tento soubor).
 
-### Příklad
+#### Příklad
 ```sh
 <body>
 Toto je normální text stránky.<br>
