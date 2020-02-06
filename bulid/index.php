@@ -38,18 +38,13 @@ include 'scripts/join.php';
 				</li>
 				<li><a href="#">O nás</a></li>
 				<li><a href="#">Kalendář</a></li>
-				<?php
-					if (isset($_SESSION["username"])) {
-						echo '<li><a href="index.php?page=edit">Edit</a></li>';
-					} 
-				?>
 			</ul>
 			<ul>
 				<?php
 					if (!isset($_SESSION["username"])) {
-					    echo '<a class="btn-ghost" href="index.php?page=edit">Edit</a>';
 						echo '<a class="btn-primary" href="index.php?page=login">Přihlásit se</a>';
 					} else {
+						echo '<a class="btn-ghost" href="index.php?page=edit">Edit</a>';
 						echo '<a class="btn-primary" href="index.php?page=logout">Odhlásit se</a>';
 					}
 				?>

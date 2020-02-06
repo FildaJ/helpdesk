@@ -10,9 +10,6 @@ include('scripts/auth.php');
 </head>
 
 <body>
-
-
-
 	<form method="post" action="scripts/edit_db.php">
 
 		<input type="hidden" name="id" value="">

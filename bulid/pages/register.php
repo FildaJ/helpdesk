@@ -37,8 +37,8 @@ if (isset($_POST['reg_user'])) {
     } else
         {
         $heslo1 =  hash('sha512', $heslo1);
-        $admin = false;
-        $query = "INSERT INTO user (jmeno,prijmeni,email,heslo,admin) 
+        $admin = 0;
+        $query = "INSERT INTO user (jmeno,prijmeni,email,heslo,administrator) 
 VALUES('$jmeno','$prijmeni', '$email', '$heslo1', '$admin')";
         mysqli_query($conn, $query);
     }

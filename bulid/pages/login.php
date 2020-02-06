@@ -30,11 +30,13 @@ if (isset($_POST['login_user'])) {
         $results = mysqli_query($conn, $query);
         if (mysqli_num_rows($results) == 1) {
             $uzivatel               = "SELECT jmeno FROM user WHERE email='$email' LIMIT 1"; //najdi jméno uživatele pro jiné účely
-            $execute                = mysqli_query($conn, $uzivatel);
-            $_SESSION['username']   = $execute;
-            $admin              = "SELECT administrator FROM user WHERE email='$email' LIMIT 1"; //najdi jméno uživatele pro jiné účely
-            $execute            = mysqli_query($conn, $uzivatel);
-            $_SESSION['admin']  = $execute;
+            $execute1                = mysqli_query($conn, $uzivatel);
+            $temp1 = mysqli_fetch_assoc($execute1);
+            $_SESSION['username']   = implode($temp1);
+            $admin              = "SELECT administrator FROM user WHERE email='$email' LIMIT 1";
+            $execute            = mysqli_query($conn, $admin);
+            $temp = mysqli_fetch_assoc($execute);
+            $_SESSION['admin']  = implode($temp);
             header("Location: index.php?page=home");
             
 
