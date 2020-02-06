@@ -27,7 +27,7 @@ include('scripts/edit_db.php');
 				<label>Název</label>
 				<input type="text" name="nazev" value="">
 				<label>Článek</label>
-				<input type="text" name="clanek" value="">
+				<textarea id="editForm" name="clanek" rows="10"></textarea>
 
 				<button class="btn" type="submit" name="save">Vložit</button>
 		</form>
