@@ -43,7 +43,7 @@ include 'scripts/join.php';
 			<ul>
 				<?php
 					if (!isset($_SESSION["username"])) {
-					    echo '<a class="secondary" href="index.php?page=edit">Edit</a>';
+					    echo '<a class="btn-ghost" href="index.php?page=edit">Edit</a>';
 						echo '<a class="btn-primary" href="index.php?page=login">Přihlásit se</a>';
 					} else {
 						echo '<a class="btn-primary" href="index.php?page=logout">Odhlásit se</a>';
