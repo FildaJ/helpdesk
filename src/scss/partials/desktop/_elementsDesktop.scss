@@ -95,6 +95,26 @@ form {
 		}*/
 	}
 
+	select {
+		color:white;
+		background-color: $bg;
+		padding:.5rem;
+		border-radius:5px;
+		outline:none;
+		width: 100%;
+		border: 2px solid white;
+		margin-bottom: 0.75rem;
+
+		&:active {
+			border:2px solid $purple;
+		}
+
+		&:hover {
+			background-color:lighten($bg,10);
+		}
+
+	}
+
 
 	button {
 		background-color:$green;
@@ -122,6 +142,10 @@ form {
 				color:black;
 			}
 		}
+
+	#editForm {
+		width:60vw;
+	}
 }	
 //výběr
 ::-moz-selection, ::selection { 

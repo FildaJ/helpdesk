@@ -10,36 +10,28 @@ include('scripts/auth.php');
 </head>
 
 <body>
-	<form method="post" action="scripts/edit_db.php">
+	<main class="centerContainer">
+		<form method="post" action="scripts/edit_db.php">
+			<label for="id">Předměty</label>
+				<div class="selectStyle">
+					<select name=id>
+						<label>Předmět</label>
+						<option >PVY</option>"
+						<option >POG</option>"
+						<option >POS/SOS</option>"
+						<option >PRG</option>"
+					</select>
+				</div>
+				<label>Číslo</label>
+				<input type="text" name="cislo" value="">
+				<label>Název</label>
+				<input type="text" name="nazev" value="">
+				<label>Článek</label>
+				<textarea id="editForm" name="clanek" rows="10"></textarea>
 
-		<input type="hidden" name="id" value="">
-
-		<div class="input-group">
-			<select name=id>
-				<label>Předmět</label>
-				<option >PVY</option>"
-				<option >POG</option>"
-				<option >POS/SOS</option>"
-				<option >PRG</option>"
-			</select>
-		</div>
-		<div class="input-group">
-			<label>Číslo</label>
-			<input type="text" name="cislo" value="">
-		</div>
-		<div class="input-group">
-			<label>Název</label>
-			<input type="text" name="nazev" value="">
-		</div>
-		<div class="input-group">
-			<label>Článek</label>
-			<input type="text" name="clanek" value="">
-		</div>
-
-		<div class="input-group">
-			<button class="btn" type="submit" name="save">Save</button>
-		</div>
-	</form>
+				<button class="btn" type="submit" name="save">Vložit</button>
+		</form>
+	</main>
 </body>
 
 </html>
