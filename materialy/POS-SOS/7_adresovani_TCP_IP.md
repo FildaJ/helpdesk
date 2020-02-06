@@ -1,7 +1,7 @@
-# 7 | Adresování v TCP/IP sítích, třídy, zápis IP adresy, masky, přepočty.
+### 7 | Adresování v TCP/IP sítích, třídy, zápis IP adresy, masky, přepočty.
 
 
-### Adresace v TCP/IP sítích
+#### Adresace v TCP/IP sítích
 
 >Síť založená na protokolu TCP/IP využívá práci s adresami.
 
@@ -15,18 +15,18 @@ Příklad celé adresy: 11000000.10101000.00000001.0000101.
 Pro zápis čísel využíváme i ostatní číselné soustavy. Například hexadecimální 
 (16) a decimální (10) soustava.
 
-#### BINÁRNÍ soustava: 
->Využívá pouze dvě čísla 0 a 1. Pracují s ní HW prvky počítače.
+##### BINÁRNÍ soustava: 
+Využívá pouze dvě čísla 0 a 1. Pracují s ní HW prvky počítače.
 
 #### HEXADECIMÁLNÍ soustava: 
 
->Základem je šestnáct znaků: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, A, B, C, D, E, F. 
+Základem je šestnáct znaků: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, A, B, C, D, E, F. 
 V adresaci IP adres se také občas vyskytuje. 
 Převedená binární adresa by vypadala v šestnáctkovém vyjádření takto: C0.A8.01.11.
 
-#### DECIMÁLNÍ soustava: 
+##### DECIMÁLNÍ soustava: 
 
-> V současnosti nejužívanější soustava. Příklad adresy: 192.168.1.11.
+V současnosti nejužívanější soustava. Příklad adresy: 192.168.1.11.
 
 Aby mezi sebou mohli spolupracovat různé sítě, jsou jednotlivé sítě rozdělené na segmenty (části). 
 PC připojené do sítě musí mít v IP adrese uvedené číslo konkrétního PC a číslo celé sítě (segmentu) ve které se PC nachází.
