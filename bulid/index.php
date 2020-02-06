@@ -37,7 +37,7 @@ include 'scripts/join.php';
 					</ul>
 				</li>
 				<li><a href="#">O nás</a></li>
-				<li><a href="#">Kalendář</a></li>
+				<li><a href="index.php?page=kalendar">Kalendář</a></li>
 				<li><a href="index.php?page=edit">Edit</a></li>
 			</ul>
 			<ul>
@@ -67,6 +67,9 @@ include 'scripts/join.php';
 			break;
 		case "onas":
 			include "pages/onas.php";
+			break;
+		case "kalendar":
+			include "pages/calendar.php";
 			break;
 		case "login":
 				include "pages/login.php";
