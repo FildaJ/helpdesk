@@ -36,7 +36,7 @@ include 'scripts/join.php';
 						<li><a href="index.php?page=pos">Sítě</a></li>
 					</ul>
 				</li>
-				<li><a href="http://forum-matura.jednoduse.cz/">Forum</a></li>
+				<li><a href="http://forum-matura.jednoduse.cz/" target="_blank">Forum</a></li>
 				<li><a href="index.php?page=kalendar">Kalendář</a></li>
 				<li><a href="index.php?page=edit">Edit</a></li>
 			</ul>
