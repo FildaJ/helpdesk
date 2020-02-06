@@ -168,7 +168,7 @@ form {
     	border: 2px solid $error;
     }*/ }
     form input:focus, form textarea:focus {
-      border: 2px solid #00FFC3;
+      border: 2px solid #7526FF;
       background-color: #0d0d0d;
       outline: none; }
   form select {

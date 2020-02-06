@@ -73,7 +73,7 @@ form {
 		margin-bottom:0.75rem;
 		
 		&:focus {
-			border: 2px solid $green;
+			border: 2px solid $purple;
 			background-color:lighten($bg,5);
 			outline: none;
 		}
