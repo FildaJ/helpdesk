@@ -125,3 +125,5 @@ CHAR	= Pevný počet znaků, jaký si zvolíte, max. 255
 
 
 
+
+
