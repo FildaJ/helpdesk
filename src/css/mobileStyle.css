@@ -171,6 +171,17 @@ form {
       border: 2px solid #00FFC3;
       background-color: #0d0d0d;
       outline: none; }
+  form select {
+    color: white;
+    background-color: #000;
+    padding: .5rem;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+    border: 2px solid white;
+    margin-bottom: 0.75rem; }
+    form select:active {
+      border: 2px solid #7526FF; }
   form button {
     background-color: #00FFC3;
     -webkit-box-shadow: 1px 1px 5px #00FFC3;

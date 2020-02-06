@@ -13,13 +13,15 @@ include('scripts/edit_db.php');
 	<main class="centerContainer">
 		<form method="post" action="scripts/edit_db.php">
 			<label for="id">Předměty</label>
-				<select name=id>
-					<label>Předmět</label>
-					<option >PVY</option>"
-					<option >POG</option>"
-					<option >POS/SOS</option>"
-					<option >PRG</option>"
-				</select>
+				<div class="selectStyle">
+					<select name=id>
+						<label>Předmět</label>
+						<option >PVY</option>"
+						<option >POG</option>"
+						<option >POS/SOS</option>"
+						<option >PRG</option>"
+					</select>
+				</div>
 				<label>Číslo</label>
 				<input type="text" name="cislo" value="">
 				<label>Název</label>

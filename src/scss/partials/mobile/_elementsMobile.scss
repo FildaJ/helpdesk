@@ -82,6 +82,20 @@ form {
 			border: 2px solid $error;
 		}*/
 	}
+	select {
+		color:white;
+		background-color: $bg;
+		padding:.5rem;
+		border-radius:5px;
+		outline:none;
+		width: 100%;
+		border: 2px solid white;
+		margin-bottom: 0.75rem;
+
+		&:active {
+			border:2px solid $purple;
+		}
+	}
 
 	button {
 		background-color:$green;
