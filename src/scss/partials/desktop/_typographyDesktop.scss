@@ -33,12 +33,37 @@ body {
 		@include oswaldLight;
 		font-size: 3rem;
 		text-transform: uppercase;
+		color: $purple;
+	}
+
+	h4 {
+		@include oswaldSemi;
+		font-size: 2.75rem;
+		text-transform: uppercase;
+		color: $purple;
+	}
+
+	h5 {
+		@include oswaldLight;
+		font-size: 2.25rem;
+		color: $purple;
+		text-transform: uppercase;
+	}
+
+	blockquote {
+		@include oswaldLight;
+		font-size: 1.4rem;
+		border-left: 4px solid $purple;
+		padding:0.5rem 0.5rem 0.5rem 1rem;
+		margin: 1rem 0 1rem 1rem;
+		background-color: lighten($bg,5);
 	}
 
 	p {
 		font-family: $roboto;
 		max-width: 75ch;
-		font-size:1rem;
+		font-size:1.2rem;
+		color: darken(white, 10);
 	}
 
 }

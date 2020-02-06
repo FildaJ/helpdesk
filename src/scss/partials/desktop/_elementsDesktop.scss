@@ -158,8 +158,12 @@ main {
 	display:grid;
 }
 
+article {
+	margin-top: 5rem;
+}
+
 header {
-	height: 60vh;
+	height: 70vh;
 	width: 100%;
 	background-color: $green;
 	margin: 0;
@@ -178,6 +182,37 @@ header {
 		background-image:url(https://get.wallhere.com/photo/bliss-Windows-XP-sky-blue-clouds-nature-grass-hill-1450009.jpg);
 	}
 
+}
+
+footer {
+	margin-top:2rem;
+	background-color: $bg;
+	border-top:4px solid $green;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+	text-align: center;
+
+	hr {
+		width:60%;
+	}
+
+	a {
+		color:$green;
+		transition: all 0.45s;
+		font-family: $roboto;
+
+		&:hover {
+			color:darken($green, 10);
+
+		}
+	}
+	span {
+		font-family: $roboto;
+		color:white;
+		text-align:center;
+
+	}
 }
 
 .centerContainer {
