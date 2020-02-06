@@ -14,9 +14,9 @@ include 'scripts/join.php';
 	<link rel="manifest" href="manifest.json">
 	<link rel="icon" href="/img/logo/logo.png" type="image/gif" sizes="16x16">
 	<meta name="theme-color" content="#000">
-	<link rel="stylesheet" href="css/desktopStyle.css" media="screen and (min-width: 750px)"/>
-	<link rel="stylesheet" href="css/mobileStyle.css" media="screen and (max-width: 749px)"/>
-	<title>Document</title>
+	<link rel="stylesheet" href="css/desktopStyle.css" media="screen and (min-width: 750px)" />
+	<link rel="stylesheet" href="css/mobileStyle.css" media="screen and (max-width: 749px)" />
+	<title>Matura Jednoduše</title>
 </head>
 
 <body>
@@ -24,29 +24,30 @@ include 'scripts/join.php';
 	<nav>
 		<div id="navContent">
 			<input type="checkbox" id="checkbox_toggle">
-			<label for="checkbox_toggle" class="btn-primary toggle">&#9776; Menu</label>		
+			<label for="checkbox_toggle" class="toggle">&#9776; Menu</label>		
 			<ul id="links">
 				<li><a href="index.php?page=home">Domů</a></li>
 				<li>
 					<a href="#">Předměty</a>
 					<ul class="submenu">
-						<li><a href="#">Grafika</a></li>
-						<li><a href="#">Programování</a></li>
+						<li><a href="index.php?page=pog">Grafika</a></li>
+						<li><a href="index.php?page=prg">Programování</a></li>
 						<li><a href="index.php?page=pvy">PVY</a></li>
 						<li><a href="index.php?page=pos">Sítě</a></li>
+						<li><a href="index.php?page=aj">Angličtina</a></li>
 					</ul>
 				</li>
-				<li><a href="#">O nás</a></li>
-				<li><a href="#">Kalendář</a></li>
+				<li><a href="http://forum-matura.jednoduse.cz/" target="_blank">Forum</a></li>
+				<li><a href="index.php?page=kalendar">Kalendář</a></li>
+				<li><a href="index.php?page=edit">Edit</a></li>
 			</ul>
 			<ul>
 				<?php
-					if (!isset($_SESSION["username"])) {
-						echo '<a class="btn-primary" href="index.php?page=login">Přihlásit se</a>';
-					} else {
-						echo '<a class="btn-ghost" href="index.php?page=edit">Edit</a>';
-						echo '<a class="btn-primary" href="index.php?page=logout">Odhlásit se</a>';
-					}
+				if (!isset($_SESSION["username"])) {
+					echo '<a class="btn-primary" href="index.php?page=login">Přihlásit se</a>';
+				} else {
+					echo '<a class="btn-primary" href="index.php?page=logout">Odhlásit se</a>';
+				}
 				?>
 			</ul>
 		</div>
@@ -68,12 +69,15 @@ include 'scripts/join.php';
 		case "onas":
 			include "pages/onas.php";
 			break;
+		case "kalendar":
+			include "pages/calendar.php";
+			break;
 		case "login":
-				include "pages/login.php";
-				break;  
+			include "pages/login.php";
+			break;
 		case "register":
-				include "pages/register.php";
-				break;
+			include "pages/register.php";
+			break;
 		case "logout":
 			include "scripts/logout.php";
 			break;
@@ -86,9 +90,19 @@ include 'scripts/join.php';
 		case "clanek":
 			include "pages/clanek.php";
 			break;
-			case "pos":
-				include "pages/pos-sos.php";
-				break;
+		case "pos":
+			include "pages/pos-sos.php";
+			break;
+		case "aj":
+			include "pages/aj.php";
+			break;
+		case "pog":
+			include "pages/pog.php";
+			break;
+		case "prg":
+			include "pages/prg.php";
+			break;
+
 		default:
 			include "pages/home.php";
 			break;

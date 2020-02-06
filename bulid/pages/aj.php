@@ -1,6 +1,6 @@
 	<form method="post" action="">
 		<?php
-		$ID = 1;
+		$ID = 5;
 		$result = mysqli_query($conn, "SELECT nazev FROM okruhy WHERE ID_predmet = $ID");
 		while ($nazev  = mysqli_fetch_assoc($result)) {
 			echo "<div class='btn primary'>";
@@ -13,7 +13,7 @@
 	$_SESSION["clanekid"] = $_POST["idclanek"];
 	if (isset($_POST['idclanek'])) {
 		header("location: index.php?page=clanek");
-	}	
+	}
 	?>
 <div id="disqus_thread"></div>
 <script>
@@ -23,7 +23,7 @@
 
 var disqus_config = function () {
 //this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = '1235468'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.identifier = '12345'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 
 (function() { // DON'T EDIT BELOW THIS LINE

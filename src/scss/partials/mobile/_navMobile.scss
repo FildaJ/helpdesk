@@ -6,12 +6,17 @@ nav {
 	user-select: none;
 	box-sizing: border-box;
 	z-index:99;
-	display:flex
+	display:block;
+
+	.toggle {
+		padding: .5rem 1.25rem;
+		margin:1rem 0;
+		color:$green;
+		display:block;
+	}
 
 	#links {
 		//display:none;
-		position: absolute;
-		text-align: center;
 		background-color:$bg;
 		width:100%;
 		z-index: 98;
@@ -61,10 +66,10 @@ nav {
 	}
 	
 	input[type=checkbox]:checked ~ ul {
-		display: block
+		display: block;
 	}
 	
 	input[type=checkbox]:checked ~ ul li ul {
-		display: block
+		display: block;
 	}
 }

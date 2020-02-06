@@ -30,11 +30,34 @@ body {
     font-size: 2.5rem;
     text-transform: uppercase;
     text-align: center; }
+  body h4 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #7526FF;
+    text-align: center; }
+  body h5 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    color: #7526FF;
+    text-align: center; }
   body p {
     font-family: "Roboto", sans-serif;
     font-size: 1.25rem;
     text-align: left;
-    max-width: 50ch; }
+    max-width: 50ch;
+    color: #e6e6e6; }
+  body blockquote {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    border-left: 4px solid #7526FF;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    margin: 1rem 0 1rem 1rem;
+    background-color: #0d0d0d; }
   body a {
     color: #00FFC3;
     -webkit-transition: all 0.45s;
@@ -95,6 +118,12 @@ input, textarea {
   color: white;
   width: 100%; }
 
+header h1 {
+  position: absolute;
+  text-align: center;
+  z-index: 5;
+  color: #000; }
+
 main a {
   color: #00FFC3;
   -webkit-transition: all 0.45s;
@@ -127,11 +156,11 @@ main a {
   border: 4px solid #00FFC3;
   color: #00FFC3;
   padding: .5rem 1.25rem;
+  margin: 1rem 0;
   border-radius: 5px;
   display: block;
   -webkit-transition: all 0.45s;
   transition: all 0.45s;
-  margin: 1rem 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: center; }
@@ -214,6 +243,57 @@ form {
 main {
   display: grid; }
 
+header {
+  height: 80vh;
+  width: 100%;
+  background-color: #00FFC3;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  header .heroImg {
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    mix-blend-mode: multiply;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://get.wallhere.com/photo/bliss-Windows-XP-sky-blue-clouds-nature-grass-hill-1450009.jpg); }
+
+footer {
+  margin-top: 2rem;
+  background-color: #000;
+  border-top: 4px solid #00FFC3;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+  text-align: center; }
+  footer a {
+    color: #00FFC3;
+    -webkit-transition: all 0.45s;
+    transition: all 0.45s;
+    font-family: "Roboto", sans-serif; }
+    footer a:hover {
+      color: #00cc9c; }
+  footer span {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-align: center; }
+
+article {
+  margin-top: 3rem; }
+
 .centerContainer {
   margin: 0 2rem;
   display: grid;
@@ -234,11 +314,14 @@ nav {
           user-select: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  z-index: 99; }
-  nav display:flex
-  #links {
-    position: absolute;
-    text-align: center;
+  z-index: 99;
+  display: block; }
+  nav .toggle {
+    padding: .5rem 1.25rem;
+    margin: 1rem 0;
+    color: #00FFC3;
+    display: block; }
+  nav #links {
     background-color: #000;
     width: 100%;
     z-index: 98; }

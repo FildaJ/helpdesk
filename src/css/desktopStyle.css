@@ -28,11 +28,33 @@ body {
     font-family: "Oswald", sans-serif;
     font-weight: 300;
     font-size: 3rem;
+    text-transform: uppercase;
+    color: #7526FF; }
+  body h4 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    font-size: 2.75rem;
+    text-transform: uppercase;
+    color: #7526FF; }
+  body h5 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 2.25rem;
+    color: #7526FF;
     text-transform: uppercase; }
+  body blockquote {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    border-left: 4px solid #7526FF;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    margin: 1rem 0 1rem 1rem;
+    background-color: #0d0d0d; }
   body p {
     font-family: "Roboto", sans-serif;
     max-width: 75ch;
-    font-size: 1rem; }
+    font-size: 1.2rem;
+    color: #e6e6e6; }
 
 button, input[type=submit] {
   font-family: "Oswald", sans-serif;
@@ -87,6 +109,12 @@ input, textarea {
   font-family: "Roboto", sans-serif;
   font-size: 0.9rem;
   color: white; }
+
+header h1 {
+  position: absolute;
+  text-align: center;
+  z-index: 5;
+  color: #000; }
 
 main a {
   color: #00FFC3;
@@ -214,6 +242,59 @@ form {
 
 main {
   display: grid; }
+
+article {
+  margin-top: 5rem; }
+
+header {
+  height: 70vh;
+  width: 100%;
+  background-color: #00FFC3;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  header .heroImg {
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    mix-blend-mode: multiply;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://get.wallhere.com/photo/bliss-Windows-XP-sky-blue-clouds-nature-grass-hill-1450009.jpg); }
+
+footer {
+  margin-top: 2rem;
+  background-color: #000;
+  border-top: 4px solid #00FFC3;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+  text-align: center; }
+  footer hr {
+    width: 60%; }
+  footer a {
+    color: #00FFC3;
+    -webkit-transition: all 0.45s;
+    transition: all 0.45s;
+    font-family: "Roboto", sans-serif; }
+    footer a:hover {
+      color: #00cc9c; }
+  footer span {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-align: center; }
 
 .centerContainer {
   display: grid;
