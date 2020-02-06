@@ -1,14 +1,14 @@
-# Návrh databází, modelování DB a jazyk SQL
+### Návrh databází, modelování DB a jazyk SQL
 
 
-### Co je to SQL?
+#### Co je to SQL?
 
 >= strukturovaný dotazovací jazyk, který se používá pro práci s daty v relačních DB.
 
 Patří mezi jazyky Deklarativní, mezitím co u imperativních jazyků, kde musíme říkat PC vše krok po kroku, tak u deklarativních pouze říkáme, co má být výsledek, kde nás nezajímá, jak se k tomu PC dostane, ale důležitý je pro nás ten patřičný výsledek.
 Díky tomu DB dotazy jsou zjednodušeny např. „Vrať mi tabulku s 5 městy, které mají největší turistický ruch“. Po nějaké kratší době, samozřejmě záleží na tom, kolik máme v DB položek, nám vychrlí výsledek bez jakéhokoliv postupu. 
 
-### Příkazy:
+#### Příkazy:
 ```sh
 SELECT Name, City FROM User
 Vybere z tabulky jméno a město a vypíše nám jen tyto 2 sloupce.
@@ -52,7 +52,7 @@ DELETE FROM Users WHERE level = ‘420‘
 Odstraní řádek, kde Level = ‚420‘
 ```
 
-### Databázový systém:
+#### Databázový systém:
 
 - Je uspořádaná množina informací vložená na datové medium.
 - Předchůdcem byli papírové kartotéky.
@@ -60,7 +60,7 @@ Odstraní řádek, kde Level = ‚420‘
 - Umožňuje shromažďovat různé informace.
 - Ukládá a udržuje v platném stavu data.
 
-#### DBS se skládá ze tří částí:
+##### DBS se skládá ze tří částí:
 
 **1. SŘBD** (Systém řízení báze dat)
 - Program, jehož úkole je pracovat s ulož.
@@ -70,7 +70,7 @@ Odstraní řádek, kde Level = ‚420‘
 
 **3.	DB** (Báze dat) = Množina informací, o kterých chceme mít přehled
 
-### SŘBD (Systém řízení dat)
+#### SŘBD (Systém řízení dat)
 
 - Definice dat
 - Údržba dat
@@ -78,7 +78,7 @@ Odstraní řádek, kde Level = ‚420‘
 - Integrita Dat (chrání data před vnějšími činiteli)
 - Zobrazování dat – není nutné pro vnitřní funkci databáze, ale pro uživatele ANO
 
-### Databázový model
+#### Databázový model
 
 - Popis fungování databáze
 - Popisuje, jak jsou dat zpřístupňována uživatelů a jak programátorům
@@ -86,7 +86,7 @@ Odstraní řádek, kde Level = ‚420‘
 - Využívá Abstrakci
 - Zachycuje vlastnosti objektu
 
-### Návrh databáze
+#### Návrh databáze
 - Modelování = ERD model (entitně relační diagram)
 - Třída – kategorie nebo skupina věcí, které mají podobné vlastnosti a stejné nebo podobné chování
 - Objekt – určitá věc, která má specifické hodnoty vlastností
@@ -100,13 +100,13 @@ Odstraní řádek, kde Level = ‚420‘
 
 - Kompozice – nadřízená třída sama řídí životní cyklus objektů podřízeným tříd a ty jsou na nadřízené třídě závislé.
 
-### Selekce
+#### Selekce
 
 >Relace A na základě podmínky vytvoří relaci se záhlavím relace A + tělem obsahujícím n-tice splňující podmínku.
 
-### Datové typy Databáze:
+#### Datové typy Databáze:
 
-#### Celá čísla:
+##### Celá čísla:
 
 >TINYINT = 8bitové číslo
 SMALLINT =16bitové číslo
@@ -114,7 +114,7 @@ MEDIUMINT = 24bitové číslo
 INT = 32bitové číslo
 BIGINT = 64bitové číslo
 
-#### Texty:
+##### Texty:
 
 >TINYTEXT = Max. 255 B
 TEXT = Max. 64KB (opravdu dlouhý text)
