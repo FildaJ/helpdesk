@@ -1,4 +1,3 @@
-<body>
 	<form method="post" action="">
 		<?php
 		$ID = 2;
@@ -16,7 +15,6 @@
 		header("location: index.php?page=clanek");
 	}
 	?>
-</body>
 <div id="disqus_thread"></div>
 <script>
 /**

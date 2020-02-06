@@ -2,7 +2,6 @@
 include('scripts/edit_db.php');
 
 ?>
-<body>
 	<main class="centerContainer">
 		<form method="post" action="scripts/edit_db.php">
 			<label for="id">Předměty</label>
@@ -26,4 +25,3 @@ include('scripts/edit_db.php');
 			<button class="btn" type="submit" name="save">Vložit</button>
 		</form>
 	</main>
-</body>
