@@ -1,9 +1,9 @@
-# 11 | HTML & CSS
-## Charakteristika
+### 11 | HTML & CSS
+#### Charakteristika
 **HTML a CSS** jsou _základní jazyky_ pro tvorbu **webových stránek**. **Stránky**, které jsou vytvořené pomocí těchto dvou jazyků nazýváme **statické**, protože mají _pevně daný_ (tj. neměnný obsah). **HTML je značkovací jazyk**, který se používá ke specifikaci _“kostry”_ webu a jeho obsahu. Naproti tomu **CSS** se používá pro _upravování stylů stránek_.
 
 
-## Historie 
+#### Historie 
 V roce **1989 spolupracovali Tim Berners-Lee a Robert Cailliau** na propojeném _informačním systému pro CERN_.
 
 Berners-Lee si **uvědomoval**, že potřebují něco **jednoduššího** a v roce 1990 byl tedy navržen jazyk **HTML a protokol HTTP** (Hypertext Transfer Protocol – protokol pro přenos hypertextu). Zároveň také Tim Berners-Lee napsal _první webový prohlížeč_, který nazval World Wide Web. 
@@ -16,15 +16,15 @@ Následoval _rychlý rozvoj webu_, takže bylo nutné pro **HTML definovat stand
 Současně v roce **1991 organizace NCSA** (National Center for Supercomputer Applications) vybídla Marca Andreessena a Erica Binu k vytvoření prohlížeče Mosaic; ten vznikl v roce 1993 ve verzích pro počítače IBM PC a Macintosh a měl obrovský úspěch. Byl to první prohlížeč s **grafickým uživatelským rozhraním*. 
 
 
-## HTML
-### Syntax
+#### HTML
+##### Syntax
 
-#### Párový tag
+##### Párový tag
 ```sh
 <h1>Hlavní nadpis</h1>
 ```
 
-#### Nepárový tag
+##### Nepárový tag
 ```sh
 <hr><!--Horizontální čára-->
 ```
@@ -38,15 +38,15 @@ V HTML je možné vkládat i více tagů dovnitř “hlavního tagu” (vnějš�
 </div>
 ```
 
-### Struktura HTML
-#### Doctype 
+#### Struktura HTML
+##### Doctype 
 
 **Na začátku** dokumentu **HTML stojí tag: „Doctype“**, který definuje, že se jedná o dokument HTML a bude tímto způsobem i psán. Jedná se o nepárový tag. 
 ```sh
 <!DOCTYPE html>
 ```
 
-#### HTML 
+##### HTML 
 Další nezbytný tag **HTML dokumentu je „HTML“**, který definuje **začátek a konec kódu**. Jedná se o _párový tag_. 
 ```sh
 <html>
@@ -54,7 +54,7 @@ Další nezbytný tag **HTML dokumentu je „HTML“**, který definuje **začá
 </html>
 ```
 
-#### Head
+##### Head
 **Hlavička HTML kódu**, na stránce _se nezobrazuje_, **obsahuje**: _informace pro prohlížeče_, _titulek stránky_, _propojené soubory_, _formátování textu_, … Jedná se o párový tag. 
 
 ```sh
@@ -63,7 +63,7 @@ Další nezbytný tag **HTML dokumentu je „HTML“**, který definuje **začá
 </head>
 ```
 
-#### Body
+##### Body
 **Tělo dokumentu**. Zde se **píše to, co vidíme na stránce**. Obsahuje: _nadpisy, styly, odstavce, obrázky, formátování textu_. 
 ```sh
 <body>
@@ -71,7 +71,7 @@ Další nezbytný tag **HTML dokumentu je „HTML“**, který definuje **začá
 </body>
 ```
 
-#### Základní kód pak vypadá následovně:
+##### Základní kód pak vypadá následovně:
 ```sh
 <!DOCTYPE html>
 <html>
@@ -88,8 +88,8 @@ Další nezbytný tag **HTML dokumentu je „HTML“**, který definuje **začá
 ```
 
 
-### CSS
-#### Syntax
+#### CSS
+##### Syntax
 **Kaskádové styly (CSS)** se zadávají _pomocí
 pravidel_. Každé pravidlo se **skládá ze 3 částí**:
 
