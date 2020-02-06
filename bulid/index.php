@@ -16,7 +16,7 @@ include 'scripts/join.php';
 	<meta name="theme-color" content="#000">
 	<link rel="stylesheet" href="css/desktopStyle.css" media="screen and (min-width: 750px)" />
 	<link rel="stylesheet" href="css/mobileStyle.css" media="screen and (max-width: 749px)" />
-	<title>Document</title>
+	<title>Matura Jednoduše</title>
 </head>
 
 <body>
@@ -30,10 +30,11 @@ include 'scripts/join.php';
 				<li>
 					<a href="#">Předměty</a>
 					<ul class="submenu">
-						<li><a href="#">Grafika</a></li>
-						<li><a href="#">Programování</a></li>
+						<li><a href="index.php?page=pog">Grafika</a></li>
+						<li><a href="index.php?page=prg">Programování</a></li>
 						<li><a href="index.php?page=pvy">PVY</a></li>
 						<li><a href="index.php?page=pos">Sítě</a></li>
+						<li><a href="index.php?page=aj">Angličtina</a></li>
 					</ul>
 				</li>
 				<li><a href="http://forum-matura.jednoduse.cz/" target="_blank">Forum</a></li>
@@ -92,6 +93,16 @@ include 'scripts/join.php';
 		case "pos":
 			include "pages/pos-sos.php";
 			break;
+		case "aj":
+			include "pages/aj.php";
+			break;
+		case "pog":
+			include "pages/pog.php";
+			break;
+		case "prg":
+			include "pages/prg.php";
+			break;
+
 		default:
 			include "pages/home.php";
 			break;

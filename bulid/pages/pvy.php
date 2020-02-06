@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-	<title>PVY</title>
-</head>
-
 <body>
 	<form method="post" action="">
 		<?php
@@ -21,7 +14,7 @@
 	$_SESSION["clanekid"] = $_POST["idclanek"];
 	if (isset($_POST['idclanek'])) {
 		header("location: index.php?page=clanek");
-	}
+	}	
 	?>
 </body>
 <div id="disqus_thread"></div>
@@ -43,4 +36,3 @@ s.setAttribute('data-timestamp', +new Date());
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</html>

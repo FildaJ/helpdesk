@@ -1,11 +1,11 @@
 <body>
 	<form method="post" action="">
 		<?php
-		$ID = 3;
+		$ID = 2;
 		$result = mysqli_query($conn, "SELECT nazev FROM okruhy WHERE ID_predmet = $ID");
 		while ($nazev  = mysqli_fetch_assoc($result)) {
 			echo "<div class='btn primary'>";
-			echo	"<input type='submit' name='idclanek' value='$nazev[nazev]'>";
+			echo	"<input type='submit' name='idclanek' value='$nazev[nazev]' />";
 			echo "</div>";
 		}
 		?>
@@ -25,7 +25,7 @@
 
 var disqus_config = function () {
 //this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = '25555'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.identifier = '1235499'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 
 (function() { // DON'T EDIT BELOW THIS LINE

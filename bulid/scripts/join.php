@@ -4,7 +4,7 @@ $servername = "localhost";
 $username = "matura";                 //endora
 $password = "Maturita2020";
 $dbname = "helpdesk"; 
-/*
+*/
 $servername = "localhost";
 $username = "root";                 //xamp
 $password = "";
@@ -17,5 +17,5 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-*/
+
 ?>

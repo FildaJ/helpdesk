@@ -2,13 +2,6 @@
 include('scripts/edit_db.php');
 
 ?>
-<!DOCTYPE html>
-<html>
-
-<head>
-	<title>Přídání článku</title>
-</head>
-
 <body>
 	<main class="centerContainer">
 		<form method="post" action="scripts/edit_db.php">
@@ -20,6 +13,7 @@ include('scripts/edit_db.php');
 					<option value="2">POG</option>"
 					<option value="3">POS/SOS</option>"
 					<option value="4">PRG</option>"
+					<option value="5">AJ</option>"
 				</select>
 			</div>
 			<label>Číslo</label>
@@ -33,5 +27,3 @@ include('scripts/edit_db.php');
 		</form>
 	</main>
 </body>
-
-</html>
