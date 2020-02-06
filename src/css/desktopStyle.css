@@ -245,6 +245,34 @@ header {
     background-position: center;
     background-image: url(https://get.wallhere.com/photo/bliss-Windows-XP-sky-blue-clouds-nature-grass-hill-1450009.jpg); }
 
+footer {
+  margin-top: 2rem;
+  background-color: #000;
+  border-top: 4px solid #00FFC3;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+  text-align: center; }
+  footer a {
+    color: #00FFC3;
+    -webkit-transition: all 0.45s;
+    transition: all 0.45s;
+    font-family: "Roboto", sans-serif; }
+    footer a:hover {
+      color: #00cc9c; }
+  footer span {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-align: center; }
+    footer span strong {
+      font-family: "Oswald", sans-serif;
+      font-weight: 600;
+      text-transform: uppercase; }
+
 .centerContainer {
   display: grid;
   -ms-flex-line-pack: center;

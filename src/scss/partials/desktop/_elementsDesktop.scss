@@ -180,6 +180,37 @@ header {
 
 }
 
+footer {
+	margin-top:2rem;
+	background-color: $bg;
+	border-top:4px solid $green;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+	text-align: center;
+
+	a {
+		color:$green;
+		transition: all 0.45s;
+		font-family: $roboto;
+
+		&:hover {
+			color:darken($green, 10);
+
+		}
+	}
+	span {
+		font-family: $roboto;
+		color:white;
+		text-align:center;
+
+		strong {
+			@include oswaldSemi;
+			text-transform: uppercase;
+		}
+	}
+}
+
 .centerContainer {
 	display:grid;
 	align-content: center;
