@@ -1,0 +1,83 @@
+<html><head><style>body {
+   color: black;
+}
+</style></head><body><h3 id="8-pr-ce-s-tabulkov-m-procesorem">8 | Práce s tabulkovým procesorem</h3>
+<h4 id="charakteristika">Charakteristika</h4>
+<p>Tabulkové procesory nám umožňují pracovat s nějakými zadanými daty, provádět s nimi výpočty, či různé operace. Nejznámnější a nejpoužívanějším programem je <em>Microsoft Excel</em>. </p>
+<p>Základem tohoto programu je <em>sešit</em> <em>(přípona .XLS, .XLSX)</em>. Ten se dále skládá z listů (max 255).
+Na jednom listu je k dispozici 16384 řádků a 256 sloupců.
+Sloupce, v záhlaví, jsou značeny pomocí písmen (A-Z a pak pokračují kombinací písmen AA-IV). 
+Řádky se označují pomocí čísel. Oblast určená pro zápis dat se nazývá buňka.</p>
+<ul>
+<li>Do buněk zapisujeme 3 typy údajů:<ul>
+<li>Textové konstanty</li>
+<li>Číselné konstanty</li>
+<li>Vzorce</li>
+</ul>
+</li>
+</ul>
+<p><a href="https://nodesource.com/products/nsolid"><img src="https://webadmin.endora.cz/user/filemanager/download/matura.jednoduse.cz/web/pictures/PVY_okruhy/8_tabulkovy_procesor?file=%2Fmatura.jednoduse.cz%2Fweb%2Fpictures%2FPVY_okruhy%2F8_tabulkovy_procesor%2F8_1_bunka.png" alt="Buňka v Excelu"></a>
+<code>Buňka v Excelu (ohraničená)</code></p>
+<h4 id="vkl-d-n-a-opravy-dat">Vkládání a opravy dat</h4>
+<h5 id="vkl-dan-textu-a-sla">Vkládaní textu a čísla</h5>
+<p>Excel automaticky rozezná, zda jde o číslo nebo text. Pokud chceme zapisovat číslo, které chceme aby bylo považováno za text (např. telefonní číslo), napíšeme před něj apostrof.</p>
+<p>Obsah zadaný do jedné buňky je obsahem právě té jedné buňky do které jsme to zadali, i když jeho délka přesahuje šířku buňky. 
+Pokud nemáme buňku předem naformátovanou, Excel se snaží číslo zobrazit. Zobrazí ho třeba zaokrouhlené nebo ve vědeckém formátu (zápis čísla 5000 ve vědeckém formátu je 5E+3).</p>
+<h5 id="vkl-d-n-datumu">Vkládání datumu</h5>
+<p>Datum patří mezi čísla, je to vlastně pořadové číslo. Datum musíme psát ve formátu jako je v nastavení systému Windows, jinak Excel nepozná že jde o datum – číslo.</p>
+<h5 id="vkl-d-n-vzorc-">Vkládání vzorců</h5>
+<p>Zápis vzorce začíná znakem “=”. Vzorce se skládají z číselných či textových konstant, odkazů na buňky a funkce. Prvky ve vzorcích spojujeme operátory (+, -, *, /, ^, &lt;&gt;, &lt;, &gt;, &lt;=, &gt;=, =). Ke spojování slouží &amp;.</p>
+<h5 id="p-klad-vzorce-">Příklad vzorce:</h5>
+<p>...</p>
+<pre><code>=<span class="hljs-symbol">A1</span>+<span class="hljs-symbol">A2</span> nebo =suma(<span class="hljs-symbol">A1</span>;<span class="hljs-symbol">A2</span>)
+Sečte buňky <span class="hljs-symbol">A1</span> a <span class="hljs-symbol">A2</span>
+</code></pre><blockquote>
+<p>Po dopsání vzorce se objeví výsledná hodnota. Pokud je vzorec špatný buňka vypíše chybové hlášení.</p>
+</blockquote>
+<h5 id="pou-it-tabulkov-ch-funkc-">Použití tabulkových funkcí</h5>
+<p>Excel poskytuje 10 různých typů funkcí pro tabulky: </p>
+<ul>
+<li>matematické/trigonemetrické</li>
+<li>vědecké</li>
+<li>logické</li>
+<li>textové </li>
+<li>statistické </li>
+<li>informační a vyhledávací</li>
+<li>funkce pro datum a čas</li>
+<li>pro databáze</li>
+<li>finance.</li>
+</ul>
+<blockquote>
+<p>Obecný zápis funkce vypadá: název_funkce (argument1, argument2,……….argumentN). </p>
+</blockquote>
+<p>Co může být argumentem funkce*, záleží na konkrétní funkci. Například funkcí MAX, která hledá maximální hodnotu, mohou být konstanty, adresy buněk, nebo další funkce.</p>
+<h4 id="tvorba-a-prava-tabulky">Tvorba a úprava tabulky</h4>
+<h5 id="filtry">Filtry</h5>
+<p>Filtrem v excelu je podmínka, která si projde každý řádek na listě. Pokud řádek vyhoví, zůstane zobrazen, pokud ne tak se skryje. Filtr využijeme ve větších tabulkách. Například hledáme data které vyhovují jen určitým požadavkům. <em>Filtry lze kombinovat</em>.</p>
+<h4 id="form-tov-n-tabulky">Formátování tabulky</h4>
+<p>Je to postup, při kterém se snažíme dosáhnout co nejpřehlednější tabulky a aby se v ní dalo jednoduše orientovat.
+Znamená to úpravu <em>šířky sloupců</em>, <em>výšek řádků</em>, <em>upravení stylu</em>, <em>velikosti a fontu písma</em>.</p>
+<p>K dosažení maximálního uspokojení lze použít různých čar a rámečků.
+Formátovat lze přímo zadávané údaje - nastavíme si jak chceme data zobrazovat před zadáním.
+Při kopírování buňky se s obsahem kopíruje i formát.</p>
+<p><a href="https://nodesource.com/products/nsolid"><img src="https://webadmin.endora.cz/user/filemanager/download/matura.jednoduse.cz/web/pictures/PVY_okruhy/8_tabulkovy_procesor?file=%2Fmatura.jednoduse.cz%2Fweb%2Fpictures%2FPVY_okruhy%2F8_tabulkovy_procesor%2F8_2_format-tabulky.png" alt="Formátová tabulka"></a>
+<code>Možnost formátování tabulky</code></p>
+<h4 id="tvorba-a-prava-grafu">Tvorba a úprava grafu</h4>
+<h5 id="grafy">Grafy</h5>
+<p>V Excelu můžeme tvořit spoustu různých typů grafů od:</p>
+<h5 id="dvojrozm-rn-ch-">Dvojrozměrných:</h5>
+<ul>
+<li>sloupcové, pruhové, plošné, prstencové</li>
+</ul>
+<h5 id="trojrozm-rn-">Trojrozměrné:</h5>
+<p>kruhové, jehlanové, kuželové,...</p>
+<p>Grafy jsou přímo propojeny s tabulkami, proto jakákoliv úprava tabulky změní i graf. 
+Grafy jsou grafické objekty, proto jsou pro ně stejné možnosti manipulace jako s obrázky. Můžeme je proto vkládat do Wordu.
+...</p>
+<h5 id="tvorba-grafu">Tvorba Grafu</h5>
+<p>Nejdříve vytvoříme tabulku s daty ze které budeme čerpat.
+Poté aktivujeme průvodce tvorbou grafu. Ten nás provede několika kroky, a zeptá se nás na typ <em>grafu</em>, <em>legendy</em>, <em>popisky</em> a podobně. 
+Graf může být umístěn na samostatném listu a nebo na listu, kde už data máme.</p>
+<p><a href="https://nodesource.com/products/nsolid"><img src="https://webadmin.endora.cz/user/filemanager/download/matura.jednoduse.cz/web/pictures/PVY_okruhy/8_tabulkovy_procesor?file=%2Fmatura.jednoduse.cz%2Fweb%2Fpictures%2FPVY_okruhy%2F8_tabulkovy_procesor%2F8_3_graf-pr.png" alt="Příklad grafu"></a>
+<code>Příklad grafu</code></p>
+</body></html>

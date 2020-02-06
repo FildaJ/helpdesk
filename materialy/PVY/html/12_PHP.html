@@ -1,0 +1,162 @@
+<html><head><style>body {
+   color: black;
+}
+</style></head><body><h3 id="php-dynamick-str-nky">PHP – Dynamické stránky</h3>
+<h4 id="vlastnosti-php">Vlastnosti PHP</h4>
+<blockquote>
+<p>Datový typ proměnné je vázán na HODNOTU (nikoliv na proměnnou) 
+= Dynamicky typovaný </p>
+</blockquote>
+<p>Řetězce v PHP lze zapsat dvěma různými způsoby:</p>
+<ul>
+<li>Uzavírat do uvozovek (při vyhodnocení se provede nahrazení proměnných uvnitř)</li>
+<li>Uzavírat do apostrofů (nahrazuje se jen ESCAPE sekvence \‘).</li>
+</ul>
+<p>Pole jsou asociativní (jeho prvky mají podobu KLÍČE a HODNOTY)</p>
+<p>Příkazy PHP zapisujeme mezi znaky: </p>
+<pre><code class="lang-sh"><span class="php"><span class="hljs-meta">&lt;?php</span> 
+
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<p>Spolupráce s databázemi. Skripty mohou pomocí jazyka SQL (Structured Query Language) provádět s údaji v databázích libovolné operace.</p>
+<p>Práce s PHP je velice jednoduchá a intuitivní. Na místo psaní programů, které ve výsledku vygenerují HTML, používá PHP opačný přístup. Do HTML stránky můžeme zapsat příkazy PHP, jejichž výsledek se po interpretaci skombinuje s okolním HTML kódem.
+Syntaxe PHP je převážně odvozena z jazyka C. Některé rysy jsou převzaty z Perlu a z Javy -- např. asociativní pole a třídy. Kromě jednoduchého a mocného jazyka, je velikou devizou PHP obrovské množství zabudovaných funkcí. </p>
+<p>Důležitý příkaz pro vykonání funkcí se nazývá SWITCH. Často potřebujeme opakovaně vyhodnocovat stejný výraz a podle jeho hodnoty provést odpovídající akci ve skriptu. K tomu může sloužit příkaz IF, nebo má PHP příkaz SWITCH (přepínač).</p>
+<blockquote>
+<p>Další příkazy: while, do, for.</p>
+</blockquote>
+<h4 id="v-hody-php">Výhody PHP</h4>
+<ul>
+<li>Rozsáhlý soubor funkcí</li>
+<li>Podpora mnoha databázových systémů</li>
+<li>Podpora na hostingových službách</li>
+<li>Spousta kódů a projektů, které lze zdarma využít (phpBB, WordPress atd.)</li>
+<li>Svobodná licence</li>
+</ul>
+<h4 id="nev-hody-php">Nevýhody PHP</h4>
+<ul>
+<li>Nekonzistentní pojmenování funkcí (strpos(), strchr(), ale str_replace(), str_pad().)</li>
+<li>Jazyk podporuje výjimky, ale knihovna je používá jen zřídka</li>
+<li>Slabší podpora Unicode</li>
+<li>Ve standardní edici chybí ladící nástroj</li>
+</ul>
+<h4 id="instalace-apache-mysql-a-php">Instalace Apache, MySQL a PHP</h4>
+<p>Webové aplikace často používají linuxový operační systém, webserver Apache, databázi MySQL a programovací jazyk PHP. Tato čtveřice je často označována zkratkou LAMP. Všechny zmíněné technologie jsou zadarmo. Pokud následující technologie provozujeme pod Windows, používá se někdy zkratka WAMP.</p>
+<p>Jednotlivé části balíčku XAMPP:</p>
+<ul>
+<li>Apache – Webserver, který zajišťuje komunikaci s klientem. Jedná se o povinnou součást.</li>
+<li>MySQL – Hojně používaná databáze. Je s ní propojený phpMyAdmin, který je přiložený v instalaci. Existují i další databáze, například SQLite, která je přímo v PHP.</li>
+<li>FileZilla FTP Server – Umožňuje vytvořit si vlastní FTP server a pak se k němu vzdáleně připojovat. Je třeba mít veřejnou IP adresu.</li>
+<li>Mercury Mail Server – Lokální SMTP server pro posílání emailů.</li>
+<li>Tomcat – Servrlet pro Javu, pokud tvoříte stránky v tomto jazyce.</li>
+</ul>
+<h4 id="z-klady-syntaxe">Základy syntaxe</h4>
+<p>Celý kód musí být označen dvojící otazníku a menšítka.</p>
+<pre><code class="lang-sh"><span class="php"><span class="hljs-meta">&lt;?php</span> [PHP kód] <span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<p>Jednotlivé příkazy jsou odděleny středníkem.</p>
+<pre><code class="lang-sh"><span class="php"><span class="hljs-meta">&lt;?</span>
+<span class="hljs-keyword">echo</span> „První řádek“;
+<span class="hljs-keyword">echo</span> „Druhý řádek“;
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h4 id="prom-nn-">Proměnné</h4>
+<p>Narozdíl od mnoha jiných jazyků se proměnné v PHP určují při přiřazení, což velice zkracuje a zjednodušuje kód, zároveň ale může být takový kód pro začátečníky matoucí a nepřehledný.</p>
+<p>V průběhu kódu může proměnná měnit svůj typ (tzv. přetypování). Často se tak děje například výsledkem nějakého výpočtu.</p>
+<p>Každá proměnná musí mít jednoznačný název. Ten v PHP začíná znakem dolaru($) a následuje (bez mezery) nějakým pojmenováním. První znak toho pojmenování musí být buď písmeno a-z nebo podtržítko. Nesmí to být číslo ani nic jiného. Názvy proměnných v PHP rozlišují mezi malými a velkými písmeny, takže pozor na to. Praxe bývá většinou taková, že se proměnné píší malými písmeny. V názvech proměnných můžete používat české znaky včetně diakritiky, běžně se to ale moc nedělá. Desetinná čísla se zadávají s tečkou, ne s čárkou. Řetězce se uzavírají do uvozovek nebo do apostrofů.</p>
+<pre><code class="lang-sh"><span class="php"><span class="hljs-meta">&lt;?php</span>
+<span class="hljs-comment">//logický typ</span>
+$mam_malo_penez = <span class="hljs-keyword">TRUE</span>;
+<span class="hljs-comment">//celočíselný typ</span>
+$plat = <span class="hljs-number">10000</span>;
+<span class="hljs-comment">//desetinné číslo</span>
+$disketa = <span class="hljs-number">3.5</span>;
+<span class="hljs-comment">//řetězec</span>
+$prohlaseni = „Právě se vracím z pražského hradu! …“;
+<span class="hljs-keyword">echo</span> $mam_malo_penez.“&lt;BR&gt;“;
+<span class="hljs-keyword">echo</span> $plat.“&lt;BR&gt;“;
+<span class="hljs-keyword">echo</span> $disketa.“&lt;BR&gt;“;
+<span class="hljs-keyword">echo</span> $prohlaseni.“&lt;BR&gt;“;
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<p>...</p>
+<table>
+<thead>
+<tr>
+<th>TYP</th>
+<th>Název v PHP</th>
+<th>Popis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Logický typ</td>
+<td>Boolean</td>
+<td>uchovává hodnotu &quot;pravda&quot; (TRUE) nebo &quot;nepravda&quot; (FALSE)</td>
+</tr>
+<tr>
+<td>Celočíselný typ</td>
+<td>Integer</td>
+<td>uchovává celá kladná i záporna čísla (NULU taktéž)</td>
+</tr>
+<tr>
+<td>Desetinné číslo</td>
+<td>Float/ Real</td>
+<td>uchovává desetinná čísla, s přesností obyčejně na 14 des. míst</td>
+</tr>
+<tr>
+<td>Řetězec</td>
+<td>String</td>
+<td>uchovává texty neboli řetězce, ZNAKY nebo sada znaků, v php prakticky neomezené délky</td>
+</tr>
+</tbody>
+</table>
+<p>... </p>
+<h4 id="koment-e">Komentáře</h4>
+<p>Komentáře mohou být v PHP jednořádkové nebo víceřádkové a používají se na ně znaky „//“ (dvě dopředná lomítka), „#“ (mřížka) a dvojice „/<em>“ a „</em>/.</p>
+<pre><code class="lang-sh"><span class="php"><span class="hljs-meta">&lt;?</span>
+<span class="hljs-comment">//komentář</span>
+<span class="hljs-meta">?&gt;</span></span>
+nebo
+<span class="php"><span class="hljs-meta">&lt;?</span>
+<span class="hljs-comment">#komentář</span>
+<span class="hljs-meta">?&gt;</span></span>
+nebo
+<span class="php"><span class="hljs-meta">&lt;?</span>
+<span class="hljs-comment">/*
+komentář
+komentář
+komentář
+*/</span>
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h1 id="javascript">Javascript</h1>
+<p>Základní vlastnosti:</p>
+<ul>
+<li>interpretovaný – jazyk JavaScript se nemusí kompilovat.</li>
+<li>objektový – využívá objektů prohlížeče a zabudovaných objektů.</li>
+<li>závislý na prohlížeči – funguje však ve většině užívaných prohlížečích.</li>
+<li>case sensitivní – tzn., že záleží na velikosti písem v zápisu.</li>
+<li>syntaxí je blízký jazykům C, Java a jim podobným.</li>
+</ul>
+<blockquote>
+<p>JavaScript je klientský skript. To znamená, že se program odesílá se stránkou na klienta (do prohlížeče) a teprve tam je vykonáván. (Protikladem klientských skriptů jsou skripty serverové, které jsou vykonávány na serveru a na klienta jdou už jen výsledky).</p>
+</blockquote>
+<h4 id="kde-um-stit-skripty-">Kde umístit skripty?</h4>
+<p>Skripty můžete umístit na následujících místech:</p>
+<ul>
+<li>Do hlavičky HTML dokumentu (tj. mezi tagy <head> a </head>).</li>
+<li>Do těla HTML dokumentu (tj. mezi tagy <body> a </body>).</li>
+<li>Do externího souboru (V HTML dokumentu bude odkazováno na tento soubor).</li>
+</ul>
+<h4 id="p-klad">Příklad</h4>
+<pre><code class="lang-sh"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+Toto je normální text stránky.<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+
+<span class="hljs-built_in">document</span>.write(<span class="hljs-string">"A toto napsal JavaScript"</span>);
+
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+</body></html>
