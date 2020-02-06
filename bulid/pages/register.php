@@ -1,8 +1,5 @@
 ﻿<?php
-if (isset($_SESSION["username"])) {
-    header("Location: index.php?page=home");
-    exit();
-}
+    include "scripts\auth.php";
 ?>
 <main class="centerContainer">
     <form method="post">
@@ -37,8 +34,8 @@ if (isset($_POST['reg_user'])) {
     } else
         {
         $heslo1 =  hash('sha512', $heslo1);
-        $admin = 0;
-        $query = "INSERT INTO user (jmeno,prijmeni,email,heslo,administrator) 
+        $admin = false;
+        $query = "INSERT INTO user (jmeno,prijmeni,email,heslo,admin) 
 VALUES('$jmeno','$prijmeni', '$email', '$heslo1', '$admin')";
         mysqli_query($conn, $query);
     }

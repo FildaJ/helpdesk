@@ -7,9 +7,15 @@
 
 <body>
 	<form method="post" action="">
-		<div class="btn primary">
-			<input type="submit" name="idclanek" value="2" />
-		</div>
+		<?php
+		$ID = 3;
+		$result = mysqli_query($conn, "SELECT nazev FROM okruhy WHERE ID_predmet = $ID");
+		while ($nazev  = mysqli_fetch_assoc($result)) {
+			echo "<div class='btn primary'>";
+			echo	"<input type='submit' name='idclanek' value='$nazev[nazev]'>";
+			echo "</div>";
+		}
+		?>
 	</form>
 	<?php
 	$_SESSION["clanekid"] = $_POST["idclanek"];

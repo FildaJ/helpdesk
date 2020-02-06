@@ -36,15 +36,15 @@ include 'scripts/join.php';
 						<li><a href="index.php?page=pos">Sítě</a></li>
 					</ul>
 				</li>
-				<li><a href="#">O nás</a></li>
+				<li><a href="http://forum-matura.jednoduse.cz/">Forum</a></li>
 				<li><a href="#">Kalendář</a></li>
+				<li><a href="index.php?page=edit">Edit</a></li>
 			</ul>
 			<ul>
 				<?php
 					if (!isset($_SESSION["username"])) {
 						echo '<a class="btn-primary" href="index.php?page=login">Přihlásit se</a>';
 					} else {
-						echo '<a class="btn-ghost" href="index.php?page=edit">Edit</a>';
 						echo '<a class="btn-primary" href="index.php?page=logout">Odhlásit se</a>';
 					}
 				?>
