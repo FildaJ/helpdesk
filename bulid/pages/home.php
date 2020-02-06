@@ -1,6 +1,6 @@
 <header>
 	<h1>Ahoj</h1>
-	<div class='heroImg' style="background-image();"></div>
+	<div class='heroImg' style="background-image(img/header/home.png);"></div>
 </header>
 <article class="centerContainer">
 	<h1>Nadpis 1</h1>

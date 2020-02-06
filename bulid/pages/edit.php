@@ -17,9 +17,9 @@ include('scripts/edit_db.php');
 				<select name=id>
 					<label>Předmět</label>
 					<option value="1">PVY</option>"
-					<option value="2">POG</option>"
-					<option value="3">POS/SOS</option>"
-					<option value="4">PRG</option>"
+					<option value="2">Grafika</option>"
+					<option value="3">Sítě</option>"
+					<option value="4">Programování</option>"
 				</select>
 			</div>
 			<label>Číslo</label>

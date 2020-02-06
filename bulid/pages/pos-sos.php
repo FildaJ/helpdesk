@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>POS/SOS</title>
+	<title>Sítě</title>
 </head>
 
 <body>
