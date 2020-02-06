@@ -14,8 +14,8 @@ include 'scripts/join.php';
 	<link rel="manifest" href="manifest.json">
 	<link rel="icon" href="/img/logo/logo.png" type="image/gif" sizes="16x16">
 	<meta name="theme-color" content="#000">
-	<link rel="stylesheet" href="css/desktopStyle.css" media="screen and (min-width: 750px)"/>
-	<link rel="stylesheet" href="css/mobileStyle.css" media="screen and (max-width: 749px)"/>
+	<link rel="stylesheet" href="css/desktopStyle.css" media="screen and (min-width: 750px)" />
+	<link rel="stylesheet" href="css/mobileStyle.css" media="screen and (max-width: 749px)" />
 	<title>Document</title>
 </head>
 
@@ -24,7 +24,7 @@ include 'scripts/join.php';
 	<nav>
 		<div id="navContent">
 			<input type="checkbox" id="checkbox_toggle">
-			<label for="checkbox_toggle" class="btn-primary toggle">&#9776; Menu</label>		
+			<label for="checkbox_toggle" class="btn-primary toggle">&#9776; Menu</label>
 			<ul id="links">
 				<li><a href="index.php?page=home">Domů</a></li>
 				<li>
@@ -42,11 +42,11 @@ include 'scripts/join.php';
 			</ul>
 			<ul>
 				<?php
-					if (!isset($_SESSION["username"])) {
-						echo '<a class="btn-primary" href="index.php?page=login">Přihlásit se</a>';
-					} else {
-						echo '<a class="btn-primary" href="index.php?page=logout">Odhlásit se</a>';
-					}
+				if (!isset($_SESSION["username"])) {
+					echo '<a class="btn-primary" href="index.php?page=login">Přihlásit se</a>';
+				} else {
+					echo '<a class="btn-primary" href="index.php?page=logout">Odhlásit se</a>';
+				}
 				?>
 			</ul>
 		</div>
@@ -69,11 +69,11 @@ include 'scripts/join.php';
 			include "pages/onas.php";
 			break;
 		case "login":
-				include "pages/login.php";
-				break;  
+			include "pages/login.php";
+			break;
 		case "register":
-				include "pages/register.php";
-				break;
+			include "pages/register.php";
+			break;
 		case "logout":
 			include "scripts/logout.php";
 			break;
@@ -86,9 +86,9 @@ include 'scripts/join.php';
 		case "clanek":
 			include "pages/clanek.php";
 			break;
-			case "pos":
-				include "pages/pos-sos.php";
-				break;
+		case "pos":
+			include "pages/pos-sos.php";
+			break;
 		default:
 			include "pages/home.php";
 			break;

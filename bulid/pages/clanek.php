@@ -2,6 +2,7 @@
 $ID = $_SESSION["clanekid"];
 $result = mysqli_query($conn, "SELECT clanek, nazev, ID_predmet FROM okruhy WHERE nazev = '$ID'");
 $clanek  = mysqli_fetch_array($result);
+$jsvar = $clanek["nazev"];
 
 ?>
 <header>
@@ -16,5 +17,5 @@ $clanek  = mysqli_fetch_array($result);
 	<article>
 		<H1><?php echo $clanek["nazev"]; ?></H1>
 		<?php echo $clanek["clanek"]; ?>
-	</article>
+	</article>	
 </main>
