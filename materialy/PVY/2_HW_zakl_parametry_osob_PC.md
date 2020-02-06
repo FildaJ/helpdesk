@@ -103,7 +103,7 @@ MLC
 Multiple Level Cell buňky, které uchovají 2 bity na buňku. Jsou levnější než SLC, vydrží ale méně cyklů – kolem 10 000. Výhodou oproti SLC je větší kapacita. Nevýhodou na druhou stranu nižší rychlost a přesnost zápisu. Díky své nižší ceně, vyšší kapacitě a dostatečnému poštu cyklů se hodí pro běžné uživatele.
 
 ##### TLC
-Tri#ple Level Cell buňky, které uchovají 3 bity na buňku. Jedná se o jednu z nejlevnějších variant SSD, s cenou se ale _snižuje i rychlost a spolehlivost_. Tento typ buněk již není vhodný pro průmyslové využití. Má relativně malý počet cyklů – od 3 000 do 5 000. Jeho výhodou je vysoká kapacita vzhledem k velikosti. Používají se do _mobilních zařízení, notebooků_, atd.
+Triple Level Cell buňky, které uchovají 3 bity na buňku. Jedná se o jednu z nejlevnějších variant SSD, s cenou se ale _snižuje i rychlost a spolehlivost_. Tento typ buněk již není vhodný pro průmyslové využití. Má relativně malý počet cyklů – od 3 000 do 5 000. Jeho výhodou je vysoká kapacita vzhledem k velikosti. Používají se do _mobilních zařízení, notebooků_, atd.
 
 ##### QLC
 Quad Level Cell buňky, které uchovají 4 bity na buňku. Aktuálně nejlevnější varianta SSD, která ale _není vhodná pro normální využití_. Je nejméně přesná, nejpomalejší a má nejmenší počet cyklů – do 1 000. _Je vhodný na uchovávání dat, která nepřepisujeme tak často_.
