@@ -1,8 +1,6 @@
 <header>
 	<h1>Ahoj</h1>
-	<div id='heroFilter'>
-		<div src='' id='heroImg'></div>
-	</div>
+	<div class='heroImg' style="background-image();"></div>
 </header>
 <article class="centerContainer">
 	<h1>Nadpis 1</h1>

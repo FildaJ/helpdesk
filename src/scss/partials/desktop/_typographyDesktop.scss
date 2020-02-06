@@ -104,6 +104,15 @@ input, textarea {
 	color:white;
 }
 
+header {
+	h1 {
+		position:absolute;
+		text-align: center;
+		z-index: 5;
+		color:$bg;
+	}
+}
+
 main {
 
 	a {

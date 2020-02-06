@@ -24,7 +24,7 @@ include 'scripts/join.php';
 	<nav>
 		<div id="navContent">
 			<input type="checkbox" id="checkbox_toggle">
-			<label for="checkbox_toggle" class="btn-primary toggle">&#9776; Menu</label>		
+			<label for="checkbox_toggle" class="toggle">&#9776; Menu</label>		
 			<ul id="links">
 				<li><a href="index.php?page=home">Domů</a></li>
 				<li>

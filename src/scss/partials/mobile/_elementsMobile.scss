@@ -25,10 +25,10 @@
 	border:4px solid $green;
 	color:$green;
 	padding: .5rem 1.25rem;
+	margin:1rem 0;
 	border-radius: 5px;
 	display:block;
 	transition: all 0.45s;
-	margin:1rem 0;
 	box-sizing: border-box;
 	text-align: center;
 
@@ -132,6 +132,28 @@ form {
 //layout
 main {
 	display:grid;
+}
+
+header {
+	height: 60vh;
+	width: 100%;
+	background-color: $green;
+	margin: 0;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+
+
+	.heroImg {
+		filter: grayscale(100%);
+		mix-blend-mode: multiply;
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		background-position: center;
+		background-image:url(https://get.wallhere.com/photo/bliss-Windows-XP-sky-blue-clouds-nature-grass-hill-1450009.jpg);
+	}
+
 }
 
 .centerContainer {
