@@ -24,7 +24,7 @@ include 'scripts/join.php';
 	<nav>
 		<div id="navContent">
 			<input type="checkbox" id="checkbox_toggle">
-			<label for="checkbox_toggle" class="btn-primary toggle">&#9776; Menu</label>
+			<label for="checkbox_toggle" class="toggle">&#9776; Menu</label>		
 			<ul id="links">
 				<li><a href="index.php?page=home">Domů</a></li>
 				<li>
@@ -37,7 +37,7 @@ include 'scripts/join.php';
 					</ul>
 				</li>
 				<li><a href="http://forum-matura.jednoduse.cz/">Forum</a></li>
-				<li><a href="#">Kalendář</a></li>
+				<li><a href="index.php?page=kalendar">Kalendář</a></li>
 				<li><a href="index.php?page=edit">Edit</a></li>
 			</ul>
 			<ul>
@@ -67,6 +67,9 @@ include 'scripts/join.php';
 			break;
 		case "onas":
 			include "pages/onas.php";
+			break;
+		case "kalendar":
+			include "pages/calendar.php";
 			break;
 		case "login":
 			include "pages/login.php";

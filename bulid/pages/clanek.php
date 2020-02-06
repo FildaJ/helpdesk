@@ -6,12 +6,10 @@ $jsvar = $clanek["nazev"];
 
 ?>
 <header>
-	<h1></h1>
-	<div id='heroFilter'>
-		<?php
-		echo "<img src='img/header/$clanek[ID_predmet].png' alt='test' id='heroImg'>";
-		?>
-	</div>
+	<h1><?php $clanek["nazev"]; ?></h1>
+	<?php
+	echo "<div style='background-image:(img/header/$clanek[ID_predmet].png);' class='heroImg'></div>";
+	?>
 </header>
 <main>
 	<article>
