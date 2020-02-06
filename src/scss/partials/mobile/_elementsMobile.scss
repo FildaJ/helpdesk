@@ -135,7 +135,7 @@ main {
 }
 
 header {
-	height: 60vh;
+	height: 80vh;
 	width: 100%;
 	background-color: $green;
 	margin: 0;
@@ -181,6 +181,10 @@ footer {
 		text-align:center;
 
 	}
+}
+
+article {
+	margin-top: 3rem;
 }
 
 .centerContainer {

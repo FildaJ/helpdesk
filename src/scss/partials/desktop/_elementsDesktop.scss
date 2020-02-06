@@ -158,8 +158,12 @@ main {
 	display:grid;
 }
 
+article {
+	margin-top: 5rem;
+}
+
 header {
-	height: 60vh;
+	height: 70vh;
 	width: 100%;
 	background-color: $green;
 	margin: 0;

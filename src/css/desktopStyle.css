@@ -28,11 +28,33 @@ body {
     font-family: "Oswald", sans-serif;
     font-weight: 300;
     font-size: 3rem;
+    text-transform: uppercase;
+    color: #7526FF; }
+  body h4 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    font-size: 2.75rem;
+    text-transform: uppercase;
+    color: #7526FF; }
+  body h5 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 2.25rem;
+    color: #7526FF;
     text-transform: uppercase; }
+  body blockquote {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    border-left: 4px solid #7526FF;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    margin: 1rem 0 1rem 1rem;
+    background-color: #0d0d0d; }
   body p {
     font-family: "Roboto", sans-serif;
     max-width: 75ch;
-    font-size: 1rem; }
+    font-size: 1.2rem;
+    color: #e6e6e6; }
 
 button, input[type=submit] {
   font-family: "Oswald", sans-serif;
@@ -221,8 +243,11 @@ form {
 main {
   display: grid; }
 
+article {
+  margin-top: 5rem; }
+
 header {
-  height: 60vh;
+  height: 70vh;
   width: 100%;
   background-color: #00FFC3;
   margin: 0;
