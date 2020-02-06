@@ -215,6 +215,11 @@ form {
 main {
   display: grid; }
 
+header {
+  height: 60vh;
+  width: 100%;
+  background-color: #7526FF; }
+
 .centerContainer {
   display: grid;
   -ms-flex-line-pack: center;

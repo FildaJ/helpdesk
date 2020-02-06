@@ -1,3 +1,9 @@
+<header>
+	<h1>Ahoj</h1>
+	<div id='heroFilter'>
+		<div src='' id='heroImg'></div>
+	</div>
+</header>
 <article class="centerContainer">
 	<h1>Nadpis 1</h1>
 	<h2>Nadpis 2</h2>

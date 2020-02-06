@@ -158,6 +158,12 @@ main {
 	display:grid;
 }
 
+header {
+	height:60vh;
+	width:100%;
+	background-color: $purple;
+}
+
 .centerContainer {
 	display:grid;
 	align-content: center;
