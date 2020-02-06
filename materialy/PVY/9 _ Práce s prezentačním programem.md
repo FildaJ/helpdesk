@@ -1,6 +1,6 @@
-# 9 | Práce s prezentačním programem
+### 9 | Práce s prezentačním programem
 
-## Základní práce v PowerPointu:
+#### Základní práce v PowerPointu:
 ---
 
 [![Vytvoření ppt](https://webadmin.endora.cz/user/filemanager/download/matura.jednoduse.cz/web/pictures/PVY_okruhy/9_prezentacni-program?file=%2Fmatura.jednoduse.cz%2Fweb%2Fpictures%2FPVY_okruhy%2F9_prezentacni-program%2F9_1_vytvoreni.PNG)]()
@@ -21,7 +21,7 @@
 [![Návrh prezentace](https://webadmin.endora.cz/user/filemanager/download/matura.jednoduse.cz/web/pictures/PVY_okruhy/9_prezentacni-program?file=%2Fmatura.jednoduse.cz%2Fweb%2Fpictures%2FPVY_okruhy%2F9_prezentacni-program%2F9_12_navrh.PNG)]()
 `Návrh prezentace`
 
-## Editování textu + práce s multimédii
+#### Editování textu + práce s multimédii
 ---
 
 [![Edit písma](https://webadmin.endora.cz/user/filemanager/download/matura.jednoduse.cz/web/pictures/PVY_okruhy/9_prezentacni-program?file=%2Fmatura.jednoduse.cz%2Fweb%2Fpictures%2FPVY_okruhy%2F9_prezentacni-program%2F9_3_edit-pisma.PNG)]()
@@ -60,7 +60,7 @@
 `Vkládání multimédií`
 ...
 
-## Animace a přechody + závěrečné úpravy prezentace
+#### Animace a přechody + závěrečné úpravy prezentace
 ---
 
 [![Formát pozadí](https://webadmin.endora.cz/user/filemanager/download/matura.jednoduse.cz/web/pictures/PVY_okruhy/9_prezentacni-program?file=%2Fmatura.jednoduse.cz%2Fweb%2Fpictures%2FPVY_okruhy%2F9_prezentacni-program%2F9_13_format-pozadi.PNG)]()
