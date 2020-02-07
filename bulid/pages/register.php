@@ -14,9 +14,9 @@ if (isset($_SESSION["username"])) {
         <label for="email">E-Mail</label>
         <input type="email" name="email" placeholder="test@test.cz" title="text@text.text" required pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$">
         <label for="heslo1">Heslo</label>
-        <input type="password" name="heslo1" placeholder="Vzor123" title="Heslo nejméně 8 znaků. Alespoň jedno malé a jedno velké písmeno." required pattern="(?=^.{8,}$)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+        <input type="password" name="heslo1" placeholder="Vzorek123" title="Heslo nejméně 8 znaků. Alespoň jedno malé a jedno velké písmeno." required pattern="(?=^.{8,}$)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
         <label for="heslo2">Heslo znovu</label>
-        <input type="password" name="heslo2" placeholder="Vzor123" title="Heslo nejméně 8 znaků. Alespoň jedno malé a jedno velké písmeno." required pattern="(?=^.{8,}$)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+        <input type="password" name="heslo2" placeholder="Vzorek123" title="Heslo nejméně 8 znaků. Alespoň jedno malé a jedno velké písmeno." required pattern="(?=^.{8,}$)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
         <button class="fullWidthBtn" name="reg_user" type="submit">Registrovat</button>  
         <a class="btn-ghost" href="index.php?page=login">Zpět k přihlášení</a>  
     </form>
