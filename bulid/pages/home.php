@@ -1,6 +1,6 @@
 <header>
 	<h1>Maturita jednoduše</h1>
-	<div class='heroImg' style="background-image(img/header/home.png);"></div>
+	<div class='heroImg' style="background-image(pictures/header/home.png);"></div>
 </header>
 <main class="centerContainer">
 	<article>

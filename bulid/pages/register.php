@@ -1,5 +1,8 @@
 ﻿<?php
-    include "scripts\auth.php";
+if (isset($_SESSION["username"])) {
+    header("Location: index.php");
+    exit();
+}
 ?>
 <main class="centerContainer">
     <form method="post">

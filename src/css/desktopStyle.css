@@ -47,7 +47,7 @@ body {
     font-weight: 300;
     font-size: 1.4rem;
     border-left: 4px solid #7526FF;
-    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    padding: 0.5rem 0.5rem 0.5rem 2rem;
     margin: 1rem 0 1rem 1rem;
     background-color: #0d0d0d; }
   body p {
@@ -245,6 +245,8 @@ main {
 
 article {
   margin-top: 5rem; }
+  article img {
+    max-width: 80%; }
 
 header {
   height: 70vh;
@@ -268,7 +270,7 @@ header {
     height: 100%;
     background-size: cover;
     background-position: center;
-    background-image: url(https://get.wallhere.com/photo/bliss-Windows-XP-sky-blue-clouds-nature-grass-hill-1450009.jpg); }
+    background-image: url(pictures/header/home.png); }
 
 footer {
   margin-top: 2rem;
