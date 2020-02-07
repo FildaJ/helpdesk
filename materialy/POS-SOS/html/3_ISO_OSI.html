@@ -1,8 +1,5 @@
-<html><head><style>body {
-   color: black;
-}
-</style></head><body><h3>Model ISO/OSI, architektura TCP/IP, aktivní prvky kabeláže versus model TCP/IP.</h3>
-<p><a href="https://nodesource.com/products/nsolid"><img src="http://matura.jednoduse.cz/pictures/3_1_iso_osi_tcp_ip.PNG" alt="N|Solid"></a></p>
+<h3>Model ISO/OSI, architektura TCP/IP, aktivní prvky kabeláže versus model TCP/IP.</h3>
+<p><a/><img src="pictures/3_1_iso_osi_tcp_ip.PNG" alt="N|Solid"></a></p>
 <h4 id="srovn-n-iso-osi-a-tcp-ip-aneb-v-em-se-li-">Srovnání ISO/OSI a TCP/IP, aneb v čem se liší</h4>
 <ul>
 <li>Hlavní rozdíl je ve výchozích předpokladech + postojech tvůrců těchto modelů</li>
@@ -107,7 +104,7 @@ Telnet – nezabezpečené šifrování</p>
 <p>Tyto zmiňované vlastnosti umožňují přenášet data maximální rychlostí. Objem nepřenesených dat k přeneseným je hodně malý a proto se IP protokol používá. Pokud bychom chtěli spolehlivý přenos, využijí se protokoly vyšších vrstev.
 Protokol je začleněn v koncových uzlech sítě nebo i ve směřovačích (routerech). Přenášená data jsou nazývány IP datagram a.k.a packety. → Každý packet musí nést řídící informace a v druhé části vlastní přenášená data (tzn. payload).</p>
 <p>Hlavička IP datagramu (packetu)</p>
-<p><a href="https://nodesource.com/products/nsolid"><img src="https://webadmin.endora.cz/user/filemanager/download/matura.jednoduse.cz/web/pictures?file=%2Fmatura.jednoduse.cz%2Fweb%2Fpictures%2F3_2_hlavicka_IP_datagramu.PNG" alt="N|Solid"></a>
+<p><a/><img src="pictures/3_2_hlavicka_IP_datagramu.PNG" alt="N|Solid"></a>
 Skládá se z hlavičky a vlastních dat. Hlavička zabírá 0. až 23. Byte, od 24. Bytu začíná datová část packetu.</p>
 <p> Packet se skládá z:</p>
 <ul>
@@ -172,7 +169,7 @@ Protokol také umí rozlišovat různé appky běžící na jednom PC (webový s
 Zdrojový port     Cílový port     Číslo sekvence     Potvrzovací bajt 
 příznaky     okénko     Kontrolní součet 
 Urgent pointer     volby     výplň 
-<a href="https://nodesource.com/products/nsolid"><img src="https://webadmin.endora.cz/user/filemanager/download/matura.jednoduse.cz/web/pictures?file=%2Fmatura.jednoduse.cz%2Fweb%2Fpictures%2F3_4_hlavicka_TCP_protokolu.PNG" alt="N|Solid"></a></p>
+<a/><img src="pictures/3_4_hlavicka_TCP_protokolu.PNG" alt="N|Solid"></a></p>
 <p>Potvrzování u TCP:
 Jelikož je pro spolehlivost přenosu potřeba něco co rozezná chybu v posílání a vynutí znovu odeslání dat. 
 Pro toto existuje několik různých metod potvrzování (acknowledgment):</p>
@@ -188,7 +185,7 @@ Pro toto existuje několik různých metod potvrzování (acknowledgment):</p>
 O nějaké zajištění spolehlivosti se poté stará samotná aplikace využívající UDP.
 UDP také využívá DNS či DHCP anebo RIP.</p>
 <p>Hlavička UDP protokolu
-<a href="https://nodesource.com/products/nsolid"><img src="https://webadmin.endora.cz/user/filemanager/download/matura.jednoduse.cz/web/pictures?file=%2Fmatura.jednoduse.cz%2Fweb%2Fpictures%2F3_5_hlavicka_UDP_protokolu.PNG" alt="N|Solid"></a></p>
+<a/><img src="pictures/3_5_hlavicka_UDP_protokolu.PNG" alt="N|Solid"></a></p>
 <hr>
 <h4 id="_dns_-domain-name-system-"><em>DNS</em> (Domain Name System)</h4>
 <p>Protokol aplikační vrstvy. Už víme, že každý PC (v síti) musí mít jednoznačnou adresu; tzn. IP adresu. Ta se používá k ID PC’s i na internetu. K tomu abych si je nemuseli pamatovat (jelikož jsou samá čísla) se místo IP adresy používá doménové jméno. Doménové jméno se tedy užívá všude kromě IP adresy samotného name serveru (který s těmito adresami a čísly pracuje).
@@ -196,8 +193,8 @@ UDP také využívá DNS či DHCP anebo RIP.</p>
 IP adresy se také užívají u elektronické pošty → jana.novotna@seznam.cz
 Vazba mezi IP adresou a doménovým jménem je uložena v celosvětové databázi v *DNS (Domain Name System). Tudíž jedna webová adresa je platná po celém světě.</p>
 <p>Princip fungování DNS:
-<a href="https://nodesource.com/products/nsolid"><img src="https://webadmin.endora.cz/user/filemanager/download/matura.jednoduse.cz/web/pictures?file=%2Fmatura.jednoduse.cz%2Fweb%2Fpictures%2F3_6_fungovani_DNS.PNG" alt="N|Solid"></a>
-<a href="https://nodesource.com/products/nsolid"><img src="https://webadmin.endora.cz/user/filemanager/download/matura.jednoduse.cz/web/pictures?file=%2Fmatura.jednoduse.cz%2Fweb%2Fpictures%2F3_7_domenove_jmeno.PNG" alt="N|Solid"></a></p>
+<a/><img src="pictures/3_6_fungovani_DNS.PNG" alt="N|Solid"></a>
+<a/><img src="pictures/3_7_domenove_jmeno.PNG" alt="N|Solid"></a></p>
 <p>DNS může mít:</p>
 <ul>
 <li>Rekurzivní postup: provádí hiearchicky nejnižší DNS → ten hledá adresu, dokud nedostane odpověď.</li>
@@ -218,4 +215,3 @@ Moc to však nepoužívá, spíše se spoléhá na fyzickou bezpečnost sítě a
 </blockquote>
 </li>
 </ul>
-</body></html>
