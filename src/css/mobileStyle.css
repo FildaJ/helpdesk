@@ -297,6 +297,10 @@ article {
   article img {
     max-width: 80%; }
 
+table {
+  color: white;
+  font-family: "Roboto", sans-serif; }
+
 .centerContainer {
   margin: 0 2rem;
   display: grid;

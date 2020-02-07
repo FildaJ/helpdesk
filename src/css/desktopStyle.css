@@ -248,6 +248,10 @@ article {
   article img {
     max-width: 80%; }
 
+table {
+  color: white;
+  font-family: "Roboto", sans-serif; }
+
 header {
   height: 70vh;
   width: 100%;
