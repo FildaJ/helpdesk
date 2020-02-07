@@ -12,11 +12,12 @@ nav ul a {
 body {
   color: white; }
   body h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-family: "Oswald", sans-serif;
     font-weight: 600;
     text-transform: uppercase;
-    text-align: center; }
+    text-align: center;
+    max-width: 80%; }
   body h2 {
     font-family: "Oswald", sans-serif;
     font-weight: 600;
