@@ -39,10 +39,14 @@ include 'scripts/join.php';
 				</li>
 				<li><a href="http://forum-matura.jednoduse.cz/" target="_blank">Forum</a></li>
 				<li><a href="index.php?page=kalendar">Kalendář</a></li>
-				<li><a href="index.php?page=edit">Edit</a></li>
 			</ul>
 			<ul>
-				<?php
+				<?php 
+				if (isset($_SESSION['admin'])) {
+				if ($_SESSION['admin'] == '1' ) {
+					echo '<a href="index.php?page=edit" class="btn-ghost">Edit</a>';
+				}				
+				}				
 				if (!isset($_SESSION["username"])) {
 					echo '<a class="btn-primary" href="index.php?page=login">Přihlásit se</a>';
 				} else {
