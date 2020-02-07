@@ -1,7 +1,4 @@
-<html><head><style>body {
-   color: black;
-}
-</style></head><body><h3 id="s-ov-m-dia-p-stupov-metody-">Síťová média, přístupové metody.</h3>
+<h3 id="s-ov-m-dia-p-stupov-metody-">Síťová média, přístupové metody.</h3>
 <h4 id="s-ov-m-dia-vod-">Síťová média – úvod:</h4>
 <p>Jsou to prvky, které počítačové sítě potřebují, aby se mezi nimi přenášela data, či směřoval jejich tok a filtraci nebo například zesiloval či opakoval.
 Technicky řečeno, jsou to zařízení,která mají co dočinění s přijímáním a vysíláním (datagramů a.k.a. paketů) z či do počítačové sítě.</p>
@@ -13,7 +10,7 @@ V PC má podobu karty, která se zasouvá na základní desku do PC-I/PCI-E či 
 U síťovky je také důležité zmínit, že každá má svou unikátní <em>48-bitovou MAC adresu</em> (př.: F0-03-8C-C0-22-1F), díky které nedochází ke zmatků při komunikaci zařízení.</p>
 <h4 id="jak-s-ov-m-dia-tedy-m-ne-">Jaké síťové média tedy máne?</h4>
 <h4 id="1-router">1. Router</h4>
-<p><a href="https://nodesource.com/products/nsolid"><img src="https://webadmin.endora.cz/user/filemanager/download/matura.jednoduse.cz/web/pictures?file=%2Fmatura.jednoduse.cz%2Fweb%2Fpictures%2F2_routerjpeg.jpeg" alt="N|Solid"></a></p>
+<p><a href="https://nodesource.com/products/nsolid"><img src="pictures/2_routerjpeg.jpeg" alt="N|Solid"></a></p>
 <p>Router je zařízení, které slouží ke spojení dvou různých sítí a také k přenosu dat mezi nimi.
 Nazývá se také česky směrovač a je to aktivní síťový prvek. 
 Router tzn. procesem routování <em>(vytyčení cesty datům v průchodu sítí) přepošle data směrem k cíli</em>.</p>
@@ -29,20 +26,20 @@ Součást routerů bývá směrovací tabulka. Je důležitá, jelikož obsahuje
 Skládá se z řádků, které obsahují: <em>cíl packetu, masku podsítě, bránu a síťové rozhraní (síťovou kartu)</em>.</li>
 </ul>
 <h4 id="2-switch">2. Switch</h4>
-<p><a href="https://nodesource.com/products/nsolid"><img src="https://webadmin.endora.cz/user/filemanager/download/matura.jednoduse.cz/web/pictures?file=%2Fmatura.jednoduse.cz%2Fweb%2Fpictures%2F3_switch.jpg" alt="N|Solid"></a></p>
+<p><a href="https://nodesource.com/products/nsolid"><img src="pictures/3_switch.jpg" alt="N|Solid"></a></p>
 <p>Česky přepínač, je taktéž aktivní síťový prvek, ke kterému se připojují části sítě. Na jeho porty se může připojit i několik desítek či stovek zařízení.
 Switche využívající ethernetovou technologii pracují na 2. vrstvě ISO/OSI. Existují i výkonnější switche, které umí např.: analyzovat protokol IP. Právě kvůli vrstvě, ve které pracují, se nazývají L3 switche.
 Jeho úkol je zkopírovat, tedy poslat přijatá data na port příjemce, ke kterému je nutné data dostat. Na rozdíl od HUBu pošle data jen skutečnému (jednomu) příjemci.
 Switch právě tímto přináší větší bezpečí přenosu, jelikož data (která potřeba jen jeden uživatel) nejsou sdílena na všechna zařízení.</p>
 <h4 id="3-hub">3. Hub</h4>
-<p><a href="https://nodesource.com/products/nsolid"><img src="https://webadmin.endora.cz/user/filemanager/download/matura.jednoduse.cz/web/pictures?file=%2Fmatura.jednoduse.cz%2Fweb%2Fpictures%2F4_hub.jpg" alt="N|Solid"></a></p>
+<p><a href="https://nodesource.com/products/nsolid"><img src="pictures/4_hub.jpg" alt="N|Solid"></a></p>
 <p>Hub, česky rozbočovač, je další z aktivních prvků sítě. Principem je hodně podobný switchi, avšak je o „hloupější“. Rozesílá totiž data všem zařízením, kt. jsou k němu připojená.</p>
 <blockquote>
 <p>Pracuje na první vrstvě ISO/OSI</p>
 </blockquote>
 <p>Využívá se hlavně ve hvězdicové topologii. Mezi výhody HUBu řadíme jeho schopnost fungovat jako opakovač (repeater) = umožňuje to obnovení rychlosti přijatého signálu a dalšího poslání uživatelům s dobrou rychlostí.</p>
 <h4 id="4-repeater">4. Repeater</h4>
-<p><a href="https://nodesource.com/products/nsolid"><img src="https://webadmin.endora.cz/user/filemanager/download/matura.jednoduse.cz/web/pictures?file=%2Fmatura.jednoduse.cz%2Fweb%2Fpictures%2F5_repeater.jpg" alt="N|Solid"></a></p>
+<p><a href="https://nodesource.com/products/nsolid"><img src="pictures/5_repeater.jpg" alt="N|Solid"></a></p>
 <p>Česky opakovač, je taktéž aktivní síťový prvek. Jeho činností je zesílit buď poškozený či přerušený signál. Taktéž dokáže vytvořit virtuální síť, kterou umí šifrovat.
 Důležité je říci, že opakovač si nijak o data nezajímá; pouze je špatný signál odešle a s větší intenzitou a opravený ho pošle.
 Existují dva druhy repeaterů: 
@@ -62,7 +59,7 @@ Před vykládáním o samotných přístupových metodách je důležité zmíni
     Kolizní doména je ta část sítě, ve které může dojít ke <em>kolizi vysílání několika stanic</em>. Ty jsou logicky napojeny na <em>sdílené médium</em>. 
 V praxi tak fungují, spíše fungovaly HUBy (rozbočovače), které posílají data na všechna rozhraní (samozřejmě mimo toho, odkud došel).</p>
 <p>Schéma kolizní domény</p>
-<p><a href="https://nodesource.com/products/nsolid"><img src="https://webadmin.endora.cz/user/filemanager/download/matura.jednoduse.cz/web/pictures?file=%2Fmatura.jednoduse.cz%2Fweb%2Fpictures%2F1_kolizni_domena_schema.jpg" alt="N|Solid"></a></p>
+<p><a href="https://nodesource.com/products/nsolid"><img src="pictures/1_kolizni_domena_schema.jpg" alt="N|Solid"></a></p>
 <h4 id="druhy-p-stupov-ch-metod">Druhy přístupových metod</h4>
 <h5 id="csma-cd-carrier-sense-multiple-access-with-collision-detection-">CSMA/CD (Carrier-sense Multiple Access with Collision Detection)</h5>
 <p>Česky: Metoda vícenásobného přístupu ke komunikačnímu kanálu s detekcí kolize.
@@ -102,4 +99,3 @@ Na jedné <em>vysílá</em>, na druhé frekvenci se <em>přijímá</em>. Příkl
 Token si stanice <em>postupně předávají</em>. Vysílat poté může je ta stanice, která token vlastní. Z toho vyplývá, že v této přístupové metodě může vysílat jen jedna stanice.<br>Od technologie Ethernet se liší tím, že zde odpadává starost rušení přenosu (a tím pádem nutnosti použít CSMA/CD).</p>
 <p><strong>Token bus</strong></p>
 <p>Je založen na Token ring, ale není zde nutné použít <em>kruhovou topologii</em>. Místo toho každá stanice obdrží logickou adresu (a v síti např.: hvězdicové se vytvoří <em>logický kruh</em>), po kterém poté putuje tokeny od adresy k adrese.</p>
-</body></html>
