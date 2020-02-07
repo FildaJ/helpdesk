@@ -10,7 +10,7 @@ $jsvar = $clanek["nazev"];
 	<div style="background-image:(pictures/header/<?php echo $clanek[ID_predmet]; ?>.png);" class='heroImg'></div>";
 </header>
 <main>
-	<article>
+	<article class="centerContainer">
 		<?php echo $clanek["clanek"]; ?>
 	</article>	
 </main>
