@@ -245,6 +245,8 @@ main {
 
 article {
   margin-top: 5rem; }
+  article img {
+    max-width: 80%; }
 
 header {
   height: 70vh;

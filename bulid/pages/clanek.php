@@ -11,7 +11,6 @@ $jsvar = $clanek["nazev"];
 </header>
 <main>
 	<article>
-		<H1><?php echo $clanek["nazev"]; ?></H1>
 		<?php echo $clanek["clanek"]; ?>
 	</article>	
 </main>
