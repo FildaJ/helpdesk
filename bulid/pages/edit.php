@@ -1,6 +1,6 @@
 <?php
 include('scripts/edit_db.php');
-
+include('scripts/auth.php');
 ?>
 	<main class="centerContainer">
 		<form method="post" action="scripts/edit_db.php">

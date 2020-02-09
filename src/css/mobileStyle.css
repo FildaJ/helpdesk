@@ -17,37 +17,43 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     text-align: center;
-    max-width: 80%; }
+    max-width: 50ch; }
   body h2 {
     font-family: "Oswald", sans-serif;
     font-weight: 600;
     font-size: 1.5rem;
     text-transform: uppercase;
     color: #7526FF;
-    text-align: center; }
+    text-align: center;
+    max-width: 50ch; }
   body h3 {
     font-family: "Oswald", sans-serif;
     font-weight: 300;
     font-size: 1.4rem;
     text-transform: uppercase;
-    text-align: center; }
+    text-align: center;
+    max-width: 50ch;
+    margin-top: 2rem; }
   body h4 {
     font-family: "Oswald", sans-serif;
     font-weight: 600;
     font-size: 1.3rem;
     text-transform: uppercase;
     color: #7526FF;
-    text-align: center; }
+    text-align: center;
+    max-width: 50ch; }
   body h5 {
     font-family: "Oswald", sans-serif;
     font-weight: 300;
     font-size: 1.2rem;
     text-transform: uppercase;
     color: #7526FF;
-    text-align: center; }
+    text-align: center;
+    max-width: 50ch; }
   body p {
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
+    line-height: 1.618rem;
     text-align: left;
     max-width: 50ch;
     color: #e6e6e6; }
@@ -59,6 +65,15 @@ body {
     padding: 0.5rem 0.5rem 0.5rem 2rem;
     margin: 1rem 0 1rem 1rem;
     background-color: #0d0d0d; }
+  body ul li {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    color: dakren(white, 10);
+    max-width: 65ch;
+    margin-left: 2rem; }
+  body code {
+    background-color: #1a1a1a;
+    max-width: 65ch; }
   body a {
     color: #00FFC3;
     -webkit-transition: all 0.45s;
@@ -123,7 +138,8 @@ header h1 {
   position: absolute;
   text-align: center;
   z-index: 5;
-  color: #000; }
+  color: white;
+  max-width: 45ch; }
 
 main a {
   color: #00FFC3;
