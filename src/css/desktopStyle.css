@@ -32,7 +32,8 @@ body {
     font-size: 2.25rem;
     text-transform: uppercase;
     color: #7526FF;
-    max-width: 65ch; }
+    max-width: 65ch;
+    margin-top: 2rem; }
   body h4 {
     font-family: "Oswald", sans-serif;
     font-weight: 600;
@@ -128,7 +129,8 @@ header h1 {
   position: absolute;
   text-align: center;
   z-index: 5;
-  color: #000; }
+  color: white;
+  max-width: 65ch; }
 
 main a {
   color: #00FFC3;

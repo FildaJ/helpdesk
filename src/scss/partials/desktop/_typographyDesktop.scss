@@ -37,6 +37,7 @@ body {
 		text-transform: uppercase;
 		color: $purple;
 		max-width: 65ch;
+		margin-top: 2rem;
 	}
 
 	h4 {
@@ -153,7 +154,8 @@ header {
 		position:absolute;
 		text-align: center;
 		z-index: 5;
-		color:$bg;
+		color:white;
+		max-width: 65ch;
 	}
 }
 
