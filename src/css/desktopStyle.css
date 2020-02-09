@@ -14,32 +14,36 @@ nav ul a {
 body {
   color: white; }
   body h1 {
-    font-size: 6rem;
+    font-size: 4rem;
     font-family: "Oswald", sans-serif;
     font-weight: 600;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    max-width: 65ch; }
   body h2 {
     font-family: "Oswald", sans-serif;
     font-weight: 600;
-    font-size: 3.75rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
-    color: #7526FF; }
+    color: #7526FF;
+    max-width: 65ch; }
   body h3 {
     font-family: "Oswald", sans-serif;
     font-weight: 300;
-    font-size: 3rem;
+    font-size: 2.25rem;
     text-transform: uppercase;
-    color: #7526FF; }
+    color: #7526FF;
+    max-width: 65ch; }
   body h4 {
     font-family: "Oswald", sans-serif;
     font-weight: 600;
-    font-size: 2.75rem;
+    font-size: 2rem;
     text-transform: uppercase;
-    color: #7526FF; }
+    color: #7526FF;
+    max-width: 65ch; }
   body h5 {
     font-family: "Oswald", sans-serif;
     font-weight: 300;
-    font-size: 2.25rem;
+    font-size: 1.75rem;
     color: #7526FF;
     text-transform: uppercase; }
   body blockquote {
@@ -52,9 +56,19 @@ body {
     background-color: #0d0d0d; }
   body p {
     font-family: "Roboto", sans-serif;
-    max-width: 75ch;
-    font-size: 1.2rem;
+    max-width: 65ch;
+    font-size: 1rem;
+    line-height: 1.618rem;
     color: #e6e6e6; }
+  body ul li {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    color: dakren(white, 10);
+    max-width: 65ch;
+    margin-left: 2rem; }
+  body code {
+    background-color: #1a1a1a;
+    max-width: 65ch; }
 
 button, input[type=submit] {
   font-family: "Oswald", sans-serif;
