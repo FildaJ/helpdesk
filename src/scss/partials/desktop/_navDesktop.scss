@@ -51,11 +51,15 @@ nav {
 	.submenu {
 		border-top: $green 4px solid;
 		border-bottom: $green 4px solid;
-		top: 76px;
+		top: 80px;
 		z-index:420;
 
 		& > ul {
 			padding:1rem;
+
+			li {
+				margin-left:0;
+			}
 		}
 	}
 
