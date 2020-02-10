@@ -11,10 +11,10 @@
 </ul>
 <p>Pole jsou asociativní (jeho prvky mají podobu KLÍČE a HODNOTY)</p>
 <p>Příkazy PHP zapisujeme mezi znaky: </p>
-<pre><code class="lang-sh"><span class="php"><span class="hljs-meta">&lt;?php</span> 
+<code class="lang-sh"><span class="php"><span class="hljs-meta">&lt;?php</span> 
 
 <span class="hljs-meta">?&gt;</span></span>
-</code></pre>
+</code>
 <p>Spolupráce s databázemi. Skripty mohou pomocí jazyka SQL (Structured Query Language) provádět s údaji v databázích libovolné operace.</p>
 <p>Práce s PHP je velice jednoduchá a intuitivní. Na místo psaní programů, které ve výsledku vygenerují HTML, používá PHP opačný přístup. Do HTML stránky můžeme zapsat příkazy PHP, jejichž výsledek se po interpretaci skombinuje s okolním HTML kódem.
 Syntaxe PHP je převážně odvozena z jazyka C. Některé rysy jsou převzaty z Perlu a z Javy -- např. asociativní pole a třídy. Kromě jednoduchého a mocného jazyka, je velikou devizou PHP obrovské množství zabudovaných funkcí. </p>
@@ -49,19 +49,19 @@ Syntaxe PHP je převážně odvozena z jazyka C. Některé rysy jsou převzaty z
 </ul>
 <h4 id="z-klady-syntaxe">Základy syntaxe</h4>
 <p>Celý kód musí být označen dvojící otazníku a menšítka.</p>
-<pre><code class="lang-sh"><span class="php"><span class="hljs-meta">&lt;?php</span> [PHP kód] <span class="hljs-meta">?&gt;</span></span>
-</code></pre>
+<code class="lang-sh"><span class="php"><span class="hljs-meta">&lt;?php</span> [PHP kód] <span class="hljs-meta">?&gt;</span></span>
+</code>
 <p>Jednotlivé příkazy jsou odděleny středníkem.</p>
-<pre><code class="lang-sh"><span class="php"><span class="hljs-meta">&lt;?</span>
+<code class="lang-sh"><span class="php"><span class="hljs-meta">&lt;?</span>
 <span class="hljs-keyword">echo</span> „První řádek“;
 <span class="hljs-keyword">echo</span> „Druhý řádek“;
 <span class="hljs-meta">?&gt;</span></span>
-</code></pre>
+</code>
 <h4 id="prom-nn-">Proměnné</h4>
 <p>Narozdíl od mnoha jiných jazyků se proměnné v PHP určují při přiřazení, což velice zkracuje a zjednodušuje kód, zároveň ale může být takový kód pro začátečníky matoucí a nepřehledný.</p>
 <p>V průběhu kódu může proměnná měnit svůj typ (tzv. přetypování). Často se tak děje například výsledkem nějakého výpočtu.</p>
 <p>Každá proměnná musí mít jednoznačný název. Ten v PHP začíná znakem dolaru($) a následuje (bez mezery) nějakým pojmenováním. První znak toho pojmenování musí být buď písmeno a-z nebo podtržítko. Nesmí to být číslo ani nic jiného. Názvy proměnných v PHP rozlišují mezi malými a velkými písmeny, takže pozor na to. Praxe bývá většinou taková, že se proměnné píší malými písmeny. V názvech proměnných můžete používat české znaky včetně diakritiky, běžně se to ale moc nedělá. Desetinná čísla se zadávají s tečkou, ne s čárkou. Řetězce se uzavírají do uvozovek nebo do apostrofů.</p>
-<pre><code class="lang-sh"><span class="php"><span class="hljs-meta">&lt;?php</span>
+<br><code class="lang-sh"><span class="php"><span class="hljs-meta">&lt;?php</span>
 <span class="hljs-comment">//logický typ</span>
 $mam_malo_penez = <span class="hljs-keyword">TRUE</span>;
 <span class="hljs-comment">//celočíselný typ</span>
@@ -75,8 +75,8 @@ $prohlaseni = „Právě se vracím z pražského hradu! …“;
 <span class="hljs-keyword">echo</span> $disketa.“&lt;BR&gt;“;
 <span class="hljs-keyword">echo</span> $prohlaseni.“&lt;BR&gt;“;
 <span class="hljs-meta">?&gt;</span></span>
-</code></pre>
-<p>...</p>
+</code>
+<br>
 <table>
 <thead>
 <tr>
@@ -111,7 +111,7 @@ $prohlaseni = „Právě se vracím z pražského hradu! …“;
 <p>... </p>
 <h4 id="koment-e">Komentáře</h4>
 <p>Komentáře mohou být v PHP jednořádkové nebo víceřádkové a používají se na ně znaky „//“ (dvě dopředná lomítka), „#“ (mřížka) a dvojice „/<em>“ a „</em>/.</p>
-<pre><code class="lang-sh"><span class="php"><span class="hljs-meta">&lt;?</span>
+<br><code class="lang-sh"><span class="php"><span class="hljs-meta">&lt;?</span>
 <span class="hljs-comment">//komentář</span>
 <span class="hljs-meta">?&gt;</span></span>
 nebo
@@ -126,10 +126,10 @@ komentář
 komentář
 */</span>
 <span class="hljs-meta">?&gt;</span></span>
-</code></pre>
+</code>
 <h1 id="javascript">Javascript</h1>
 <p>Základní vlastnosti:</p>
-<ul>
+<br><ul>
 <li>interpretovaný – jazyk JavaScript se nemusí kompilovat.</li>
 <li>objektový – využívá objektů prohlížeče a zabudovaných objektů.</li>
 <li>závislý na prohlížeči – funguje však ve většině užívaných prohlížečích.</li>
@@ -147,7 +147,7 @@ komentář
 <li>Do externího souboru (V HTML dokumentu bude odkazováno na tento soubor).</li>
 </ul>
 <h4 id="p-klad">Příklad</h4>
-<pre><code class="lang-sh"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<code class="lang-sh"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
 Toto je normální text stránky.<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
 
@@ -155,4 +155,4 @@ Toto je normální text stránky.<span class="hljs-tag">&lt;<span class="hljs-na
 
 </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-</code></pre>
+</code>

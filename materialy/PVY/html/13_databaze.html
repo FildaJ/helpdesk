@@ -6,42 +6,46 @@
 <p>Patří mezi jazyky Deklarativní, mezitím co u imperativních jazyků, kde musíme říkat PC vše krok po kroku, tak u deklarativních pouze říkáme, co má být výsledek, kde nás nezajímá, jak se k tomu PC dostane, ale důležitý je pro nás ten patřičný výsledek.
 Díky tomu DB dotazy jsou zjednodušeny např. „Vrať mi tabulku s 5 městy, které mají největší turistický ruch“. Po nějaké kratší době, samozřejmě záleží na tom, kolik máme v DB položek, nám vychrlí výsledek bez jakéhokoliv postupu. </p>
 <h4 id="p-kazy-">Příkazy:</h4>
-<pre><code class="lang-sh"><span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">Name</span>, City <span class="hljs-keyword">FROM</span> <span class="hljs-keyword">User</span>
+<br><code class="lang-sh"><span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">Name</span>, City <span class="hljs-keyword">FROM</span> <span class="hljs-keyword">User</span>
 Vybere z tabulky jmé<span class="hljs-keyword">no</span> a město a vypíše nám jen tyto <span class="hljs-number">2</span> sloupce.
-</code></pre>
-<pre><code class="lang-sh"><span class="hljs-keyword">SELECT</span> * <span class="hljs-keyword">FROM</span> <span class="hljs-keyword">Users</span> <span class="hljs-keyword">WHERE</span> <span class="hljs-keyword">Group</span>= ‘<span class="hljs-keyword">admin</span>‘
+</code>
+<code class="lang-sh"><span class="hljs-keyword">SELECT</span> * <span class="hljs-keyword">FROM</span> <span class="hljs-keyword">Users</span> <span class="hljs-keyword">WHERE</span> <span class="hljs-keyword">Group</span>= ‘<span class="hljs-keyword">admin</span>‘
 Vybere vše z tabulky <span class="hljs-keyword">Users</span>, kde je přiřazená <span class="hljs-keyword">Group</span> admin.
-</code></pre>
-<pre><code class="lang-sh"><span class="hljs-keyword">SELECT</span> * <span class="hljs-keyword">FROM</span> <span class="hljs-keyword">Users</span> <span class="hljs-keyword">WHERE</span> <span class="hljs-keyword">Group</span>= ‘<span class="hljs-keyword">admin</span>‘ <span class="hljs-keyword">AND</span> <span class="hljs-keyword">Group</span>= ‘moderator‘
+</code>
+<br><code class="lang-sh"><span class="hljs-keyword">SELECT</span> * <span class="hljs-keyword">FROM</span> <span class="hljs-keyword">Users</span> <span class="hljs-keyword">WHERE</span> <span class="hljs-keyword">Group</span>= ‘<span class="hljs-keyword">admin</span>‘ <span class="hljs-keyword">AND</span> <span class="hljs-keyword">Group</span>= ‘moderator‘
 Ukáže řádky, kde hodnota sloupce <span class="hljs-keyword">Group</span> = ‘<span class="hljs-keyword">admin</span>‘. Lze zde přidat i více podmínek   pomocí (<span class="hljs-keyword">AND</span>, <span class="hljs-keyword">OR</span>, <span class="hljs-keyword">NOT</span>).
-</code></pre>
-<pre><code class="lang-sh"><span class="hljs-keyword">SELECT</span> * <span class="hljs-keyword">FROM</span> <span class="hljs-keyword">Users</span> <span class="hljs-keyword">WHERE</span> <span class="hljs-keyword">Group</span> <span class="hljs-keyword">NOT</span> <span class="hljs-keyword">LIKE</span> ‚H%‘
+</code>
+<br><code class="lang-sh"><span class="hljs-keyword">SELECT</span> * <span class="hljs-keyword">FROM</span> <span class="hljs-keyword">Users</span> <span class="hljs-keyword">WHERE</span> <span class="hljs-keyword">Group</span> <span class="hljs-keyword">NOT</span> <span class="hljs-keyword">LIKE</span> ‚H%‘
 Vrací všechny řádky z dané tabulky, kde ve sloupci <span class="hljs-keyword">Group</span> není řetězec začínající písmenem H a za ním <span class="hljs-number">0</span>-n libovolných symbolů.
-</code></pre>
-<ul>
+</code>
+<br><ul>
 <li>% - 0…n</li>
 <li>_ 1 libovolný symbol</li>
 <li>[abc] – množina symbolů</li>
 <li>[^abc] – všechny symboly, krom určených
-... <pre><code class="lang-sh"><span class="hljs-keyword">SELECT</span> * <span class="hljs-keyword">FROM</span> Char.level <span class="hljs-keyword">WHERE</span> <span class="hljs-keyword">level</span> &gt; <span class="hljs-number">50</span>
+
+</ul>
+<br>
+<br> <code class="lang-sh"><span class="hljs-keyword">SELECT</span> * <span class="hljs-keyword">FROM</span> Char.level <span class="hljs-keyword">WHERE</span> <span class="hljs-keyword">level</span> &gt; <span class="hljs-number">50</span>
 Ukáže nám řádky, kde <span class="hljs-keyword">level</span> postavy je větší jak <span class="hljs-number">50.</span>
-</code></pre>
-<pre><code class="lang-sh"><span class="hljs-keyword">SELECT</span> * <span class="hljs-keyword">FROM</span> <span class="hljs-keyword">Users</span> <span class="hljs-keyword">WHERE</span> userID <span class="hljs-keyword">IS</span> <span class="hljs-literal">NULL</span>
+</code>
+<br><code class="lang-sh"><span class="hljs-keyword">SELECT</span> * <span class="hljs-keyword">FROM</span> <span class="hljs-keyword">Users</span> <span class="hljs-keyword">WHERE</span> userID <span class="hljs-keyword">IS</span> <span class="hljs-literal">NULL</span>
 Na <span class="hljs-literal">NULL</span> se musíme v podmínce odkazovat slovem IS.
 Jak můžeme modifikovat <span class="hljs-keyword">data</span> v DB?
-</code></pre>
-<pre><code class="lang-sh"><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> <span class="hljs-keyword">Users</span> (<span class="hljs-keyword">Name</span>, <span class="hljs-keyword">Level</span>, ...) <span class="hljs-keyword">VALUES</span> (‘Matej‘,‘<span class="hljs-number">69</span>‘, …) 
+</code>
+<br><code class="lang-sh"><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> <span class="hljs-keyword">Users</span> (<span class="hljs-keyword">Name</span>, <span class="hljs-keyword">Level</span>, ...) <span class="hljs-keyword">VALUES</span> (‘Matej‘,‘<span class="hljs-number">69</span>‘, …) 
 Vloží nový řádek, kde <span class="hljs-keyword">Name</span> = ‚Matej‘ a <span class="hljs-keyword">Level</span> = ‚<span class="hljs-number">69</span>‘
-</code></pre>
-<pre><code class="lang-sh"><span class="hljs-keyword">UPDATE</span> <span class="hljs-keyword">Users</span> <span class="hljs-keyword">SET</span> <span class="hljs-keyword">level</span> = ‘<span class="hljs-number">420</span>‘ <span class="hljs-keyword">WHERE</span> <span class="hljs-keyword">level</span> = ‘<span class="hljs-number">69</span>‘ 
+</code>
+<br><code class="lang-sh"><span class="hljs-keyword">UPDATE</span> <span class="hljs-keyword">Users</span> <span class="hljs-keyword">SET</span> <span class="hljs-keyword">level</span> = ‘<span class="hljs-number">420</span>‘ <span class="hljs-keyword">WHERE</span> <span class="hljs-keyword">level</span> = ‘<span class="hljs-number">69</span>‘ 
 Upraví řádky, kde <span class="hljs-keyword">Level</span> = ‚<span class="hljs-number">69</span>‘ a přepíše je na <span class="hljs-keyword">Level</span> = ‚<span class="hljs-number">420</span>‘
-</code></pre>
-<pre><code class="lang-sh"><span class="hljs-keyword">DELETE</span> <span class="hljs-keyword">FROM</span> <span class="hljs-keyword">Users</span> <span class="hljs-keyword">WHERE</span> <span class="hljs-keyword">level</span> = ‘<span class="hljs-number">420</span>‘
+</code>
+<br><code class="lang-sh"><span class="hljs-keyword">DELETE</span> <span class="hljs-keyword">FROM</span> <span class="hljs-keyword">Users</span> <span class="hljs-keyword">WHERE</span> <span class="hljs-keyword">level</span> = ‘<span class="hljs-number">420</span>‘
 Odstraní řádek, kde <span class="hljs-keyword">Level</span> = ‚<span class="hljs-number">420</span>‘
-</code></pre>
+</code>
 </li>
 </ul>
-<h4 id="datab-zov-syst-m-">Databázový systém:</h4>
+<br>
+<h4 id="datab-zov-syst-m-">Databázový systém:</h4><br>
 <ul>
 <li>Je uspořádaná množina informací vložená na datové medium.</li>
 <li>Předchůdcem byli papírové kartotéky.</li>

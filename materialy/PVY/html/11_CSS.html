@@ -11,42 +11,42 @@ Současně v roce <strong>1991 organizace NCSA</strong> (National Center for Sup
 <h4 id="html">HTML</h4>
 <h5 id="syntax">Syntax</h5>
 <h5 id="p-rov-tag">Párový tag</h5>
-<pre><code class="lang-sh"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hlavní nadpis<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-</code></pre>
+<p><code class="lang-sh"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hlavní nadpis<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+</code></p>
 <h5 id="nep-rov-tag">Nepárový tag</h5>
-<pre><code class="lang-sh"><span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span><span class="hljs-comment">&lt;!--Horizontální čára--&gt;</span>
-</code></pre>
+<p><code class="lang-sh"><span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span><span class="hljs-comment">&lt;!--Horizontální čára--&gt;</span>
+</code></p>
 <p>V HTML je možné vkládat i více tagů dovnitř “hlavního tagu” (vnějšího tagu).</p>
-<pre><code class="lang-sh"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+<p><code class="lang-sh"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hlavní nadpis<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>odstavec<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-</code></pre>
+</code></p>
 <h4 id="struktura-html">Struktura HTML</h4>
 <h5 id="doctype">Doctype</h5>
 <p><strong>Na začátku</strong> dokumentu <strong>HTML stojí tag: „Doctype“</strong>, který definuje, že se jedná o dokument HTML a bude tímto způsobem i psán. Jedná se o nepárový tag. </p>
-<pre><code class="lang-sh"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
-</code></pre>
+<p><code class="lang-sh"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+</code></p>
 <h5 id="html">HTML</h5>
 <p>Další nezbytný tag <strong>HTML dokumentu je „HTML“</strong>, který definuje <strong>začátek a konec kódu</strong>. Jedná se o <em>párový tag</em>. </p>
-<pre><code class="lang-sh"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<p><code class="lang-sh"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
 <span class="hljs-comment">&lt;!--Obsah dokumentu--&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
-</code></pre>
+</code></p>
 <h5 id="head">Head</h5>
 <p><strong>Hlavička HTML kódu</strong>, na stránce <em>se nezobrazuje</em>, <strong>obsahuje</strong>: <em>informace pro prohlížeče</em>, <em>titulek stránky</em>, <em>propojené soubory</em>, <em>formátování textu</em>, … Jedná se o párový tag. </p>
-<pre><code class="lang-sh"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+<p><code class="lang-sh"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
 <span class="hljs-comment">&lt;!--Obsah hlavičky--&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
-</code></pre>
+</code></p>
 <h5 id="body">Body</h5>
 <p><strong>Tělo dokumentu</strong>. Zde se <strong>píše to, co vidíme na stránce</strong>. Obsahuje: <em>nadpisy, styly, odstavce, obrázky, formátování textu</em>. </p>
-<pre><code class="lang-sh"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<p><code class="lang-sh"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-comment">&lt;!--Obsah .html dokumentu--&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-</code></pre>
+</code></p>
 <h5 id="z-kladn-k-d-pak-vypad-n-sledovn-">Základní kód pak vypadá následovně:</h5>
-<pre><code class="lang-sh"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<p><code class="lang-sh"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span><span class="hljs-comment">&lt;!--Titulek stránky--&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
@@ -58,7 +58,7 @@ Současně v roce <strong>1991 organizace NCSA</strong> (National Center for Sup
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
-</code></pre>
+</code></p>
 <h4 id="css">CSS</h4>
 <h5 id="syntax">Syntax</h5>
 <p><strong>Kaskádové styly (CSS)</strong> se zadávají <em>pomocí
@@ -100,9 +100,9 @@ HTML tagy, to znamená, že pokaždé, když se v kódu vyskytne daný HTML tag,
   použije hodnotu, kterou udává přímý styl.</p>
 </li>
 </ul>
-<pre><code class="lang-sh"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"font-family:Helvetica, sans-serif; fontsize: 24px; color:blue;"</span>&gt;</span>Hlavní nadpis
+<p><code class="lang-sh"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"font-family:Helvetica, sans-serif; fontsize: 24px; color:blue;"</span>&gt;</span>Hlavní nadpis
 <span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-</code></pre>
+</code></p>
 <ul>
 <li><h5 id="stylov-n-v-z-hlav-">Stylování v záhlaví</h5>
 <p>  Dalším způsobem pro zapisování CSS je <strong>zapsání stylů do hlavičky HTML dokumentu</strong>,
@@ -113,8 +113,8 @@ HTML tagy, to znamená, že pokaždé, když se v kódu vyskytne daný HTML tag,
   tentokrát se toto pravidlo aplikuje na všechny elementy „H1“ 
   v dokumentu namísto jednoho konkrétního. Pro zaměření jednoho konkrétního elementu se používají identifikátory „ID“ (viz odstavec o selektorech).</p>
 </li>
-</ul>
-<pre><code class="lang-sh"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+</ul><br>
+<p><code class="lang-sh"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
  <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
  <span class="hljs-selector-tag">h1</span> {
  <span class="hljs-attribute">font-family</span>: Helvetica, sans-serif;
@@ -123,11 +123,11 @@ HTML tagy, to znamená, že pokaždé, když se v kódu vyskytne daný HTML tag,
  }
  </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
-</code></pre>
-<ul>
-<li><h5 id="extern-soubor">Externí soubor</h5>
+</code></p>
+
+<h5 id="extern-soubor">Externí soubor</h5>
 <strong>Nejčastějším způsobem pro zápis CSS je zapisování CSS pravidel do externího souboru</strong>.</li>
-</ul>
+
 <p>Tento druh zápisu má dvě hlavní výhody:</p>
 <ul>
 <li><p>Tou první je <strong>zvýšená čitelnost dokumentů</strong>. To
@@ -136,12 +136,13 @@ znamená, že :v HTML souborech jsou pouze věci_, co se týče struktury dokume
 </li>
 <li><p>Další nespornou výhodou je, že <strong>jeden CSS soubor</strong> může využívat
 neomezené <strong>množství CSS stránek</strong>, jediné, co je potřeba je importovat CSS dokument do
-HTML souboru pomocí <strong>tagu „Link“</strong> <em>v záhlaví stránky</em><!--HTML soubor--></p>
+HTML souboru pomocí <strong>tagu „Link“</strong> <em>v záhlaví stránky</em><!--HTML soubor--></p><br>
 </li>
 </ul>
-<pre><code class="lang-sh"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+<p><code class="lang-sh"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
  <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/css"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"style.css"</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<br>
 /*Soubor style.css*/
 h1 {
  font-family: Helvetica, sans-serif;
@@ -149,16 +150,16 @@ h1 {
  color: blue;
 } a požadovaných parametrů. (viz
 ukázka). Poté už stačí akorát zapsat pravidla do externího souboru.
-
+<br>
 <span class="hljs-comment">&lt;!--HTML soubor--&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
  <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/css"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"style.css"</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
-
+<br>
 /*Soubor style.css*/
 h1 {
  font-family: Helvetica, sans-serif;
  font-size: 24px;
  color: blue;
 }
-</code></pre>
+</code></p><br>
