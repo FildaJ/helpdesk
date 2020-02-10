@@ -11,22 +11,23 @@ nav ul a {
   nav ul a:hover {
     color: #00FFC3; }
 
-body {
+main {
   color: white; }
-  body h1 {
+  main h1 {
     font-size: 4rem;
     font-family: "Oswald", sans-serif;
     font-weight: 600;
     text-transform: uppercase;
     max-width: 65ch; }
-  body h2 {
+  main h2 {
     font-family: "Oswald", sans-serif;
     font-weight: 600;
     font-size: 2.5rem;
     text-transform: uppercase;
     color: #7526FF;
-    max-width: 65ch; }
-  body h3 {
+    max-width: 65ch;
+    margin-top: 2rem; }
+  main h3 {
     font-family: "Oswald", sans-serif;
     font-weight: 300;
     font-size: 2.25rem;
@@ -34,20 +35,22 @@ body {
     color: #7526FF;
     max-width: 65ch;
     margin-top: 2rem; }
-  body h4 {
+  main h4 {
     font-family: "Oswald", sans-serif;
     font-weight: 600;
     font-size: 2rem;
     text-transform: uppercase;
     color: #7526FF;
-    max-width: 65ch; }
-  body h5 {
+    max-width: 65ch;
+    margin-top: 2rem; }
+  main h5 {
     font-family: "Oswald", sans-serif;
     font-weight: 300;
     font-size: 1.75rem;
     color: #7526FF;
-    text-transform: uppercase; }
-  body blockquote {
+    text-transform: uppercase;
+    margin-top: 2rem; }
+  main blockquote {
     font-family: "Oswald", sans-serif;
     font-weight: 300;
     font-size: 1.4rem;
@@ -55,21 +58,25 @@ body {
     padding: 0.5rem 0.5rem 0.5rem 2rem;
     margin: 1rem 0 1rem 1rem;
     background-color: #0d0d0d; }
-  body p {
+  main p {
     font-family: "Roboto", sans-serif;
     max-width: 65ch;
     font-size: 1rem;
     line-height: 1.618rem;
     color: #e6e6e6; }
-  body ul li {
+  main > ul li {
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
-    color: dakren(white, 10);
+    color: #e6e6e6;
     max-width: 65ch;
     margin-left: 2rem; }
-  body code {
+  main code {
     background-color: #1a1a1a;
-    max-width: 65ch; }
+    max-width: 65ch;
+    display: block; }
+  main span {
+    max-width: 65ch;
+    display: inline-block; }
 
 button, input[type=submit] {
   font-family: "Oswald", sans-serif;
@@ -130,6 +137,11 @@ header h1 {
   text-align: center;
   z-index: 5;
   color: white;
+  max-width: 65ch;
+  font-size: 4rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
   max-width: 65ch; }
 
 main a {
@@ -385,10 +397,12 @@ nav {
   nav .submenu {
     border-top: #00FFC3 4px solid;
     border-bottom: #00FFC3 4px solid;
-    top: 76px;
+    top: 80px;
     z-index: 420; }
     nav .submenu > ul {
       padding: 1rem; }
+      nav .submenu > ul li {
+        margin-left: 0; }
   nav #loginBtn {
     -ms-flex-item-align: end;
         align-self: end; }
