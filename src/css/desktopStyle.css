@@ -75,7 +75,8 @@ main {
   main code {
     background-color: #1a1a1a;
     max-width: 65ch;
-    display: block; }
+    display: block;
+    padding: 1rem; }
   main span {
     max-width: 65ch;
     display: inline-block; }

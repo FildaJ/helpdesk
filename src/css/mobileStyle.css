@@ -80,7 +80,8 @@ main {
   main code {
     background-color: #1a1a1a;
     max-width: 50ch;
-    display: block; }
+    display: block;
+    padding: 1rem; }
   main span {
     max-width: 50ch;
     display: inline-block; }
