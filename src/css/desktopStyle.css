@@ -19,14 +19,14 @@ main {
     font-family: "Oswald", sans-serif;
     font-weight: 600;
     text-transform: uppercase;
-    max-width: 45ch; }
+    max-width: 75%; }
   main h2 {
     font-family: "Oswald", sans-serif;
     font-weight: 600;
     font-size: 2.5rem;
     text-transform: uppercase;
     color: #7526FF;
-    max-width: 45ch;
+    max-width: 75%;
     margin-top: 2rem; }
   main h3 {
     font-family: "Oswald", sans-serif;
@@ -34,7 +34,7 @@ main {
     font-size: 2.25rem;
     text-transform: uppercase;
     color: #7526FF;
-    max-width: 45ch;
+    max-width: 75%;
     margin-top: 2rem; }
   main h4 {
     font-family: "Oswald", sans-serif;
@@ -42,7 +42,7 @@ main {
     font-size: 2rem;
     text-transform: uppercase;
     color: #7526FF;
-    max-width: 45ch;
+    max-width: 75%;
     margin-top: 2rem; }
   main h5 {
     font-family: "Oswald", sans-serif;
@@ -51,7 +51,7 @@ main {
     color: #7526FF;
     text-transform: uppercase;
     margin-top: 2rem;
-    max-width: 45ch; }
+    max-width: 75%; }
   main blockquote {
     font-family: "Oswald", sans-serif;
     font-weight: 300;
@@ -59,10 +59,11 @@ main {
     border-left: 4px solid #7526FF;
     padding: 0.5rem 0.5rem 0.5rem 2rem;
     margin: 1rem 0 1rem 1rem;
-    background-color: #0d0d0d; }
+    background-color: #0d0d0d;
+    max-width: 75%; }
   main p {
     font-family: "Roboto", sans-serif;
-    max-width: 65ch;
+    max-width: 75%;
     font-size: 1rem;
     line-height: 1.618rem;
     color: #e6e6e6; }
@@ -70,15 +71,15 @@ main {
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
     color: #e6e6e6;
-    max-width: 65ch;
+    max-width: 75%;
     margin-left: 2rem; }
   main code {
     background-color: #1a1a1a;
-    max-width: 65ch;
+    max-width: 75%;
     display: block;
     padding: 1rem; }
   main span {
-    max-width: 65ch;
+    max-width: 75%;
     display: inline-block; }
 
 button, input[type=submit] {

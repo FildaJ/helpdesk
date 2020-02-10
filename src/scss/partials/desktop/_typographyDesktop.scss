@@ -21,7 +21,7 @@ main {
 		font-size: 4rem;
 		@include oswaldSemi;
 		text-transform: uppercase;
-		max-width:45ch;
+		max-width:75%;
 	}
 
 	h2 {
@@ -29,7 +29,7 @@ main {
 		font-size: 2.5rem;
 		text-transform: uppercase;
 		color:$purple;
-		max-width:45ch;
+		max-width:75%;
 		margin-top: 2rem;
 	}
 
@@ -38,7 +38,7 @@ main {
 		font-size: 2.25rem;
 		text-transform: uppercase;
 		color: $purple;
-		max-width:45ch;
+		max-width:75%;;
 		margin-top: 2rem;
 	}
 
@@ -47,7 +47,7 @@ main {
 		font-size: 2rem;
 		text-transform: uppercase;
 		color: $purple;
-		max-width:45ch;
+		max-width:75%;
 		margin-top: 2rem;
 	}
 
@@ -57,7 +57,7 @@ main {
 		color: $purple;
 		text-transform: uppercase;
 		margin-top: 2rem;
-		max-width:45ch;
+		max-width:75%;
 	}
 
 	blockquote {
@@ -67,11 +67,12 @@ main {
 		padding:0.5rem 0.5rem 0.5rem 2rem;
 		margin: 1rem 0 1rem 1rem;
 		background-color: lighten($bg,5);
+		max-width:75%;
 	}
 
 	p {
 		font-family: $roboto;
-		max-width: 65ch;
+		max-width:75%;
 		font-size:1rem;
 		line-height: 1.618rem;
 		color: darken(white, 10);
@@ -81,20 +82,20 @@ main {
 		font-family:$roboto;
 		font-size: 1rem;
 		color:darken(white,10);
-		max-width: 65ch;
+		max-width:75%;
 		margin-left:2rem;
 	}
 
 	code {
 		background-color:lighten($bg,10);
-		max-width: 65ch;
+		max-width:75%;
 		display:block;
 		padding:1rem;
 
 	}
 
 	span {
-		max-width:65ch;
+		max-width:75%;
 		display:inline-block;
 	}
 
