@@ -350,6 +350,9 @@ footer {
   display: -ms-inline-flexbox;
   display: inline-flex; }
 
+#calendar {
+  margin: auto; }
+
 nav {
   padding: 0rem 1rem;
   -webkit-box-sizing: border-box;
