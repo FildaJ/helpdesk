@@ -146,8 +146,8 @@ header h1 {
   text-align: center;
   z-index: 5;
   color: white;
-  max-width: 45ch;
-  font-size: 3rem;
+  max-width: 15ch;
+  font-size: 2rem;
   font-family: "Oswald", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
