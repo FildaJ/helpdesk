@@ -64,7 +64,7 @@ main {
     font-size: 1rem;
     line-height: 1.618rem;
     color: #e6e6e6; }
-  main > ul li {
+  main li {
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
     color: #e6e6e6;

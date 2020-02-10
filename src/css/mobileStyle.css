@@ -9,16 +9,16 @@ nav ul a {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase; }
 
-body {
+main {
   color: white; }
-  body h1 {
+  main h1 {
     font-size: 2rem;
     font-family: "Oswald", sans-serif;
     font-weight: 600;
     text-transform: uppercase;
     text-align: center;
     max-width: 50ch; }
-  body h2 {
+  main h2 {
     font-family: "Oswald", sans-serif;
     font-weight: 600;
     font-size: 1.5rem;
@@ -27,7 +27,7 @@ body {
     text-align: center;
     max-width: 50ch;
     margin-top: 2rem; }
-  body h3 {
+  main h3 {
     font-family: "Oswald", sans-serif;
     font-weight: 300;
     font-size: 1.4rem;
@@ -35,7 +35,7 @@ body {
     text-align: center;
     max-width: 50ch;
     margin-top: 2rem; }
-  body h4 {
+  main h4 {
     font-family: "Oswald", sans-serif;
     font-weight: 600;
     font-size: 1.3rem;
@@ -44,7 +44,7 @@ body {
     text-align: center;
     max-width: 50ch;
     margin-top: 2rem; }
-  body h5 {
+  main h5 {
     font-family: "Oswald", sans-serif;
     font-weight: 300;
     font-size: 1.2rem;
@@ -53,14 +53,14 @@ body {
     text-align: center;
     max-width: 50ch;
     margin-top: 2rem; }
-  body p {
+  main p {
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
     line-height: 1.618rem;
     text-align: left;
     max-width: 50ch;
     color: #e6e6e6; }
-  body blockquote {
+  main blockquote {
     font-family: "Oswald", sans-serif;
     font-weight: 300;
     font-size: 1.4rem;
@@ -68,24 +68,24 @@ body {
     padding: 0.5rem 0.5rem 0.5rem 2rem;
     margin: 1rem 0 1rem 1rem;
     background-color: #0d0d0d; }
-  body ul li {
+  main li {
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
     color: dakren(white, 10);
     max-width: 65ch;
     margin-left: 2rem; }
-  body code {
+  main code {
     background-color: #1a1a1a;
     max-width: 50ch;
     display: block; }
-  body span {
+  main span {
     max-width: 50ch;
     display: inline-block; }
-  body a {
+  main a {
     color: #00FFC3;
     -webkit-transition: all 0.45s;
     transition: all 0.45s; }
-    body a:active {
+    main a:active {
       color: #00cc9c; }
 
 button, input[type=submit] {
