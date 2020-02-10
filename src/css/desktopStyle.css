@@ -12,7 +12,8 @@ nav ul a {
     color: #00FFC3; }
 
 main {
-  color: white; }
+  color: white;
+  font-family: "Roboto", sans-serif; }
   main h1 {
     font-size: 4rem;
     font-family: "Oswald", sans-serif;
