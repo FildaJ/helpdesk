@@ -340,7 +340,9 @@ footer {
       align-content: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  margin: 0 auto;
+  max-width: 75vw; }
 
 .buttonBox {
   display: -webkit-inline-box;
