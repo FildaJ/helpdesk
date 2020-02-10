@@ -79,14 +79,13 @@ IGP (Interior Gateway Protocol) – starají se o směrování v rámci LAN (uvn
 </ul>
 <h4 id="d-le-it-sm-rovac-protokoly-">Důležité směrovací protokoly:</h4>
 <h5 id="intern-protokoly-">INTERNÍ PROTOKOLY:</h5>
-<hr>
+
 <h5 id="rip-routing-information-protocol-">RIP (Routing Information Protocol)</h5>
-<p>...</p>
+
 <blockquote>
 <p>Je směrovací protokol typu distance vector, který tedy <em>umožňuje komunikaci mezi routery</em>. </p>
 </blockquote>
-<p>...
-RIP je protokol pro metriku směrování počet skoků (hop count). Pro určení nejkratší cesty používá <em>Bellmanův-Fordův algoritmus</em>.
+<p>RIP je protokol pro metriku směrování počet skoků (hop count). Pro určení nejkratší cesty používá <em>Bellmanův-Fordův algoritmus</em>.
 Aby se hopy nevracely ve smyčkách zpět, je jejich počet omezen na 15.</p>
 <p>Původně RIP <em>posílal celou routovací tabulky svým sousedům každých 30 sekund</em>. Vzhledem k čím dal většímu růstu sítí a zařízení v nich začaly být sítě čím dál více zahlcovány. 
 Proto vznikl RIPv2, který umožnil nastavování <em>časového intervalu každého routeru zvlášť</em>.
@@ -100,7 +99,7 @@ Nedoporučení v používání je příčinnou hlavně čas, za který je schopn
 <li>přenos síťových masek ve zprávách mezi směrovači umožňuje používat podsítě</li>
 </ul>
 <h5 id="igrp">IGRP</h5>
-<p>...</p>
+
 <blockquote>
 <p>Protokol typu distance vector, který se řadí do <em>protokolů vnitřních</em>. Metrika je zde vypočítaná z několika položek:</p>
 <ul>
@@ -121,7 +120,7 @@ Nedoporučení v používání je příčinnou hlavně čas, za který je schopn
 <li>Tabulku topologie – ukládá data na základě informací z tabulky sousedů</li>
 </ul>
 <h5 id="ospf-open-shortest-path-first-">OSPF (Open Shortest Path First)</h5>
-<p>...</p>
+
 <blockquote>
 <p>Je to směrovací vnitřní protokol, který na rozdíl o předešlých funguje na algoritmu link-state <em>(výběr cesty na základě více faktů, ne jen hopů)</em>.</p>
 </blockquote>
@@ -129,9 +128,8 @@ Nedoporučení v používání je příčinnou hlavně čas, za který je schopn
 Nad touto DB <em>potom pomocí algoritmu SPF</em> provádí výpočty nejvýhodnější cesty do jednotlivých sítí. </p>
 <p>Metrika OSPF je postavena na ceně (tzn. cost). To je číslo od 1-65 535, které má přiřazený každý směrovač. Platí, že čím menší číslo, tím lepší metriku cesta má a bude více preferována.</p>
 <h5 id="extern-protokoly-">EXTERNÍ PROTOKOLY:</h5>
-<hr>
+
 <h5 id="bgp-protokol-border-gateway-protocol-">BGP protokol (Border Gateway Protocol)</h5>
-<p>..</p>
 <blockquote>
 <p>Je to dynamický externí protokol, který je používán v rámci centrálních <em>uzlů Internetu</em>. Používají ho tedy poskytovatelé připojení k internetu a peeringové uzly.</p>
 </blockquote>

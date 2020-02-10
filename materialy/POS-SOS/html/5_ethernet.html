@@ -59,9 +59,9 @@ Co se týče topologií, ty lze použít různé, stejně tak to funguje s kabel
 <p>Pro tento rozměr se používá pojem: kolizní doména</p>
 </blockquote>
 <p><strong>Kolizní doména</strong> = maximální délka sítě (definovaná na základě přístupové metody CSMA/CD)</p>
-<p><a href=""><img src="pictures/5_standarty_sitoveho_HW_Ethernet_a_ostatni/5_7_znaceni_ethernetu.PNG" alt="N|Solid"></a></p>
+<p><img src="pictures/5_standarty_sitoveho_HW_Ethernet_a_ostatni/5_7_znaceni_ethernetu.PNG" alt="N|Solid"></p>
 <h4 id="druhy-ethernetu-">Druhy ethernetu:</h4>
-<hr>
+<br>
 <h4 id="klasick-ethernet">Klasický ethernet</h4>
 <p>Nejstarším <em>(dnes už se nepoužívá)</em> ethernetem byl ten s přenosovou rychlostí 10 Mb/s; <em>tedy norma 10BASE</em>. </p>
 <p>Existoval v těchto formách:</p>
@@ -71,7 +71,7 @@ Historicky nejstarší verze ethernetu. Jeho základem je tlustý koaxiál a sb�
 </ul>
 <p>Na obrázku vidíme AUI kabel pro připojení síťovky (šedý kabel), 
 koax je žlutý, černá krabička je transceiver a oranžový nástroj slouží pro tvorbu odboček na koaxu.</p>
-<p><a href=""><img src="pictures/5_standarty_sitoveho_HW_Ethernet_a_ostatni/5_1_10-BASE-5.jpg" alt="N|Solid"></a>
+<p><img src="pictures/5_standarty_sitoveho_HW_Ethernet_a_ostatni/5_1_10-BASE-5.jpg" alt="N|Solid">
 Prvky sítě Ethernet 10BASE5</p>
 <ul>
 <li>10BAE-2, tzn. tenký ethernet:
@@ -79,14 +79,14 @@ Nástupce tlustého Ethernetu, který byl ve své době hojně rozšířen. Na r
 A na rozdíl <em>od předchozího standartu</em> se tato síť rozšiřovala o nové prvky lehčeji <em>(odbočky se u koax BASE5 vyřezávaly přímo do koxu)</em>,
 a to protože koaxiály zde měly na obou koncích BNC konektor.</li>
 </ul>
-<p><a href=""><img src="pictures/5_standarty_sitoveho_HW_Ethernet_a_ostatni/5_2_BNC_kabel_pro_base-5.jpg" alt="N|Solid"></a></p>
+<p><img src="pictures/5_standarty_sitoveho_HW_Ethernet_a_ostatni/5_2_BNC_kabel_pro_base-5.jpg" alt="N|Solid"></p>
 <h5 id="koax-ln-kabel-s-bnc-koncovkou">Koaxílní kabel s BNC koncovkou</h5>
 <p>Koaxiální kabel 10BASE-2 používala opět pro sběrnicovou topologii. Rozšíření (připojení nové stanice) se provádělo pomocí T-členů (viz Obrázek ) nebo zásuvek EAD.
 Pro rozvětvení sítě se mohl použít HUB, switch či router.</p>
-<p><a href=""><img src="pictures/5_standarty_sitoveho_HW_Ethernet_a_ostatni/5_3_BNC_kabel_s_pruchozim_BNC-T.jpg" alt="N|Solid"></a>
+<p><img src="pictures/5_standarty_sitoveho_HW_Ethernet_a_ostatni/5_3_BNC_kabel_s_pruchozim_BNC-T.jpg" alt="N|Solid">
 <code>T-člen</code></p>
 <p>Jelikož se jednalo o sítě se sběrnicovou topologií, konce musely být zakončeny terminátory („zakončovacími odpory“).
-<a href=""><img src="pictures/5_standarty_sitoveho_HW_Ethernet_a_ostatni/5_5_EAD_pripojka.jpg" alt="N|Solid"></a>
+<img src="pictures/5_standarty_sitoveho_HW_Ethernet_a_ostatni/5_5_EAD_pripojka.jpg" alt="N|Solid">
 <code>EAD zásuvka</code></p>
 <ul>
 <li>10BASE-T, kabeláž kroucenou dvojlinkou:
@@ -101,7 +101,7 @@ Kabeláž optickým kabelem: ethernet, který používá optické kabely. Má t�
 <li>o    Pro páteřní rozvody mezi budovami – specifikace 10BASE-FB (fiber bacbone)</li>
 <li>o    Pro připojování stanic (PC) a HUBů – specifikace BASE-FL (fiber link) Tato specifikace je pro LAN nejdůležitější, délka segmentu díky optice může být <em>až 2km</em>. Nejčastěji se zde propojují dva HUBy (spojí se tím vlastně dva segmenty sítě).</li>
 </ul>
-<hr>
+<br>
 <p>Dodatek:</p>
 <blockquote>
 <p>Délku segmentu (podsítě) lze prodlužovat pomocí zesilovačů, transceivery nám zase převádí signál mezi kabely. 
@@ -151,7 +151,7 @@ Přenáší světla delších vln, a to 1310 nm při použití <em>laserového z
   Jelikož vlastně nahrazují přístupovou metodu <em>(posílají data jen na dané zařízení, přičemž nedochází k setkávání dvou paketů)</em>, staly se switche náhradou vůči přístupové metodě. Díky tomuto „fíglu“ se uvolnila cesta k výrazně rychlejším odstraňování kolizí mezi stanicemi.</p>
 </li>
 </ul>
-<hr>
+<br>
 <p>Poznámka: Existuje ještě standard 1000BaseCX, který definuje použití metalických kabelů (stíněné STP či koaxu), používá se však jen na <em>propojení do 25m</em> (serveru se switchem, switchů navzájem).</p>
 <h4 id="10gigabit-ethernet-a-k-a-ethernet-pro-rychlost-10000mb-s-">10Gigabit Ethernet: (a.k.a ethernet pro rychlost 10000Mb/s)</h4>
 <p>Norma nejrychlejšího ethernetu <em>provedeného optikou se využívá nejen pro LAN</em>, ale <em>také pro MAN či WAN</em>. Umožněno je to přenosovou vzdáleností, která může být, pokud použijeme jednovidový optický kabel až 40 km. 
@@ -162,7 +162,7 @@ Opět, jako u předchozích norem existuje několik podstandartů, které se li�
 <li>Kabely</li>
 <li>Šířkou přenosového pásma</li>
 </ul>
-<hr>
+<br>
 <p>Poznámka: standardizační komise pracují na vývoji metalické formy <em>10 GB internetu</em>.</p>
 <h5 id="druhy-10gigabitov-ho-ethernetu-">Druhy 10Gigabitového Ethernetu:</h5>
 <ul>
@@ -198,7 +198,7 @@ Od té doby obdrží výrobek poskytující možnost připojení se k Wi-Fi cert
 <li>přístupovou metodu CSMA/CD</li>
 <li>složení paketu</li>
 </ul>
-<hr>
+<br>
 <ul>
 <li><p>standard 802.11 a
 Pracuje na f 5 GHz. Není, z důvodu nedostatku HW pro tento standart, tolik zahlceno</p>

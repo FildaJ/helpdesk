@@ -104,8 +104,8 @@ Telnet – nezabezpečené šifrování</p>
 <p>Tyto zmiňované vlastnosti umožňují přenášet data maximální rychlostí. Objem nepřenesených dat k přeneseným je hodně malý a proto se IP protokol používá. Pokud bychom chtěli spolehlivý přenos, využijí se protokoly vyšších vrstev.
 Protokol je začleněn v koncových uzlech sítě nebo i ve směřovačích (routerech). Přenášená data jsou nazývány IP datagram a.k.a packety. → Každý packet musí nést řídící informace a v druhé části vlastní přenášená data (tzn. payload).</p>
 <p>Hlavička IP datagramu (packetu)</p>
-<p><a/><img src="pictures/3_2_hlavicka_IP_datagramu.PNG" alt="N|Solid"></a>
-Skládá se z hlavičky a vlastních dat. Hlavička zabírá 0. až 23. Byte, od 24. Bytu začíná datová část packetu.</p>
+<a/><img src="pictures/3_2_hlavicka_IP_datagramu.PNG" alt="N|Solid"></a>
+<p>Skládá se z hlavičky a vlastních dat. Hlavička zabírá 0. až 23. Byte, od 24. Bytu začíná datová část packetu.</p>
 <p> Packet se skládá z:</p>
 <ul>
 <li>4 bity – označuje verzi IP – IPv4, nebo IPv6</li>
@@ -129,11 +129,11 @@ Skládá se z hlavičky a vlastních dat. Hlavička zabírá 0. až 23. Byte, od
 <p>IP protokol přenáší data různými přenosovými cestami. V různých sítích závisí max. velikost datového rámce na MTU (Maximum Transfer Unit). Při přeplnění MTU se musí packet fragmentovat (rozdělit) na menší části, které poté možné přenést. 
 Fragmentace packetu probíhá na router pokud se tedy zjistí, že není schopen packet přenést. Fragmentace poté může také být: opakovaná (fragmentace fragmentu). Zpětná defragmentace probíhá u příjemce. 
 Pro určení pořadí fragmentů slouží část hlavičky packet → offset a příznaky (značí zda (ne)může být fragmentován). Packet, kt. nesmí být fragmentován má min. velikost 576B.</p>
-<h2 id="posledn-v-ci-kter-se-u-fragmentace-e-je-_timeout_-as-do-kter-ho-kdy-nedoraz-fragment-pakety-doch-z-k-zahozen-cel-zpr-vy-">Poslední věci, která se u fragmentace řeší je <em>timeout</em>; čas, do kterého když nedorazí fragment pakety, dochází k zahození celé zprávy.</h2>
+<h4 id="posledn-v-ci-kter-se-u-fragmentace-e-je-_timeout_-as-do-kter-ho-kdy-nedoraz-fragment-pakety-doch-z-k-zahozen-cel-zpr-vy-">Poslední věci, která se u fragmentace řeší je <em>timeout</em>; čas, do kterého když nedorazí fragment pakety, dochází k zahození celé zprávy.</h4>
 <h4 id="_arp-_"><em>ARP:</em></h4>
 <p>Slouží k překladu IP adres na MAC adresy. Funguje metodou dotaz-odpoveď. Dotazy jsou vkládány do linkových rámců a rozeslány jsou broadcastem (v adrese mají samé jedničky). Je použitelný jen tam, kde je užit broadcast (všesměrové vysílání). Odpověď je už cílená (ne broadcastová); odpoví jedno zařízení.</p>
 <p>Funguje tak, že pošle dotaz všem zařízením (kdo odpoví, toho se dotaz týká – rozezná svou IP adresu). </p>
-<h2 id="arp-dotazy-jsou-cachov-ny-uchov-v-si-sti-dotaz-pro-p-t-rychlej-pr-ci-po-cca-20-minut-p-i-dotazu-na-ip-se-arp-prvn-pod-v-do-cache-a-a-pot-vys-l-broadcast-">ARP dotazy jsou cachovány (uchovává si části dotazů pro příští rychlejší práci) po cca 20 minut. Při dotazu na IP se ARP prvně podívá do cache a až poté vysílá broadcast.</h2>
+<h4 id="arp-dotazy-jsou-cachov-ny-uchov-v-si-sti-dotaz-pro-p-t-rychlej-pr-ci-po-cca-20-minut-p-i-dotazu-na-ip-se-arp-prvn-pod-v-do-cache-a-a-pot-vys-l-broadcast-">ARP dotazy jsou cachovány (uchovává si části dotazů pro příští rychlejší práci) po cca 20 minut. Při dotazu na IP se ARP prvně podívá do cache a až poté vysílá broadcast.</h4>
 <p>ARP zpráva se skládá:</p>
 <ul>
 <li>HW address – specifikuje systémový protokolový typ – př.: Ethernet je 1 </li>
@@ -159,7 +159,7 @@ Uzel, kt. příjme broadcast vysílání se žádostí o &gt;identifikaci adresy
 •    Jde-li o odpověď, odpověď použije 
 ZAJÍMAVOST: pro překlad MAC adres na IP adresu se používá protokol RARP.</li>
 </ul>
-<hr>
+<br>
 <h4 id="_tcp_-transmission-control-protocol-"><em>TCP</em> (Transmission Control Protocol)</h4>
 <p>Základní protokol transportní vrstvy. Umožňuje appkám vytvořit spojení a přenášet spolehlivě a spojovaně data. <em>Protokol také zaručuje spolehlivé doručení dat ve správném pořadí!</em>
 A to i přes to, že pro posílání dat používá nespolehlivý protokol IP; spolehlivost zajišťuje kontrolou doručení paketu (pomocí potvrzování). Pakety dále také přeuspořádává na straně příjemce (aby dorazily ve správném pořadí).
@@ -179,14 +179,14 @@ Pro toto existuje několik různých metod potvrzování (acknowledgment):</p>
 <li>Metoda okénka</li>
 <li>Odesílatel odešle data dřív než obdrží potvrzení o přijetí dat předchozích</li>
 </ul>
-<hr>
+<br>
 <h4 id="_udp_-user-datagram-protocol-"><em>UDP</em> (User Datagram Protocol)</h4>
 <p>Na rozdíl od TCP UDP upřednostňuje rychlost doručení packetů před spolehlivostí. Proto se tento protokol hodí tam, kde není nutná 100% doručitelnost packetů <em>(typicky videa, streamy, internetová rádia, real-time hry)</em>.
 O nějaké zajištění spolehlivosti se poté stará samotná aplikace využívající UDP.
 UDP také využívá DNS či DHCP anebo RIP.</p>
 <p>Hlavička UDP protokolu
 <a/><img src="pictures/3_5_hlavicka_UDP_protokolu.PNG" alt="N|Solid"></a></p>
-<hr>
+<br>
 <h4 id="_dns_-domain-name-system-"><em>DNS</em> (Domain Name System)</h4>
 <p>Protokol aplikační vrstvy. Už víme, že každý PC (v síti) musí mít jednoznačnou adresu; tzn. IP adresu. Ta se používá k ID PC’s i na internetu. K tomu abych si je nemuseli pamatovat (jelikož jsou samá čísla) se místo IP adresy používá doménové jméno. Doménové jméno se tedy užívá všude kromě IP adresy samotného name serveru (který s těmito adresami a čísly pracuje).
 <em>Umožňuje tedy ve zkratce překlad IP adres na doménové jména a i naopak!</em>
@@ -200,7 +200,7 @@ Vazba mezi IP adresou a doménovým jménem je uložena v celosvětové databáz
 <li>Rekurzivní postup: provádí hiearchicky nejnižší DNS → ten hledá adresu, dokud nedostane odpověď.</li>
 <li>Nerekurzivní postup: provádí ho vyšší servery DNS → pokud neznají odpověď</li>
 </ul>
-<hr>
+<br>
 <h4 id="dhcp-dynamic-host-control-protocol-">DHCP (Dynamic Host Control Protocol)</h4>
 <p>Protokol aplikační vrstvy. Používání se pro automatické přidělování IP adres, masky sítě, default gateway a DNS1 + DN2 stanicím v síti. Funguje na UDP portu 68, server naslouchá na UDP portu 67.</p>
 <p>Současně s těmito údaji posílá DCHP server klientům další nastavení pro jejich fungování (adresa nejbližšího směrovače (routeru)).
