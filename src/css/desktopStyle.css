@@ -63,7 +63,7 @@ main {
     max-width: 75%; }
   main p {
     font-family: "Roboto", sans-serif;
-    max-width: 75%;
+    max-width: 55ch;
     font-size: 1rem;
     line-height: 1.618rem;
     color: #e6e6e6; }
@@ -344,7 +344,7 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
-  max-width: 75vw; }
+  max-width: 50%; }
 
 .buttonBox {
   display: -webkit-inline-box;
