@@ -275,6 +275,8 @@ article {
   margin-top: 5rem; }
   article img {
     max-width: 80%; }
+  article .notTransparent {
+    background-color: white; }
 
 table {
   color: white;
