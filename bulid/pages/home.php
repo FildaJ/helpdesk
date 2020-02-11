@@ -20,4 +20,4 @@
 		<p>Umíš programovat, jsi dobrý na design nebo umíš výborně vysvětlovat věci? I ty můžeš přispět do tohoto projektu svou pomocí. Stačí navštívit náš repozitář na Gitlabu, kde jsou veškeré zdrojové kódy k této stránce a všechny výukové materiály.</p>
 		<a href="https://gitlab.com/snoopcat/helpdesk" class="btn-ghost">Gitlab</a>
 	</article>
-<main>
+</main>
